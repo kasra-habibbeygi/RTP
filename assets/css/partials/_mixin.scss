@@ -1,0 +1,13 @@
+@mixin transition($time, $type, $delay) {
+    transition: all $time $type $delay;
+    -webkit-transition: all $time $type $delay;
+    -ms-transition: all $time $type $delay;
+    -moz-transition: all $time $type $delay;
+}
+
+@mixin transform($type) {
+    transform: $type;
+    -webkit-transform: $type;
+    -ms-transform: $type;
+    -moz-transform: $type;
+}

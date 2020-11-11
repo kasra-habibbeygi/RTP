@@ -1,0 +1,67 @@
+.btn:hover {
+    color: #ffffff;
+}
+
+.btn.focus,
+.btn:focus {
+    outline: 0;
+    box-shadow: none;
+}
+
+a:hover {
+    color: #0056b3;
+    text-decoration: none;
+}
+
+button:focus {
+    outline: none;
+    outline: none;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: #1e1e2d00;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(197, 197, 197);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(85, 94, 129);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.row {
+    margin-right: 0px !important;
+    margin-left: 0px !important;
+}
+
+.alert {
+    position: unset !important;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 30px white inset !important;
+}
+
+::-moz-selection {
+    background: rgb(185, 197, 255);
+}
+
+::selection {
+    background: rgb(185, 197, 255);
+}
+
+:focus {
+    outline: none;
+}

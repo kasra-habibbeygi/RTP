@@ -1,0 +1,37 @@
+$nf : normal-font;
+$bf : bold-font;
+$lf : light-font;
+$af : accent-font;
+
+@font-face {
+    font-family: $nf;
+    src: url(../../fonts/Shabnam.eot) format('eot'),
+        url(../../fonts/Shabnam.ttf) format('ttf'),
+        url(../../fonts/Shabnam.woff) format('woff');
+}
+
+@font-face {
+    font-family: $bf;
+    src: url(../../fonts/Shabnam-Bold.eot) format('eot'),
+        url(../../fonts/Shabnam-Bold.ttf) format('ttf'),
+        url(../../fonts/Shabnam-Bold.woff) format('woff');
+}
+
+@font-face {
+    font-family: $lf;
+    src: url(../../fonts/Shabnam-Light.eot) format('eot'),
+        url(../../fonts/Shabnam-Light.ttf) format('ttf'),
+        url(../../fonts/Shabnam-Light.woff) format('woff');
+}
+
+@font-face {
+    font-family: $af;
+    src: url(../../fonts/aviny.ttf) format('eot'),
+        url(../../fonts/aviny.otf) format('otf'),
+        url(../../fonts/avinyweb.woff) format('woff'),
+        url(../../fonts/avinyweb.woff2) format('woff2');
+}
+
+body {
+    font-family: $lf;
+}

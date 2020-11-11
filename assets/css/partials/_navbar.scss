@@ -1,0 +1,228 @@
+//The part at the top of the page where the logo and search are located 
+.secondary-nav {
+    width: 100%;
+    display: flex;
+    padding-top: 16px;
+    padding-left: 20px;
+    position: relative;
+    border-bottom: 1px solid rgb(231, 231, 231);
+    height: 80px;
+
+    .NB-search {
+        width: 500px;
+        direction: rtl;
+        text-align: right;
+        position: relative;
+        top: 3px;
+
+        input {
+            border-radius: 7px 0px 0px 7px !important;
+            border-right: 0px;
+            font-size: 0.9rem;
+            height: 38px;
+            border-color: rgb(228, 228, 228);
+            color: rgb(124, 124, 124);
+
+            &::placeholder {
+                color: rgb(175, 175, 175);
+                font-size: 0.8rem;
+                font-family: $lf;
+            }
+        }
+
+        span {
+            background-color: $accent_color;
+            height: 38px;
+            border-radius: 0px 7px 7px 0px !important;
+            cursor: pointer;
+            border: 0;
+
+            &:hover {
+                background-color: $ac_color;
+            }
+
+            button {
+                padding: 0;
+
+                i {
+                    position: relative;
+                    top: 2px;
+                    color: rgb(255, 255, 255);
+                }
+            }
+        }
+    }
+
+    img {
+        width: 100px;
+        position: absolute;
+        right: 20px;
+    }
+}
+
+// navbar
+nav {
+    width: 100%;
+    height: 55px;
+    background-color: #FAFAFA;
+    box-shadow: 0px 8px 10px -5px #00000012;
+    position: relative;
+
+    .right-NB {
+        position: absolute;
+        right: 20px;
+
+        .navbar-option {
+            list-style-type: none;
+            display: flex;
+            direction: rtl;
+            padding: 0;
+
+            li {
+                cursor: pointer;
+                height: 55px;
+                padding: 0px 20px;
+                text-align: center;
+                padding-top: 15px;
+                margin-left: 5px;
+
+                &:hover {
+
+                    a {
+                        color: $accent_color;
+                    }
+
+                    p {
+                        color: $accent_color;
+                    }
+
+                    border-bottom: 2px solid $accent_color;
+                }
+
+                a {
+                    color: rgb(145, 145, 145);
+                    font-size: 0.9rem;
+                }
+
+                p {
+                    color: rgb(145, 145, 145);
+                    font-size: 0.9rem;
+
+                    i {
+                        position: relative;
+                        right: 3px;
+                        top: 2px;
+                    }
+                }
+            }
+
+            .NBP-dropdown {
+                position: relative;
+
+                &:hover {
+                    .product-option {
+                        display: block;
+
+                        a {
+                            color: rgb(145, 145, 145);
+                        }
+                    }
+                }
+
+                // dropdown
+                .product-option {
+                    text-align: right;
+                    direction: rtl;
+                    width: 140px;
+                    border-radius: 7px;
+                    background-color: #FAFAFA;
+                    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.075);
+                    position: absolute;
+                    top: 55px;
+                    right: 0;
+                    border: 1px solid #eaeaea;
+                    display: none;
+
+                    a {
+                        display: block;
+                        padding: 10px 0px;
+                        font-weight: bold;
+                        width: 100%;
+                        padding-right: 15px;
+
+                        &:hover {
+                            color: $accent_color;
+                            background-color: #f4f4f4;
+                        }
+                    }
+                }
+
+                // dropdown
+            }
+
+
+            .active-page {
+                border-bottom: 2px solid $accent_color;
+            }
+        }
+    }
+
+    .left-NB {
+        position: absolute;
+        left: 20px;
+        display: flex;
+
+        .LR-field {
+            font-weight: bold;
+            padding-top: 15px;
+            text-align: right;
+            direction: rtl;
+
+            a {
+                color: #707070;
+                padding: 0px 3px;
+
+                &:nth-child(1) {
+                    border-right: 2px solid #707070;
+                    padding-right: 20px;
+                }
+            }
+        }
+
+        .basket-field {
+            text-align: right;
+            direction: rtl;
+            margin-left: 20px;
+            padding-top: 15px;
+
+            a {
+                color: $accent_color;
+                font-weight: bold;
+                position: relative;
+
+                .B-conter {
+                    background-color: $accent_color;
+                    color: rgb(255, 255, 255);
+                    padding: 3px;
+                    width: 25px;
+                    height: 25px;
+                    border-radius: 500px;
+                    position: absolute;
+                    top: -12px;
+                    left: 10px;
+                    border: 4px solid #FAFAFA;
+                    font-size: 0.8rem;
+                    text-align: center;
+                    padding-top: 0.3px;
+                }
+
+                i {
+                    font-size: 1.1rem;
+                    position: relative;
+                    top: 2px;
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+}
