@@ -66,13 +66,6 @@
 
         .l_cnct{
           color:$smal_text ;
-          @include transition(.5s , linear , 0s);
-
-
-          &:hover{
-            color: black;
-            font-size: 1.02rem;
-          }
 
           .lbl_icon , .l_cnct_text{
             display: inline-block;

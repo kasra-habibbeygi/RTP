@@ -256,14 +256,6 @@ nav .left-NB .basket-field a i {
 }
 .main_contact_us .mcu_left_box .lb_list_cnct .lbl_list .l_cnct {
   color: #4b4b4b;
-  transition: all 0.5s linear 0s;
-  -webkit-transition: all 0.5s linear 0s;
-  -ms-transition: all 0.5s linear 0s;
-  -moz-transition: all 0.5s linear 0s;
-}
-.main_contact_us .mcu_left_box .lb_list_cnct .lbl_list .l_cnct:hover {
-  color: black;
-  font-size: 1.02rem;
 }
 .main_contact_us .mcu_left_box .lb_list_cnct .lbl_list .l_cnct .lbl_icon, .main_contact_us .mcu_left_box .lb_list_cnct .lbl_list .l_cnct .l_cnct_text {
   display: inline-block;
