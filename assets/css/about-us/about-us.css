@@ -219,24 +219,61 @@ nav .left-NB .basket-field a i {
 .about-us .au_header .au_h_txt {
   font: 3rem accent-font;
   padding-right: 20%;
+  color: #B5DB1E;
 }
 .about-us .au_header .au_h_small_txt {
-  padding-right: 30%;
+  padding-right: 28%;
   direction: rtl;
+  font-size: 1.2rem;
 }
-.about-us .au_trust {
+.about-us .au_trust, .about-us .au_best_quality {
   text-align: right;
   direction: rtl;
   display: flex;
   justify-content: center;
-  flex-direction: column;
+  flex-wrap: wrap;
 }
-.about-us .au_trust .au_t_title {
-  font: 3rem accent-font;
-  width: 100%;
+.about-us .au_trust .au_t_title, .about-us .au_best_quality .au_t_title {
+  font: 2.5rem accent-font;
+  margin-top: 50px;
 }
-.about-us .au_trust .au_t_img {
+.about-us .au_trust .au_t_exp, .about-us .au_best_quality .au_t_exp {
+  padding: 10px 100px 50px;
+  text-align: justify;
+  line-height: 40px;
+  font-size: 1.1rem;
+  color: #4b4b4b;
+}
+.about-us .au_trust .au_t_img, .about-us .au_best_quality .au_t_img {
   width: 250px;
+}
+.about-us .au_counter_box {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 80%;
+  height: 200px;
+  box-shadow: 5px 5px 10px 5px #b8b8b8;
+  margin: 0 auto 50px;
+  border-radius: 10px;
+}
+.about-us .au_counter_box .au_cb_field {
+  width: 25%;
+  height: 200px;
+  text-align: center;
+}
+.about-us .au_counter_box .au_cb_field .counter_icons {
+  margin: 35px 0 10px;
+  width: 50px;
+}
+.about-us .au_counter_box .au_cb_field .exp {
+  margin-bottom: 10px;
+  color: #4b4b4b;
+}
+.about-us .au_counter_box .au_cb_field .counter {
+  display: inline-block;
+  color: #4b4b4b;
+  font-size: 1.2rem;
 }
 
 /*# sourceMappingURL=about-us.css.map */

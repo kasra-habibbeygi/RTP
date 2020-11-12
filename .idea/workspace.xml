@@ -20,14 +20,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="852b3d14-e7b9-49ae-b295-cc1244fe7f2d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/css/index/index.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/AH00.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/AT01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/AC02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/AC03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js/about-us/about-us.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/about-us/about-us.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/about-us/about-us.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/about-us/about-us.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/about-us/about-us.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/about-us/about-us.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/about-us/about-us.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/index/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/index/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/about-us/about-us.html" beforeDir="false" afterPath="$PROJECT_DIR$/views/about-us/about-us.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -43,6 +42,7 @@
       <list>
         <option value="HTML File" />
         <option value="SCSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -83,7 +83,7 @@
       <updated>1605071557268</updated>
       <workItem from="1605071559163" duration="12698000" />
       <workItem from="1605085447989" duration="644000" />
-      <workItem from="1605192078696" duration="4635000" />
+      <workItem from="1605192078696" duration="10725000" />
     </task>
     <servers />
   </component>
