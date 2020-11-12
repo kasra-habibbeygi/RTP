@@ -20,32 +20,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="852b3d14-e7b9-49ae-b295-cc1244fe7f2d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/RTP.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/css/contact_us/contact_us.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/contact-us/contact-us.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/New Text Document.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobileUI/about us.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobileUI/article list.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobileUI/article.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobileUI/contact us.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobileUI/edit profile.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobileUI/index.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobileUI/login.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobileUI/navbar profile drop down.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobileUI/order detail.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobileUI/product detail (comments).png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobileUI/product detail (mobile detail).png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobileUI/product detail (videos).png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobileUI/product detail.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobileUI/product list.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobileUI/profile.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobileUI/register.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobileUI/shop bascket.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobileUI/shop basket 2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobileUI/shop basket 3.png" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/css/about-us/about-us.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/css/about-us/about-us.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/css/about-us/about-us.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/about-us/about-us.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/contact_us/contact_us.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/contact_us/contact_us.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/contact_us/contact_us.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/contact_us/contact_us.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/contact-us/contact-us.html" beforeDir="false" afterPath="$PROJECT_DIR$/views/contact-us/contact-us.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,6 +66,11 @@
     <property name="settings.editor.selected.configurable" value="watcher.settings" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\project\git project\rezai\RTP\views\about-us" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -93,6 +80,8 @@
       <option name="presentableId" value="Default" />
       <updated>1605071557268</updated>
       <workItem from="1605071559163" duration="12698000" />
+      <workItem from="1605085447989" duration="644000" />
+      <workItem from="1605192078696" duration="479000" />
     </task>
     <servers />
   </component>
@@ -109,6 +98,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />

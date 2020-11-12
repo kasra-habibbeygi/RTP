@@ -1,9 +1,10 @@
+// import partials scss file
 @import '../partials/color';
 @import '../partials/fonts';
 @import '../partials/mixin';
 @import '../partials/navbar';
 
-
+// main style
 .main_contact_us{
   width: 100%;
   display: flex;
@@ -11,7 +12,7 @@
   justify-content: center;
   margin: 50px 0;
 
-  //left box text based
+  //left part - text base
 
   .mcu_left_box{
     width: 40%;
@@ -96,7 +97,7 @@
 
   }
 
-
+//  right part - contact form
 
   .mcu_right_box{
     width: 40%;
@@ -133,7 +134,7 @@
 }
 
 
-
+//responsive part
 @media only screen and (max-width: 1200px) {
   
 }
