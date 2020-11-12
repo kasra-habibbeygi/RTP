@@ -118,6 +118,7 @@ nav {
 
             .NBP-dropdown {
                 position: relative;
+                z-index: 1000;
 
                 &:hover {
                     .product-option {
