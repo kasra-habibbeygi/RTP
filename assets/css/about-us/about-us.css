@@ -206,4 +206,37 @@ nav .left-NB .basket-field a i {
   margin-right: 10px;
 }
 
+.about-us .au_header {
+  background-image: url("../../img/AH00.jpg");
+  width: 100%;
+  height: 600px;
+  background-size: cover;
+  text-align: right;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+.about-us .au_header .au_h_txt {
+  font: 3rem accent-font;
+  padding-right: 20%;
+}
+.about-us .au_header .au_h_small_txt {
+  padding-right: 30%;
+  direction: rtl;
+}
+.about-us .au_trust {
+  text-align: right;
+  direction: rtl;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.about-us .au_trust .au_t_title {
+  font: 3rem accent-font;
+  width: 100%;
+}
+.about-us .au_trust .au_t_img {
+  width: 250px;
+}
+
 /*# sourceMappingURL=about-us.css.map */
