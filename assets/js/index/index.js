@@ -1,18 +1,30 @@
 // header big slider 
 
 var swiper = new Swiper('.HRBS', {
+
   loop: true,
   effect: 'fade',
+
   navigation: {
+
     nextEl: '.RHS_next_arrow',
     prevEl: '.RHS_prev_arrow',
+
   },
+
 });
 
-var swiper = new Swiper('.HLLS', {
-  loop: true,
+// product slider 1
+var swiper = new Swiper('.SP000', {
+
+  slidesPerView: 5,
+  spaceBetween: 40,
+
   navigation: {
-    nextEl: '.LHS_next_arrow',
-    prevEl: '.LHS_right_arrow',
+
+    nextEl: '.PS000_next_arrow',
+    prevEl: '.PS000_next_prev',
+
   },
+
 });

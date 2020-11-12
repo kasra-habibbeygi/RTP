@@ -2,6 +2,7 @@
 @import '../partials/fonts';
 @import '../partials/mixin';
 @import '../partials/navbar';
+@import '../partials/product-slider';
 
 // header slider
 .header_sliders {
@@ -21,17 +22,17 @@
         .LHS_contents {
             width: 100%;
             height: 400px;
-            background: linear-gradient(0deg, rgba(254,234,234,1) 0%, rgba(230,249,255,1) 100%);
+            background: linear-gradient(0deg, rgba(254, 234, 234, 1) 0%, rgba(230, 249, 255, 1) 100%);
             direction: rtl;
             text-align: right;
 
-            img{
+            img {
                 width: 60%;
                 margin-right: 20%;
                 margin-top: 20px;
             }
 
-            .LHS_detail{
+            .LHS_detail {
                 font-weight: bold;
                 width: 80%;
                 color: #626262;
@@ -40,7 +41,7 @@
                 font-size: 0.9rem;
             }
 
-            .LHS_price{
+            .LHS_price {
                 text-align: left;
                 margin-left: 30px;
                 margin-bottom: 0;
@@ -48,7 +49,8 @@
                 color: #999999;
                 font-size: 1.1rem;
             }
-            .LHS_sale{
+
+            .LHS_sale {
                 text-align: left;
                 margin-left: 30px;
                 margin-bottom: 0;
@@ -58,7 +60,7 @@
             }
         }
 
-        .LHS_next_arrow{
+        .LHS_next_arrow {
             background-color: rgba(66, 66, 66, 0.16);
             padding: 35px 18px;
             right: 0;
@@ -79,7 +81,7 @@
             }
         }
 
-        .LHS_right_arrow{
+        .LHS_right_arrow {
             background-color: rgba(66, 66, 66, 0.16);
             padding: 35px 18px;
             left: 0;
@@ -184,8 +186,6 @@
     }
 }
 
-
-
 /* big slider animation */
 
 .RST_header {
@@ -212,3 +212,83 @@
     transform: translate3d(0, 0, 0);
     opacity: 1;
 }
+
+// category section
+.categorys {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px 20px;
+    margin-top: 10px;
+    margin-bottom: 100px;
+
+    a {
+        width: 32%;
+        margin-left: 2%;
+        height: 200px;
+        border-radius: 15px;
+        background: linear-gradient(90deg, rgba(98, 149, 170, 0.4990246376294768) 0%, rgba(177, 216, 255, 0.05) 100%);
+        padding: 25px;
+        position: relative;
+
+        &:first-child {
+            margin-left: 0;
+        }
+
+        h3 {
+            font-weight: bold;
+            font-size: 2.2rem;
+            position: relative;
+            top: 15px;
+            color: rgb(34, 34, 34);
+        }
+
+        p {
+            width: 210px;
+            line-height: 30px;
+            font-family: $af;
+            font-size: 1.4rem;
+            color: #3d3d3d;
+            text-align: right;
+            margin-top: 20px;
+            position: absolute;
+            bottom: 20px;
+            left: 0px;
+        }
+
+        .apple_log {
+            width: 160px;
+            position: relative;
+            left: 20px;
+        }
+
+        .samsung_logo {
+            width: 260px;
+            position: relative;
+            left: -20px;
+            top: 10px;
+        }
+
+        .category_img_000 {
+            width: 190px;
+            position: absolute;
+            right: 10px;
+            bottom: -40px;
+        }
+
+        .category_img_001 {
+            width: 110px;
+            position: absolute;
+            right: 10px;
+            bottom: -40px;
+        }
+
+        .category_img_002 {
+            width: 160px;
+            position: absolute;
+            right: 10px;
+            bottom: -40px;
+        }
+    }
+}
+
