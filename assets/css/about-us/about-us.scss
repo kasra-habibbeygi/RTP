@@ -22,12 +22,12 @@
 
     .au_h_txt {
       font: 3rem $af;
-      padding-right: 20%;
+      padding-right: 10vw;
       color: $accent_color;
     }
 
     .au_h_small_txt {
-      padding-right: 28%;
+      padding-right: 18vw;
       direction: rtl;
       font-size: 1.2rem;
     }
@@ -49,7 +49,7 @@
       margin-top: 50px;
     }
 
-    .au_t_exp{
+    .au_t_exp {
       padding: 10px 100px 50px;
       text-align: justify;
       line-height: 40px;
@@ -62,38 +62,38 @@
     }
   }
 
-  .au_best_quality{
+  .au_best_quality {
     @extend .au_trust;
   }
 
   //counter part
 
-  .au_counter_box{
+  .au_counter_box {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     width: 80%;
     height: 200px;
     box-shadow: 5px 5px 10px 5px #b8b8b8;
-    margin:0 auto 50px;
+    margin: 0 auto 50px;
     border-radius: 10px;
 
-    .au_cb_field{
+    .au_cb_field {
       width: 25%;
       height: 200px;
       text-align: center;
 
-      .counter_icons{
+      .counter_icons {
         margin: 35px 0 10px;
         width: 50px;
       }
 
-      .exp{
+      .exp {
         margin-bottom: 10px;
         color: $smal_text;
       }
 
-      .counter{
+      .counter {
         display: inline-block;
         color: $smal_text;
         font-size: 1.2rem;
@@ -103,34 +103,146 @@
   }
 
 
-
 }
 
 //responsive part
 
 
 @media only screen and (max-width: 1200px) {
+  .about-us .au_header {
+    height: 450px;
+  }
+  .about-us .au_header .au_h_txt {
+    font-size: 2.5rem;
+  }
+  .about-us .au_header .au_h_small_txt,
+  .about-us .au_trust .au_t_exp, .about-us .au_best_quality .au_t_exp {
+    font-size: 1rem;
+  }
+
+  .about-us .au_trust .au_t_title, .about-us .au_best_quality .au_t_title {
+    font-size: 2rem;
+  }
 
 }
 
 @media only screen and (max-width: 992px) {
-
+  .about-us .au_header {
+    height: 350px;
+  }
+  .about-us .au_header .au_h_txt {
+    font-size: 2.2rem;
+  }
+  .about-us .au_header .au_h_small_txt,
+  .about-us .au_trust .au_t_exp, .about-us .au_best_quality .au_t_exp,
+  .about-us .au_counter_box .au_cb_field .exp{
+    font-size: .9rem;
+  }
+  .about-us .au_trust .au_t_img, .about-us .au_best_quality .au_t_img {
+    width: 180px;
+  }
+  .about-us .au_trust .au_t_exp, .about-us .au_best_quality .au_t_exp {
+    padding: 10px 100px 20px;
+  }
+  .about-us .au_counter_box .au_cb_field .counter_icons {
+    width: 35px;
+  }
+  .about-us .au_counter_box .au_cb_field .counter{
+    font-size: 1rem;
+  }
+  .about-us .au_counter_box{
+    height: 170px;
+  }
 }
 
 @media only screen and (max-width: 768px) {
+  .about-us .au_header {
+    height: 250px;
+  }
+  .about-us .au_header .au_h_txt {
+    font-size: 2rem;
+  }
+  .about-us .au_header .au_h_small_txt,
+  .about-us .au_trust .au_t_exp, .about-us .au_best_quality .au_t_exp,
+  .about-us .au_counter_box .au_cb_field .exp{
+    font-size: .8rem;
+  }
+  .about-us .au_trust .au_t_title, .about-us .au_best_quality .au_t_title {
+    font-size: 1.5rem;
+  }
+  .about-us .au_trust .au_t_exp, .about-us .au_best_quality .au_t_exp {
+    padding: 10px 50px;
+  }
+  .about-us .au_counter_box{
+    height: 160px;
+  }
+}
 
+@media only screen and (max-width: 650px) {
+
+  .about-us .au_header .au_h_txt {
+    font-size: 1.5rem;
+  }
+  .about-us .au_trust .au_t_img, .about-us .au_best_quality .au_t_img {
+    width: 130px;
+  }
+  .about-us .au_trust .au_t_title, .about-us .au_best_quality .au_t_title {
+    font-size: 1.3rem;
+  }
+  .about-us .au_counter_box .au_cb_field .counter_icons {
+    width: 25px;
+  }
+  .about-us .au_counter_box .au_cb_field .exp{
+    font-size: .7rem;
+  }
+  .about-us .au_counter_box .au_cb_field .counter {
+    font-size: .8rem;
+  }
 }
 
 @media only screen and (max-width: 600px) {
-
+  .about-us .au_counter_box .au_cb_field{
+    width: 50%;
+    height: 140px;
+  }
+  .about-us .au_counter_box{
+    height: 280px;
+  }
 }
 
 @media only screen and (max-width: 500px) {
+  .about-us .au_header {
+    height: 200px;
+  }
+
+  .about-us .au_header .au_h_txt,
+  .about-us .au_trust .au_t_title, .about-us .au_best_quality .au_t_title {
+    font-size: 1.1rem;
+  }
+  .about-us .au_header .au_h_small_txt {
+    font-size: .6rem;
+    padding-right: 15vw;
+  }
+  .about-us .au_trust .au_t_exp, .about-us .au_best_quality .au_t_exp{
+    font-size: .7rem;
+  }
+  .about-us .au_trust .au_t_img, .about-us .au_best_quality .au_t_img {
+    width: 100px;
+  }
+
+
+
 
 }
 
 @media only screen and (max-width: 400px) {
-
+  .about-us .au_header {
+    height: 170px;
+  }
+  .about-us .au_trust .au_t_exp, .about-us .au_best_quality .au_t_exp {
+    padding: 10px 30px;
+    line-height: 25px;
+  }
 }
 
 @media only screen and (max-width: 360px) {
