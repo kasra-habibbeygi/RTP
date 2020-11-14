@@ -52,6 +52,4 @@ var swiper = new Swiper('.SP000', {
       slidesPerGroup: 4,
     },
   }
-
-
 });
