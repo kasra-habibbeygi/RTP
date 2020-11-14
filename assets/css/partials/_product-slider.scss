@@ -10,7 +10,7 @@
     .SP000 {
         padding: 0px 10px;
 
-        .swiper-wrapper{
+        .swiper-wrapper {
             padding-top: 15px;
         }
 
@@ -87,10 +87,10 @@
         width: 100%;
         display: flex;
         flex-direction: column;
-        @include transition(0.2s , linear , 0s);
+        @include transition(0.2s, linear, 0s);
         padding: 10px 10px;
 
-        &:hover{
+        &:hover {
             box-shadow: 0px 0px 15px -4px #00000017;
             border-radius: 10px;
             padding: 10px 10px;
@@ -126,3 +126,54 @@
         }
     }
 }
+
+.swiper-button-next.swiper-button-disabled,
+.swiper-button-prev.swiper-button-disabled {
+    opacity: .35;
+    cursor: pointer;
+    pointer-events: unset;
+}
+
+// media query
+@media only screen and (max-width: 1360px) {
+    .product_slider .PS_field .PS_description {
+        font-size: 0.8rem;
+    }
+}
+
+@media only screen and (max-width: 1279px) {
+    .product_slider .PS_field .PS_description {
+        font-size: 0.9rem;
+    }
+}
+
+@media only screen and (max-width: 825px) {
+    .product_slider .PS_field .PS_description {
+        font-size: 0.8rem;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .product_slider .PS_field .PS_description {
+        font-size: 0.9rem;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .product_slider .PS_field .PS_description {
+        font-size: 0.8rem;
+    }
+}
+
+@media only screen and (max-width: 499px) {
+    .product_slider .PS_field .PS_description {
+        font-size: 2rem;
+    }
+    body{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 550px) {}
+
+@media only screen and (max-width: 550px) {}
