@@ -308,6 +308,9 @@ footer .copy_right p {
 .product_slider .SP000 {
   padding: 0px 50px;
 }
+.product_slider .SP000 .swiper-wrapper {
+  padding-top: 15px;
+}
 .product_slider .SP000 .PS000_next_arrow {
   background-color: rgba(66, 66, 66, 0.16);
   padding: 35px 18px;
@@ -369,6 +372,17 @@ footer .copy_right p {
   width: 100%;
   display: flex;
   flex-direction: column;
+  transition: all 0.2s linear 0s;
+  -webkit-transition: all 0.2s linear 0s;
+  -ms-transition: all 0.2s linear 0s;
+  -moz-transition: all 0.2s linear 0s;
+  padding: 10px 0px;
+}
+.product_slider .PS_field:hover {
+  box-shadow: 0px 0px 15px -4px #00000017;
+  border-radius: 10px;
+  padding: 10px 0px;
+  background-color: white;
 }
 .product_slider .PS_field img {
   width: 130px;

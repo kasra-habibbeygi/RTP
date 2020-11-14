@@ -18,7 +18,8 @@ var swiper = new Swiper('.HRBS', {
 var swiper = new Swiper('.SP000', {
 
   slidesPerView: 5,
-  spaceBetween: 40,
+  spaceBetween: 10,
+  loop:true,
 
   navigation: {
 
