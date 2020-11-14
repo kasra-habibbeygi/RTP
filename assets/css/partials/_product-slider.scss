@@ -140,21 +140,25 @@
         font-size: 0.8rem;
     }
 }
+
 @media only screen and (max-width: 1279px) {
     .product_slider .PS_field .PS_description {
         font-size: 0.9rem;
     }
 }
+
 @media only screen and (max-width: 825px) {
     .product_slider .PS_field .PS_description {
         font-size: 0.8rem;
     }
 }
+
 @media only screen and (max-width: 800px) {
     .product_slider .PS_field .PS_description {
-        font-size: 0.9rem;
+        font-size: 0.8rem;
     }
 }
+
 @media only screen and (max-width: 550px) {
     .product_slider .PS_field .PS_description {
         font-size: 0.8rem;
@@ -162,14 +166,42 @@
 }
 
 @media only screen and (max-width: 499px) {
-    .product_slider .PS_field .PS_description {
-        font-size: 2rem;
+    .product_slider .PS_field img {
+        width: 170px;
+        height: 210px;
     }
-    body{
-        display: none;
+
+    .product_slider .PS_field .PS_description {
+        font-size: 1.1rem;
+        line-height: 40px;
+    }
+
+    .product_slider .PS_field .PS_price {
+        font-size: 1.9rem;
     }
 }
 
-@media only screen and (max-width: 550px) {}
+@media only screen and (max-width: 340px) {
+    .product_slider .PS_field img {
+        width: 140px;
+        height: 180px;
+    }
 
-@media only screen and (max-width: 550px) {}
+    .product_slider .PS_field .PS_description {
+        font-size: 0.9rem;
+        line-height: 30px;
+    }
+
+    .product_slider .PS_field .PS_price {
+        font-size: 1.5rem;
+    }
+
+    .product_slider .PS_header_text h3 {
+        font-size: 1.1rem !important;
+        font-weight: bold;
+    }
+
+    .product_slider .PS_header_text span {
+        width: 190px;
+    }
+}
