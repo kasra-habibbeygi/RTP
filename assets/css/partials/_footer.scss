@@ -1,0 +1,109 @@
+footer {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #202325;
+    padding: 120px 100px 0px 100px;
+    margin-top: 30px;
+
+    .contact {
+        width: 30%;
+        direction: rtl;
+        text-align: right;
+        color: $white;
+
+        .header {
+            font-size: 1.3rem;
+            font-weight: bold;
+        }
+
+        p {
+            line-height: 34px;
+            text-align: justify;
+
+            i {
+                margin-left: 5px;
+            }
+
+            span {
+                &:last-child {
+                    margin-right: 15px;
+                }
+            }
+        }
+    }
+
+    .short_links {
+        width: 20%;
+        direction: rtl;
+        text-align: right;
+        color: $white;
+
+        .header {
+            font-size: 1.3rem;
+            font-weight: bold;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+
+            li {
+                margin-bottom: 15px;
+
+                a {
+                    color: rgb(177, 177, 177);
+
+                    &:hover {
+                        color: $white;
+                    }
+                }
+            }
+        }
+    }
+
+    .footer_description {
+        width: 30%;
+        direction: rtl;
+        text-align: right;
+        color: $white;
+
+        .header {
+            font-size: 1.3rem;
+            font-weight: bold;
+        }
+
+        .FDT {
+            line-height: 35px;
+            text-align: justify;
+            width: 80%;
+        }
+
+        .social_media {
+            text-align: center;
+            width: 80%;
+
+            a {
+                font-size: 1.5rem;
+                color: $white;
+
+                &:nth-child(2) {
+                    margin: 0px 15px;
+                }
+            }
+        }
+    }
+
+    .copy_right{
+        width: 100%;
+        border-top: 1px  solid rgb(68, 68, 68);
+        padding: 15px 0px;
+        color: rgb(189, 189, 189);
+        text-align: center;
+        margin-top: 80px;
+
+        p{
+            margin-bottom: 0;
+        }
+    }
+}
