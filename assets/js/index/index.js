@@ -18,8 +18,9 @@ var swiper = new Swiper('.HRBS', {
 var swiper = new Swiper('.SP000', {
 
   slidesPerView: 5,
-  spaceBetween: 10,
-  loop:true,
+  spaceBetween: 20,
+  slidesPerGroup: 4,
+  speed: 1200,
 
   navigation: {
 
@@ -27,5 +28,7 @@ var swiper = new Swiper('.SP000', {
     prevEl: '.PS000_next_prev',
 
   },
+
+  
 
 });
