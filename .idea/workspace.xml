@@ -23,7 +23,10 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/about-us/about-us.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/about-us/about-us.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/about-us/about-us.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/about-us/about-us.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/about-us/about-us.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/about-us/about-us.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/contact_us/contact_us.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/contact_us/contact_us.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/contact_us/contact_us.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/contact_us/contact_us.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/index/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/index/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/index/index.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/index/index.css.map" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,7 +84,7 @@
       <workItem from="1605085447989" duration="644000" />
       <workItem from="1605192078696" duration="10725000" />
       <workItem from="1605268530053" duration="623000" />
-      <workItem from="1605286079485" duration="1591000" />
+      <workItem from="1605286079485" duration="3045000" />
     </task>
     <servers />
   </component>

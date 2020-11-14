@@ -120,6 +120,7 @@ nav .right-NB .navbar-option li p i {
 }
 nav .right-NB .navbar-option .NBP-dropdown {
   position: relative;
+  z-index: 1000;
 }
 nav .right-NB .navbar-option .NBP-dropdown:hover .product-option {
   display: block;
