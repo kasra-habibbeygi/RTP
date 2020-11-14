@@ -453,3 +453,10 @@
     transform: translate3d(0, 0, 0);
     opacity: 1;
 }
+
+// media query
+@media only screen and (max-width: 550px) {
+    .categorys , .packag_field{
+        display: none;
+    }
+}
