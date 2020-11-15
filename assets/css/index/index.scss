@@ -259,7 +259,7 @@
     flex-wrap: wrap;
     padding: 0px 20px;
     margin-top: 10px;
-    margin-bottom: 100px;
+    margin-bottom: 60px;
 
     a {
         width: 32%;
@@ -311,7 +311,7 @@
         .category_img_000 {
             width: 190px;
             position: absolute;
-            right: 10px;
+            right: -20px;
             bottom: -40px;
         }
 
@@ -323,7 +323,7 @@
         }
 
         .category_img_002 {
-            width: 160px;
+            width: 130px;
             position: absolute;
             right: 10px;
             bottom: -40px;
@@ -363,7 +363,7 @@
             }
 
             .cart_field {
-                height: 192px;
+                height: 193px;
             }
 
             .content {
@@ -455,8 +455,18 @@
 }
 
 
-
 // media query
+@media only screen and (max-width: 1260px) {
+    .article_field .small_carts .SCF .content h3 {
+        width: 100%;
+    }
+
+    .article_field .cart_field .content {
+        width: 90%;
+        margin-left: 5%;
+    }
+}
+
 @media only screen and (max-width: 1200px) {
     .packag_field .PFS .samsung_bordered_logo {
         width: 190px;
@@ -484,6 +494,46 @@
         font-weight: bold;
         font-size: 1rem;
     }
+
+    .article_field .cart_field .content h3 {
+        width: 100%;
+    }
+
+    .categorys a .samsung_logo {
+        width: 210px;
+    }
+
+    .categorys a p {
+        width: 190px;
+    }
+
+    .categorys a .apple_log {
+        width: 120px;
+        left: 10px;
+        top: 10px;
+    }
+
+    .categorys a h3 {
+        font-size: 1.8rem;
+    }
+
+    .categorys a .category_img_002 {
+        width: 120px;
+    }
+}
+
+@media only screen and (max-width: 1040px) {
+    .article_field .small_carts .SCF .content h3 {
+        font-size: 1.7rem;
+    }
+
+    .article_field .cart_field .content h3 {
+        font-size: 2.5rem;
+    }
+
+    .article_field .cart_field .content {
+        bottom: 40px;
+    }
 }
 
 @media only screen and (max-width: 1080px) {
@@ -498,6 +548,42 @@
 
     .header_sliders .LHS {
         width: 240px;
+    }
+
+    .categorys a .category_img_000 {
+        width: 140px;
+        bottom: -20px;
+    }
+
+    .categorys a .category_img_001 {
+        width: 90px;
+        bottom: -20px;
+    }
+
+    .categorys a .category_img_002 {
+        width: 100px;
+        bottom: -20px;
+    }
+
+    .categorys a {
+        height: 180px;
+    }
+
+    .categorys a .samsung_logo {
+        width: 190px;
+    }
+
+    .categorys a p {
+        width: 170px;
+        font-size: 1.2rem;
+    }
+
+    .categorys a .apple_log {
+        width: 110px;
+    }
+
+    .categorys a h3 {
+        font-size: 1.6rem;
     }
 }
 
@@ -529,6 +615,82 @@
 
     .packag_field .PFS .samsung_bordered_logo {
         width: 220px;
+    }
+
+    .article_field .big_cart {
+        width: 100%;
+        margin-right: 0%;
+    }
+
+    .article_field .small_carts {
+        width: 100%;
+        display: flex;
+        height: auto;
+    }
+
+    .article_field .small_carts .SCF:first-child {
+        margin-top: 10px;
+    }
+
+    .article_field .small_carts .SCF:nth-child(2) {
+        margin: 0 10px;
+        margin-top: 10px;
+    }
+
+}
+
+@media only screen and (max-width: 950px) {
+    .categorys a {
+        width: 49%;
+    }
+
+    .ATPC001 {
+        order: 3;
+        width: 100% !important;
+        margin-top: 30px !important;
+    }
+
+    .ATPC002 {
+        order: 1;
+    }
+
+    .ATPC003 {
+        order: 2;
+    }
+
+    .categorys a {
+        width: 49%;
+        margin: 0;
+    }
+
+    .categorys a h3 {
+        font-size: 2.1rem;
+    }
+
+    .categorys a p {
+        width: 210px;
+        font-size: 1.5rem;
+    }
+
+    .categorys a .category_img_000 {
+        width: 200px;
+        bottom: -40px;
+    }
+
+    .categorys a .category_img_002 {
+        width: 120px;
+        bottom: -20px;
+    }
+
+    .categorys a .category_img_001 {
+        width: 100px;
+        bottom: -20px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .article_field .small_carts .SCF .content p {
+        font-size: 0.8rem;
     }
 }
 
@@ -588,6 +750,65 @@
         }
     }
 
+    .article_field .big_cart .cart_field {
+        height: 320px;
+    }
+
+    .article_field .small_carts .SCF .cart_field {
+        height: 320px;
+    }
+
+    .article_field .small_carts {
+        flex-direction: column;
+    }
+
+    .article_field .small_carts .SCF:nth-child(2) {
+        margin: 0 0px;
+        margin-top: 10px;
+    }
+
+    .article_field .small_carts .SCF .content h3 {
+        font-size: 2.5rem;
+    }
+
+    .article_field .small_carts .SCF .content p {
+        font-size: 1.2rem;
+    }
+
+    .article_field .small_carts .SCF .content {
+        bottom: 40px;
+    }
+
+    .categorys a {
+        width: 100%;
+        margin: 0;
+        margin-top: 30px !important;
+    }
+
+    .categorys {
+        margin-top: 0px;
+    }
+
+    .categorys a .category_img_001 {
+        width: 110px;
+        bottom: -20px;
+    }
+
+    .categorys a .category_img_002 {
+        width: 130px;
+        bottom: -20px;
+    }
+
+    .categorys a .category_img_000 {
+        right: -30px;
+    }
+
+    .categorys a p {
+        width: 360px;
+        font-size: 1.6rem;
+        top: 80px;
+    }
+
 }
 
 @media only screen and (max-width: 610px) {
@@ -618,10 +839,6 @@
 
 @media only screen and (max-width: 550px) {
 
-    .categorys {
-        display: none;
-    }
-
     .product_slider {
         padding: 30px 0px 0px 0px;
     }
@@ -639,6 +856,27 @@
     .packag_field .PFS .samsung_bordered_logo {
         width: 180px;
         height: 70px;
+    }
+
+    .article_field .cart_field .content h3 {
+        font-size: 2rem;
+        margin-bottom: 10px;
+    }
+
+    .article_field .small_carts .SCF .content h3 {
+        font-size: 2rem;
+    }
+
+    .article_field .cart_field .content p {
+        font-size: 1rem;
+    }
+
+    .article_field .small_carts .SCF .content p {
+        font-size: 1rem;
+    }
+
+    .categorys a p {
+        width: 220px;
     }
 
 }
@@ -694,6 +932,30 @@
     .header_sliders .LHS .LHS_contents,
     .header_sliders .LHS {
         height: 170px;
+    }
+}
+
+@media only screen and (max-width: 430px) {
+
+    .categorys a .category_img_001 {
+        width: 100px;
+        bottom: -20px;
+    }
+
+    .categorys a .category_img_002 {
+        width: 100px;
+        bottom: -20px;
+    }
+
+    .categorys a .category_img_000 {
+        width: 160px;
+        bottom: -20px;
+    }
+
+    .categorys a p {
+        width: 180px;
+        font-size: 1.3rem;
+        top: 80px;
     }
 }
 
@@ -757,4 +1019,65 @@
     .header_sliders .LHS {
         height: 150px;
     }
+
+    .article_field .cart_field .content h3 {
+        font-size: 1.7rem;
+        margin-bottom: 10px;
+    }
+
+    .article_field .cart_field .content p {
+        font-size: 0.9rem;
+    }
+
+    .article_field .small_carts .SCF .content h3 {
+        font-size: 1.7rem;
+    }
+
+    .article_field .small_carts .SCF .content p {
+        font-size: 0.9rem;
+    }
+
+    .categorys a .category_img_001 {
+        width: 80px;
+        bottom: -20px;
+    }
+
+    .categorys a .category_img_002 {
+        width: 90px;
+        bottom: -20px;
+    }
+
+    .categorys a .category_img_000 {
+        width: 140px;
+        bottom: -20px;
+    }
+
+    .categorys a {
+        height: 150px;
+    }
+
+    .categorys a .apple_log {
+        width: 100px;
+        left: 0px;
+        top: 0px;
+    }
+
+    .categorys a .samsung_logo {
+        width: 170px;
+        left: -30px;
+        top: 0px;
+    }
+
+    .categorys a h3 {
+        font-size: 1.6rem;
+        top: 5px;
+    }
+
+    .categorys a p {
+        width: 140px;
+        font-size: 1.1rem;
+        top: 40px;
+        left: 10px;
+    }
+
 }
