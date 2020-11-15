@@ -18,7 +18,7 @@
     <div class="secondary-nav">
         <div class="NB-search">
             <form action="">
-                <div class="input-group mb-3">
+                <div class="input-group">
                     <div class="input-group-prepend">
                         <!-- search -->
                         <span class="input-group-text" id="navbar_search">
@@ -39,23 +39,31 @@
 
     <!-- navbar -->
     <nav>
-        <div class="left-nb">
-
-        </div>
+        <div class="SN_layout"></div>
+        <button class="sandwich-navbar btn">
+            <i class="fas fa-bars"></i>
+        </button>
         <div class="right-NB">
+            <i class="fas fa-times close_SN"></i>
             <!-- navbar option -->
             <ul class="navbar-option">
                 <li class="active-page">
                     <a href="">صفحه اصلی</a>
                 </li>
-                <li class="NBP-dropdown">
+                <li class="NBP-dropdown" id="PDP">
                     <p>محصولات <i class="fal fa-angle-down"></i></p>
-                    <div class="product-option">
+                    <div class="product-option" id="PD">
                         <a href="">سامسونگ</a>
                         <a href="">اپل</a>
                         <a href="">اپل واچ</a>
                         <a href="">ایر پاد</a>
                     </div>
+                </li>
+                <li id="PDSN">
+                    <a href="">سامسونگ</a>
+                    <a href="">اپل</a>
+                    <a href="">اپل واچ</a>
+                    <a href="">ایر پاد</a>
                 </li>
                 <li>
                     <a href="">اخبار</a>
@@ -549,6 +557,7 @@
     <script src="../../assets/js/general/Swiper.js"></script>
     <script src="../../assets/js/general/wow.js"></script>
     <script src="../../assets/js/index/index.js"></script>
+    <script src="../../assets/js/custom/navbar.js"></script>
 </body>
 
 </html>
