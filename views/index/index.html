@@ -18,7 +18,7 @@
     <div class="secondary-nav">
         <div class="NB-search">
             <form action="">
-                <div class="input-group mb-3">
+                <div class="input-group">
                     <div class="input-group-prepend">
                         <!-- search -->
                         <span class="input-group-text" id="navbar_search">
@@ -39,23 +39,31 @@
 
     <!-- navbar -->
     <nav>
-        <div class="left-nb">
-
-        </div>
+        <div class="SN_layout"></div>
+        <button class="sandwich-navbar btn">
+            <i class="fas fa-bars"></i>
+        </button>
         <div class="right-NB">
+            <i class="fas fa-times close_SN"></i>
             <!-- navbar option -->
             <ul class="navbar-option">
                 <li class="active-page">
                     <a href="">صفحه اصلی</a>
                 </li>
-                <li class="NBP-dropdown">
+                <li class="NBP-dropdown" id="PDP">
                     <p>محصولات <i class="fal fa-angle-down"></i></p>
-                    <div class="product-option">
+                    <div class="product-option" id="PD">
                         <a href="">سامسونگ</a>
                         <a href="">اپل</a>
                         <a href="">اپل واچ</a>
                         <a href="">ایر پاد</a>
                     </div>
+                </li>
+                <li id="PDSN">
+                    <a href="">سامسونگ</a>
+                    <a href="">اپل</a>
+                    <a href="">اپل واچ</a>
+                    <a href="">ایر پاد</a>
                 </li>
                 <li>
                     <a href="">اخبار</a>
@@ -103,7 +111,7 @@
                     <div class="swiper-slide" style="background-image: url(../../assets/img/AB01.jpg);">
                         <div class="RHS_contents">
                             <p class="HC">
-                                رایانه ای پرقدرت در دستان توست !
+                                رایانه ای پرقدرت در دستان توست 
                             </p>
                             <p class="HD">
                                 ارسال به سر تا سر کشور با پیک رایگاه ، پشتیبانی تا 6 ماه به همراه اصالت کالا
@@ -180,6 +188,34 @@
                 <div class="swiper-slide">
                     <a href="" class="PS_field">
                         <img src="../../assets/img/AP07.PNG" alt="">
+                        <p class="PS_description">گوشی موبایل هوااوی مدل galaxy note 9 ظرفیت 128 گیگ</p>
+                        <p class="PS_price">3.000.000</p>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="" class="PS_field">
+                        <img src="../../assets/img/AP02.PNG" alt="">
+                        <p class="PS_description">گوشی موبایل هوااوی مدل galaxy note 9 ظرفیت 128 گیگ</p>
+                        <p class="PS_price">3.000.000</p>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="" class="PS_field">
+                        <img src="../../assets/img/AP02.PNG" alt="">
+                        <p class="PS_description">گوشی موبایل هوااوی مدل galaxy note 9 ظرفیت 128 گیگ</p>
+                        <p class="PS_price">3.000.000</p>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="" class="PS_field">
+                        <img src="../../assets/img/AP02.PNG" alt="">
+                        <p class="PS_description">گوشی موبایل هوااوی مدل galaxy note 9 ظرفیت 128 گیگ</p>
+                        <p class="PS_price">3.000.000</p>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="" class="PS_field">
+                        <img src="../../assets/img/AP02.PNG" alt="">
                         <p class="PS_description">گوشی موبایل هوااوی مدل galaxy note 9 ظرفیت 128 گیگ</p>
                         <p class="PS_price">3.000.000</p>
                     </a>
@@ -431,7 +467,7 @@
                 <div class="cart_field" style="background-image: url(../../assets/img/AB04.jpg);">
                     <div class="layout"></div>
                     <div class="content">
-                        <h3>بهترین گوشی سال 2020</h3>
+                        <h3>تفاوت گوشی های طرح اصلی با اورجینال</h3>
                         <p>بعد از مدت‌ها این برند تایوانی از مدل جدید گوشی هوشمند خودش رونمایی کرد، الب </p>
                     </div>
                 </div>
@@ -521,6 +557,7 @@
     <script src="../../assets/js/general/Swiper.js"></script>
     <script src="../../assets/js/general/wow.js"></script>
     <script src="../../assets/js/index/index.js"></script>
+    <script src="../../assets/js/custom/navbar.js"></script>
 </body>
 
 </html>

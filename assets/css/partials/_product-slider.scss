@@ -5,12 +5,12 @@
     border-radius: 15px;
     background-color: #F7F7F7;
     margin-top: 50px;
-    padding: 30px 0px;
+    padding: 30px 0px 50px 0px;
 
     .SP000 {
-        padding: 0px 50px;
+        padding: 0px 10px;
 
-        .swiper-wrapper{
+        .swiper-wrapper {
             padding-top: 15px;
         }
 
@@ -87,13 +87,13 @@
         width: 100%;
         display: flex;
         flex-direction: column;
-        @include transition(0.2s , linear , 0s);
-        padding: 10px 0px;
+        @include transition(0.2s, linear, 0s);
+        padding: 10px 10px;
 
-        &:hover{
+        &:hover {
             box-shadow: 0px 0px 15px -4px #00000017;
             border-radius: 10px;
-            padding: 10px 0px;
+            padding: 10px 10px;
             background-color: $white;
         }
 
@@ -124,5 +124,84 @@
             direction: rtl;
             font-family: $bf;
         }
+    }
+}
+
+.swiper-button-next.swiper-button-disabled,
+.swiper-button-prev.swiper-button-disabled {
+    opacity: .35;
+    cursor: pointer;
+    pointer-events: unset;
+}
+
+// media query
+@media only screen and (max-width: 1360px) {
+    .product_slider .PS_field .PS_description {
+        font-size: 0.8rem;
+    }
+}
+
+@media only screen and (max-width: 1279px) {
+    .product_slider .PS_field .PS_description {
+        font-size: 0.9rem;
+    }
+}
+
+@media only screen and (max-width: 825px) {
+    .product_slider .PS_field .PS_description {
+        font-size: 0.8rem;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .product_slider .PS_field .PS_description {
+        font-size: 0.8rem;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .product_slider .PS_field .PS_description {
+        font-size: 0.8rem;
+    }
+}
+
+@media only screen and (max-width: 499px) {
+    .product_slider .PS_field img {
+        width: 170px;
+        height: 210px;
+    }
+
+    .product_slider .PS_field .PS_description {
+        font-size: 1.1rem;
+        line-height: 40px;
+    }
+
+    .product_slider .PS_field .PS_price {
+        font-size: 1.9rem;
+    }
+}
+
+@media only screen and (max-width: 340px) {
+    .product_slider .PS_field img {
+        width: 140px;
+        height: 180px;
+    }
+
+    .product_slider .PS_field .PS_description {
+        font-size: 0.9rem;
+        line-height: 30px;
+    }
+
+    .product_slider .PS_field .PS_price {
+        font-size: 1.5rem;
+    }
+
+    .product_slider .PS_header_text h3 {
+        font-size: 1.1rem !important;
+        font-weight: bold;
+    }
+
+    .product_slider .PS_header_text span {
+        width: 190px;
     }
 }
