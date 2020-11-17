@@ -1,0 +1,434 @@
+@import '../partials/color';
+@import '../partials/fonts';
+@import '../partials/mixin';
+@import '../partials/navbar';
+@import '../partials/footer';
+@import '../partials/check-box';
+
+.product_field {
+    width: 84%;
+    margin-left: 8%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+
+    .poor_rich {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        margin-bottom: 30px;
+
+        .PRT {
+            width: max-content;
+            padding: 3px 10px;
+            border: 1px solid rgb(230, 230, 230);
+            margin-left: 10px;
+            color: rgb(170, 170, 170);
+            border-radius: 10px;
+            font-family: $nf;
+            font-size: 0.9rem;
+        }
+    }
+
+    .product_list {
+        width: 75%;
+        display: flex;
+        flex-wrap: wrap;
+        direction: rtl;
+        height: max-content;
+
+        .product_card {
+            width: 31%;
+            border-radius: 15px;
+            box-shadow: 0px 0px 6px -3px #00000073;
+            margin-right: 2%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 50px 20px 20px 20px;
+            position: relative;
+            margin-bottom: 2%;
+            @include transition(0.2s, linear, 0s);
+            height: 380px;
+
+            &:hover {
+                @include transform(scale(1.05));
+            }
+
+            .PC_color {
+                position: absolute;
+                top: 20px;
+                left: 20px;
+                width: 30px;
+                display: flex;
+                flex-direction: column;
+
+                span {
+                    width: 15px;
+                    height: 15px;
+                    margin-top: 3px;
+                    border-radius: 500px;
+                    border: 1px solid #e5e5e5;
+                }
+            }
+
+            img {
+                width: 120px;
+            }
+
+            .PC_description {
+                width: 90%;
+                margin-right: 5%;
+                direction: rtl;
+                text-align: right;
+                line-height: 30px;
+                font-family: $nf;
+                font-size: 0.9rem;
+                margin-top: 30px;
+                color: rgb(44, 44, 44);
+            }
+
+            .PC_price {
+                font-size: 1.3rem;
+                font-weight: bold;
+                color: #58BE1D;
+                font-family: $bf;
+            }
+
+            .sale {
+                margin: 0;
+                text-decoration: line-through;
+                color: rgb(184, 184, 184);
+                font-family: $nf;
+                font-weight: normal;
+                font-size: 1.2rem;
+            }
+
+            .PC_sale {
+                margin: 0;
+                color: #EE384E;
+                font-size: 1.3rem;
+                font-weight: bold;
+            }
+
+            .sale_flag {
+                position: absolute;
+                top: 0px;
+                right: 20px;
+                width: max-content;
+                padding: 5px 10px;
+                background-color: #FF6565;
+                color: $white;
+                border-radius: 0px 0px 10px 10px;
+                font-size: 0.7rem;
+
+                span {
+                    width: 100%;
+                    display: block;
+                    text-align: center;
+                    font-family: $nf;
+                }
+            }
+        }
+    }
+
+    .filter_field {
+        width: 100%;
+        border-radius: 15px;
+        box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.301);
+        text-align: right;
+        direction: rtl;
+        padding: 20px 20px;
+        height: max-content;
+
+        h3 {
+            font-size: 1.2rem !important;
+            font-weight: bold;
+        }
+
+        .header_underline {
+            display: block;
+            width: 150px;
+            height: 2px;
+            background-color: $accent_color;
+            border-radius: 50px 0px 0px 50px;
+            position: relative;
+            right: -20px;
+            box-shadow: 10px 9px 15px 0px $accent_color;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .brand_name {
+            position: relative;
+
+            .english_brand {
+                position: absolute;
+                left: 0;
+                top: 0;
+                color: #cdcdcd;
+                font-size: 0.9rem;
+            }
+
+            .color_shape {
+                width: 15px;
+                height: 15px;
+                border-radius: 50px;
+                position: absolute;
+                left: 0;
+                top: 0;
+                color: #cdcdcd;
+                font-size: 0.9rem;
+                border: 1px solid rgb(211, 211, 211);
+            }
+        }
+
+        .FF_brand_name {
+            margin-bottom: 40px;
+        }
+
+        .FF_color {
+            margin-bottom: 40px;
+        }
+
+        .add_filters {
+            background-color: $accent_color;
+            color: $white;
+            font-weight: bold;
+            width: 100%;
+            border-radius: 50px;
+            padding: 10px 0px;
+        }
+
+    }
+}
+
+.filter_navbar {
+    display: none;
+}
+
+.main_filter_field{
+    width: 25%;
+    display: block;
+}
+
+.close_FF{
+    display: none;
+}
+
+// media query
+@media only screen and (max-width: 1340px) {
+
+    .product_field {
+        width: 90%;
+        margin-left: 5%;
+    }
+
+}
+
+@media only screen and (max-width: 1250px) {
+
+    .product_field {
+        width: 96%;
+        margin-left: 2%;
+    }
+
+    .product_field .filter_field .brand_name {
+        font-size: 0.9rem;
+    }
+
+    .product_field .filter_field h3 {
+        font-size: 1.1rem !important;
+    }
+
+    .product_field .product_list .product_card img {
+        width: 100px;
+    }
+
+    .product_field .filter_field .brand_name .english_brand {
+        font-size: 0.8rem;
+    }
+
+}
+
+@media only screen and (max-width: 1120px) {
+
+    .cbx span:last-child {
+        width: 85%;
+    }
+
+}
+
+@media only screen and (max-width: 1050px) {
+
+    .product_field .product_list .product_card {
+        width: 48%;
+    }
+
+    .product_field .product_list {
+        width: 70%;
+    }
+
+    .main_filter_field{
+        width: 30%;
+    }
+
+}
+
+@media only screen and (max-width: 900px) {
+
+    .filter_navbar {
+        width: 100%;
+        height: 50px;
+        text-align: right;
+        direction: rtl;
+        background-color: white;
+        display: flex;
+        align-items: center;
+        position: absolute;
+        top: 137px;
+        box-shadow: 0px 8px 10px -5px #00000012;
+        padding-right: 20px;
+        color: #797979;
+        font-family: $nf;
+
+        #OPF {
+            cursor: pointer;
+            padding: 0px 10px;
+        }
+
+        i {
+            margin-left: 10px;
+        }
+
+        .PRT_F {
+            position: absolute;
+            left: 0;
+
+            .PRT {
+                width: max-content;
+                padding: 3px 10px;
+                border: 1px solid rgb(230, 230, 230);
+                margin-left: 10px;
+                color: rgb(170, 170, 170);
+                border-radius: 10px;
+                font-family: $nf;
+                font-size: 0.9rem;
+            }
+        }
+    }
+
+    .poor_rich {
+        display: none !important;
+    }
+
+    .product_field {
+        margin-top: 80px;
+    }
+
+    .product_field .product_list {
+        width: 100%;
+    }
+
+    .product_field .product_list .product_card {
+        width: 31%;
+    }
+
+    .product_field .filter_field {
+        width: 50%;
+        margin-left: 25%;
+        margin-bottom: 50px;
+        position: absolute;
+        top: 40px;
+        background-color: white;
+        z-index: 100000;
+        overflow: auto;
+    }
+
+    .main_filter_field{
+        width: 100%;
+        height: 100vh;
+        background-color: #00000066;
+        position: fixed;
+        top: 0;
+        left: 0;
+        overflow: auto;
+        display: none;
+    }
+
+    .close_FF{
+        display: block;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        color: #9c9c9c;
+        font-size: 1.7rem;
+        cursor: pointer;
+    }
+
+}
+
+@media only screen and (max-width: 780px) {
+
+    .product_field .product_list .product_card {
+        width: 48%;
+    }
+
+    .product_field .filter_field {
+        width: 60%;
+        margin-left: 20%;
+    }
+
+}
+
+@media only screen and (max-width: 620px) {
+
+    .product_field .filter_field {
+        width: 80%;
+        margin-left: 10%;
+    }
+
+}
+
+
+@media only screen and (max-width: 520px) {
+
+    .product_field .product_list .product_card img {
+        width: 90px;
+    }
+
+    .product_field .product_list .product_card .PC_description {
+        width: 100%;
+    }
+
+}
+
+@media only screen and (max-width: 480px) {
+
+    .product_field .product_list .product_card {
+        width: 70%;
+        margin-right: 15%;
+        margin-top: 15px;
+    }
+
+    .product_field .product_list .product_card img {
+        width: 130px;
+    }
+
+    .product_field .filter_field {
+        width: 95%;
+        margin-left: 2.5%;
+    }
+}
+
+@media only screen and (max-width: 390px) {
+
+    .product_field .product_list .product_card {
+        width: 100%;
+        margin-right: 0%;
+        margin-top: 15px;
+    }
+
+}
