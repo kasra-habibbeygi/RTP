@@ -265,6 +265,60 @@
       }
     }
 
+    .cm_box{
+      margin-bottom: 50px;
+      .cm_title{
+        text-align: center;
+        font-size: 1.5rem;
+        font-family: $bf;
+        width: max-content;
+        margin: 10px auto 40px;
+        border-bottom: 2px solid $accent_color;
+        padding-bottom: 15px;
+      }
+
+      .cm_s_msg{
+        width: 90%;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        text-align: right;
+        .img_acc{
+          width: 70px;
+          height: 70px;
+          border-radius: 50%;
+        }
+
+        .name_acc{
+          width: 70%;
+          position: relative;
+          right: 30px;
+          top: 7px;
+        }
+
+        .date_cm{
+        @extend .name_acc;
+          top: -25px;
+          right:100px;
+          color: $smal_text;
+
+        }
+
+        .msg_msg{
+          padding-right: 100px;
+          text-align: justify;
+          direction: rtl;
+        }
+      }
+
+      .cm_replay_s_msg{
+        margin-right: 100px;
+        margin-top: 50px;
+
+      }
+
+    }
+
   }
 
 

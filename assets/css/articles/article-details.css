@@ -784,5 +784,49 @@ footer .copy_right p {
   margin-right: 70%;
   border-radius: 30px;
 }
+.article_details .ad_content .cm_box {
+  margin-bottom: 50px;
+}
+.article_details .ad_content .cm_box .cm_title {
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: bold-font;
+  width: max-content;
+  margin: 10px auto 40px;
+  border-bottom: 2px solid #B5DB1E;
+  padding-bottom: 15px;
+}
+.article_details .ad_content .cm_box .cm_s_msg {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: right;
+}
+.article_details .ad_content .cm_box .cm_s_msg .img_acc {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+.article_details .ad_content .cm_box .cm_s_msg .name_acc, .article_details .ad_content .cm_box .cm_s_msg .date_cm {
+  width: 70%;
+  position: relative;
+  right: 30px;
+  top: 7px;
+}
+.article_details .ad_content .cm_box .cm_s_msg .date_cm {
+  top: -25px;
+  right: 100px;
+  color: #4b4b4b;
+}
+.article_details .ad_content .cm_box .cm_s_msg .msg_msg {
+  padding-right: 100px;
+  text-align: justify;
+  direction: rtl;
+}
+.article_details .ad_content .cm_box .cm_replay_s_msg {
+  margin-right: 100px;
+  margin-top: 50px;
+}
 
 /*# sourceMappingURL=article-details.css.map */
