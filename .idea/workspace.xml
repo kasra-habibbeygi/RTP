@@ -20,20 +20,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="852b3d14-e7b9-49ae-b295-cc1244fe7f2d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/img/AB08.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/aricle-details/articles-details.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/about-us/about-us.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/about-us/about-us.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/about-us/about-us.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/about-us/about-us.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/about-us/about-us.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/about-us/about-us.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/article-details/article-details.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/article-details/article-details.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/article-details/article-details.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/article-details/article-details.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/article-details/article-details.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/article-details/article-details.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/contact_us/contact_us.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/contact_us/contact_us.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/contact_us/contact_us.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/contact_us/contact_us.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/contact_us/contact_us.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/contact_us/contact_us.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/about-us/about-us.html" beforeDir="false" afterPath="$PROJECT_DIR$/views/about-us/about-us.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/article-details/article-details.html" beforeDir="false" afterPath="$PROJECT_DIR$/views/article-details/article-details.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/index/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/index/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/index/index.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/index/index.css.map" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,6 +87,7 @@
       <workItem from="1605268530053" duration="623000" />
       <workItem from="1605286079485" duration="23718000" />
       <workItem from="1605414254932" duration="848000" />
+      <workItem from="1605598056838" duration="491000" />
     </task>
     <servers />
   </component>
