@@ -38,3 +38,25 @@ var galleryTop = new Swiper('.gallery-top', {
 
     },
 });
+
+
+// Survey tabs js
+
+let SF_option = $('.SF_option');
+let SO_container = $('.SO_container');
+
+for(let i = 0 ; i < SF_option.length ; i++){
+
+    SF_option.eq(i).click(function() {
+
+        // show and hide Survey option 
+        SO_container.css('display' , 'none');
+        SO_container.eq(i).css('display' , 'block');
+
+        // add and remove class to survay option to change color and background color
+        SF_option.removeClass('active_SO');
+        SF_option.eq(i).addClass('active_SO');
+
+    });
+
+}

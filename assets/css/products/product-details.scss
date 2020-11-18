@@ -245,7 +245,11 @@
 
         .SO_container {
 
+            display: none;
 
+            &:first-child {
+                display: block;
+            }
 
             h3 {
                 font-weight: bold;
@@ -272,6 +276,7 @@
                         margin-left: 1%;
                         border-radius: 10px;
                         height: max-content;
+                        min-height: 50px;
                         box-shadow: 2px 2px 4px 0px #00000012;
                         background-color: #F9F9F9;
                         display: flex;
@@ -559,7 +564,7 @@
     .Survey_field .SO_details_field .SO_container .article_body {
         font-size: 0.9rem;
     }
-    
+
     .h_iframe-aparat_embed_frame iframe {
         width: 90%;
         margin-left: 5%;

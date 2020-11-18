@@ -833,6 +833,14 @@ footer .copy_right p {
   text-align: right;
 }
 
+.Survey_field .SO_details_field .SO_container {
+  display: none;
+}
+
+.Survey_field .SO_details_field .SO_container:first-child {
+  display: block;
+}
+
 .Survey_field .SO_details_field .SO_container h3 {
   font-weight: bold;
   font-size: 1.3rem;
@@ -860,6 +868,7 @@ footer .copy_right p {
   margin-left: 1%;
   border-radius: 10px;
   height: max-content;
+  min-height: 50px;
   box-shadow: 2px 2px 4px 0px #00000012;
   background-color: #F9F9F9;
   display: flex;
