@@ -24,9 +24,6 @@
       <change beforePath="$PROJECT_DIR$/assets/css/articles/article-list.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/articles/article-list.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/articles/article-list.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/articles/article-list.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/articles/article-list.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/articles/article-list.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/products/product-details.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/products/product-details.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/products/product-details.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/products/product-details.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/article/article-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/views/article/article-list.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,7 +84,7 @@
       <workItem from="1605286079485" duration="23718000" />
       <workItem from="1605414254932" duration="848000" />
       <workItem from="1605598056838" duration="13828000" />
-      <workItem from="1605685177694" duration="15976000" />
+      <workItem from="1605685177694" duration="17791000" />
     </task>
     <servers />
   </component>
