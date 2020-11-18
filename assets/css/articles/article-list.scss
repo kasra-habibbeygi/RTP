@@ -412,7 +412,6 @@
   }
   .article_list .al_last_article .content .s_c_2 .small-c-1, .article_list .al_last_article .content .s_c_2 .small-c-2 {
     width: 50%;
-
   }
   .article_list .al_last_article .content .s_c_2 .small-c-1 {
     margin-left: 1%;
@@ -429,6 +428,7 @@
     flex-wrap: wrap;
     margin-top: 50px;
     justify-content: center;
+    order: 1;
   }
   .article_list .al_new_article .main_content .al_sidebar .al_s_suggest {
     width: 38%;
@@ -441,6 +441,7 @@
   }
   .article_list .al_new_article .main_content .al_n_article {
     width: 95%;
+    order: 2;
   }
 
   .article_list .al_new_article .main_content .al_n_article .link_article .box_of_article .cont_list .short_exp_about_article {

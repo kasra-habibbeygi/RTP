@@ -893,6 +893,7 @@ footer .copy_right p {
     flex-wrap: wrap;
     margin-top: 50px;
     justify-content: center;
+    order: 1;
   }
 
   .article_list .al_new_article .main_content .al_sidebar .al_s_suggest {
@@ -908,6 +909,7 @@ footer .copy_right p {
 
   .article_list .al_new_article .main_content .al_n_article {
     width: 95%;
+    order: 2;
   }
 
   .article_list .al_new_article .main_content .al_n_article .link_article .box_of_article .cont_list .short_exp_about_article {
