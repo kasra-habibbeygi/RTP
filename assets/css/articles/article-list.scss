@@ -76,7 +76,6 @@
         display: flex;
         flex-direction: column;
         width: 30%;
-        height: 81vh;
 
         .small-c-1 {
           background: url("../../img/AH00.jpg") no-repeat;
@@ -398,7 +397,47 @@
 }
 
 @media only screen and (max-width: 992px) {
+  .article_list .al_last_article .content .big_c{
+    width: 95%;
+    margin-left:0;
+  }
 
+  .article_list .al_last_article .content .s_c_2{
+    flex-direction: row;
+    width: 95%;
+    margin-top: 20px;
+  }
+  .article_list .al_last_article .content .s_c_2 .small-c-1 , .article_list .al_last_article .content .s_c_2 .small-c-2{
+    width: 50%;
+
+  }
+  .article_list .al_last_article .content .s_c_2 .small-c-1{
+    margin-left: 1%;
+  }
+
+  .article_list .al_new_article .title_main_c, .article_list .al_last_article .al_la_title{
+    font-size: 1.3rem;
+    width: 300px;
+  }
+
+  .article_list .al_new_article .main_content .al_sidebar{
+    order: 1;
+    width: 95%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .article_list .al_new_article .main_content .al_n_article{
+    order: 2;
+  }
+  .article_list .al_new_article .main_content .al_sidebar .al_s_suggest{
+    width: 38%;
+    margin: 0;
+    margin-left: 2%;
+  }
+  .article_list .al_new_article .main_content .al_sidebar .al_s_best{
+    width: 60%;
+    margin: 0;
+  }
 }
 
 @media only screen and (max-width: 768px) {
