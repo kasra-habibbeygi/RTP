@@ -887,6 +887,10 @@ footer .copy_right p {
     width: 300px;
   }
 
+  .article_list .al_new_article .title_main_c {
+    margin: 50px 20px 0px;
+  }
+
   .article_list .al_new_article .main_content .al_sidebar {
     width: 95%;
     display: flex;
@@ -955,13 +959,13 @@ footer .copy_right p {
 @media only screen and (max-width: 768px) {
   .article_list .al_new_article .main_content .al_sidebar .al_s_suggest {
     width: 70%;
-    order: 2;
+    margin-bottom: 30px;
+    order: 1;
   }
 
   .article_list .al_new_article .main_content .al_sidebar .al_s_best {
     width: 70%;
-    order: 1;
-    margin-bottom: 30px;
+    order: 2;
   }
 
   .d_n {

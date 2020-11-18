@@ -420,7 +420,12 @@
   .article_list .al_new_article .title_main_c, .article_list .al_last_article .al_la_title {
     font-size: 1.3rem;
     width: 300px;
+
   }
+  .article_list .al_new_article .title_main_c {
+    margin: 50px 20px 0px;
+  }
+
 
   .article_list .al_new_article .main_content .al_sidebar {
     width: 95%;
@@ -485,13 +490,13 @@
 @media only screen and (max-width: 768px) {
   .article_list .al_new_article .main_content .al_sidebar .al_s_suggest {
     width: 70%;
-
-    order: 2;
+    margin-bottom: 30px;
+    order: 1;
   }
   .article_list .al_new_article .main_content .al_sidebar .al_s_best {
     width: 70%;
-    order: 1;
-    margin-bottom: 30px;
+    order: 2;
+
   }
 
   .d_n {
@@ -547,63 +552,62 @@
     padding-bottom: 5px;
   }
 
-  .article_list .al_last_article .content .s_c_2 .small-c-1{
+  .article_list .al_last_article .content .s_c_2 .small-c-1 {
     margin-bottom: 4%;
   }
 
-  .article_list .al_new_article .main_content .al_n_article .link_article .box_of_article{
+  .article_list .al_new_article .main_content .al_n_article .link_article .box_of_article {
     flex-direction: column;
     width: 70%;
 
   }
 
-  .article_list .al_new_article .main_content .al_n_article .link_article .box_of_article .img_of_article{
+  .article_list .al_new_article .main_content .al_n_article .link_article .box_of_article .img_of_article {
     border-radius: 10px 10px 0px 0px;
     width: 100%;
     height: 200px;
   }
 
-  .article_list .al_new_article .main_content .al_n_article .link_article .box_of_article .cont_list{
+  .article_list .al_new_article .main_content .al_n_article .link_article .box_of_article .cont_list {
     width: 100%;
   }
 }
 
 @media only screen and (max-width: 500px) {
-  .article_list .al_new_article .title_main_c, .article_list .al_last_article .al_la_title{
+  .article_list .al_new_article .title_main_c, .article_list .al_last_article .al_la_title {
     font-size: 1.1rem;
     width: 200px;
-    padding-bottom:10px;
+    padding-bottom: 10px;
   }
 
-  .article_list .al_last_article .content .big_c .cover_txt .bc_title ,
+  .article_list .al_last_article .content .big_c .cover_txt .bc_title,
   .article_list .al_last_article .content .s_c_2 .small-c-1 .cover_txt .sm_title,
-  .article_list .al_last_article .content .s_c_2 .small-c-2 .cover_txt .sm_title
-  {
+  .article_list .al_last_article .content .s_c_2 .small-c-2 .cover_txt .sm_title {
     font-size: 1rem;
   }
-  .article_list .al_last_article .content .big_c .cover_txt .short_exp ,
-  .article_list .al_last_article .content .s_c_2 .small-c-1 .cover_txt .short_exp ,
-  .article_list .al_last_article .content .s_c_2 .small-c-2 .cover_txt .short_exp{
+  .article_list .al_last_article .content .big_c .cover_txt .short_exp,
+  .article_list .al_last_article .content .s_c_2 .small-c-1 .cover_txt .short_exp,
+  .article_list .al_last_article .content .s_c_2 .small-c-2 .cover_txt .short_exp {
     font-size: .8rem;
     width: 90%;
   }
-  .article_list .al_new_article .main_content .al_n_article .link_article .box_of_article ,
+  .article_list .al_new_article .main_content .al_n_article .link_article .box_of_article,
   .article_list .al_new_article .main_content .al_sidebar .al_s_best,
-  .article_list .al_new_article .main_content .al_sidebar .al_s_suggest{
+  .article_list .al_new_article .main_content .al_sidebar .al_s_suggest {
     width: 80%;
 
   }
 
   .article_list .al_new_article .main_content .al_n_article .pagination .p_num,
   .article_list .al_new_article .main_content .al_n_article .pagination .p_next,
-  .article_list .al_new_article .main_content .al_n_article .pagination .p_prev{
+  .article_list .al_new_article .main_content .al_n_article .pagination .p_prev {
     font-size: .7rem;
     width: 25px;
     height: 25px;
     line-height: 25px;
   }
   .article_list .al_new_article .main_content .al_n_article .pagination .p_next i,
-  .article_list .al_new_article .main_content .al_n_article .pagination .p_prev i{
+  .article_list .al_new_article .main_content .al_n_article .pagination .p_prev i {
     font-size: 1rem;
   }
 
@@ -612,7 +616,7 @@
 @media only screen and (max-width: 400px) {
   .article_list .al_new_article .main_content .al_n_article .link_article .box_of_article,
   .article_list .al_new_article .main_content .al_sidebar .al_s_best,
-  .article_list .al_new_article .main_content .al_sidebar .al_s_suggest{
+  .article_list .al_new_article .main_content .al_sidebar .al_s_suggest {
     width: 90%;
   }
 }
