@@ -20,11 +20,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="852b3d14-e7b9-49ae-b295-cc1244fe7f2d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/css/invoices-show/invoices-show.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/css/invoices-show/invoices-show.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/css/invoices-show/invoices-show.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/invoices-show/invoices-show.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/css/errors/404.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/errors/404.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/about-us/about-us.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/about-us/about-us.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/articles/article-details.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/articles/article-details.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/articles/article-list.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/articles/article-list.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/contact_us/contact_us.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/contact_us/contact_us.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/index/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/index/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/partials/_color.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/partials/_color.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/products/product-list.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/products/product-list.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,7 +90,7 @@
       <workItem from="1605286079485" duration="23718000" />
       <workItem from="1605414254932" duration="848000" />
       <workItem from="1605598056838" duration="13828000" />
-      <workItem from="1605685177694" duration="5129000" />
+      <workItem from="1605685177694" duration="7457000" />
     </task>
     <servers />
   </component>
