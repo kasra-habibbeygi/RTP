@@ -2,18 +2,22 @@
   font-family: normal-font;
   src: url(../../fonts/Shabnam.eot) format("eot"), url(../../fonts/Shabnam.ttf) format("ttf"), url(../../fonts/Shabnam.woff) format("woff");
 }
+
 @font-face {
   font-family: bold-font;
   src: url(../../fonts/Shabnam-Bold.eot) format("eot"), url(../../fonts/Shabnam-Bold.ttf) format("ttf"), url(../../fonts/Shabnam-Bold.woff) format("woff");
 }
+
 @font-face {
   font-family: light-font;
   src: url(../../fonts/Shabnam-Light.eot) format("eot"), url(../../fonts/Shabnam-Light.ttf) format("ttf"), url(../../fonts/Shabnam-Light.woff) format("woff");
 }
+
 @font-face {
   font-family: accent-font;
   src: url(../../fonts/aviny.ttf) format("eot"), url(../../fonts/aviny.otf) format("otf"), url(../../fonts/avinyweb.woff) format("woff"), url(../../fonts/avinyweb.woff2) format("woff2");
 }
+
 body {
   font-family: light-font;
 }
@@ -128,85 +132,20 @@ body {
   animation-direction: alternate;
 }
 
-@-webkit-keyframes animation_error_1 {
-  from {
-    -webkit-transform: rotate(20deg);
-    transform: rotate(20deg);
-  }
-  to {
-    -webkit-transform: rotate(25deg);
-    transform: rotate(25deg);
-  }
-}
-@-o-keyframes animation_error_1 {
-  from {
-    -webkit-transform: rotate(20deg);
-    transform: rotate(20deg);
-  }
-  to {
-    -webkit-transform: rotate(25deg);
-    transform: rotate(25deg);
-  }
-}
-@-moz-keyframes animation_error_1 {
-  from {
-    -webkit-transform: rotate(20deg);
-    transform: rotate(20deg);
-  }
-  to {
-    -webkit-transform: rotate(25deg);
-    transform: rotate(25deg);
-  }
-}
 @keyframes animation_error_1 {
   from {
-    -webkit-transform: rotate(20deg);
     transform: rotate(20deg);
   }
   to {
-    -webkit-transform: rotate(25deg);
     transform: rotate(25deg);
-  }
-}
-@-webkit-keyframes animation_error_2 {
-  from {
-    -webkit-transform: rotate(-15deg);
-    transform: rotate(-15deg);
-  }
-  to {
-    -webkit-transform: rotate(-20deg);
-    transform: rotate(-20deg);
-  }
-}
-@-o-keyframes animation_error_2 {
-  from {
-    -webkit-transform: rotate(-15deg);
-    transform: rotate(-15deg);
-  }
-  to {
-    -webkit-transform: rotate(-20deg);
-    transform: rotate(-20deg);
-  }
-}
-@-moz-keyframes animation_error_2 {
-  from {
-    -webkit-transform: rotate(-15deg);
-    transform: rotate(-15deg);
-  }
-  to {
-    -webkit-transform: rotate(-20deg);
-    transform: rotate(-20deg);
-  }
-}
-@keyframes animation_error_2 {
-  from {
-    -webkit-transform: rotate(-15deg);
-    transform: rotate(-15deg);
-  }
-  to {
-    -webkit-transform: rotate(-20deg);
-    transform: rotate(-20deg);
   }
 }
 
-/*# sourceMappingURL=404.css.map */
+@keyframes animation_error_2 {
+  from {
+    transform: rotate(-15deg);
+  }
+  to {
+    transform: rotate(-20deg);
+  }
+}
