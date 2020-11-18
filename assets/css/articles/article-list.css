@@ -55,7 +55,7 @@ body {
 }
 
 .secondary-nav .NB-search span {
-  background-color: #B5DB1E;
+  background-color: #b5db1e;
   height: 38px;
   border-radius: 0px 7px 7px 0px !important;
   cursor: pointer;
@@ -132,15 +132,15 @@ nav .right-NB .navbar-option li {
 }
 
 nav .right-NB .navbar-option li:hover {
-  border-bottom: 2px solid #B5DB1E;
+  border-bottom: 2px solid #b5db1e;
 }
 
 nav .right-NB .navbar-option li:hover a {
-  color: #B5DB1E;
+  color: #b5db1e;
 }
 
 nav .right-NB .navbar-option li:hover p {
-  color: #B5DB1E;
+  color: #b5db1e;
 }
 
 nav .right-NB .navbar-option li a {
@@ -160,7 +160,7 @@ nav .right-NB .navbar-option li p i {
 }
 
 nav .right-NB .navbar-option .active-page {
-  border-bottom: 2px solid #B5DB1E;
+  border-bottom: 2px solid #b5db1e;
 }
 
 nav .left-NB {
@@ -192,13 +192,13 @@ nav .left-NB .basket-field {
 }
 
 nav .left-NB .basket-field a {
-  color: #B5DB1E;
+  color: #b5db1e;
   font-weight: bold;
   position: relative;
 }
 
 nav .left-NB .basket-field a .B-conter {
-  background-color: #B5DB1E;
+  background-color: #b5db1e;
   color: white;
   padding: 3px;
   width: 25px;
@@ -252,7 +252,7 @@ nav .left-NB .basket-field a i {
     padding-right: 15px;
   }
   .NBP-dropdown .product-option a:hover {
-    color: #B5DB1E !important;
+    color: #b5db1e !important;
     background-color: #f4f4f4;
   }
 }
@@ -358,14 +358,14 @@ nav .left-NB .basket-field a i {
     color: #cecece;
   }
   #PDSN a:hover {
-    color: #B5DB1E !important;
+    color: #b5db1e !important;
     background-color: #2C2C2C;
   }
   .active_collaps {
     background-color: #2C2C2C;
   }
   .active_collaps p {
-    color: #B5DB1E !important;
+    color: #b5db1e !important;
   }
 }
 
@@ -602,7 +602,7 @@ footer .copy_right p {
   font-family: bold-font;
   width: 400px;
   margin: 50px 20px 40px;
-  border-bottom: 2px solid #B5DB1E;
+  border-bottom: 2px solid #b5db1e;
   padding-bottom: 15px;
 }
 
@@ -779,7 +779,7 @@ footer .copy_right p {
 .article_list .al_new_article .main_content .al_sidebar .al_s_suggest .price {
   font-size: 1.3rem;
   direction: rtl;
-  color: #B5DB1E;
+  color: #b5db1e;
   font-family: bold-font;
   padding-bottom: 25px;
 }
@@ -909,11 +909,11 @@ footer .copy_right p {
 }
 
 .article_list .al_new_article .main_content .al_n_article .pagination .active {
-  border: 1px solid #B5DB1E;
+  border: 1px solid #b5db1e;
 }
 
 .article_list .al_new_article .main_content .al_n_article .pagination .p_next, .article_list .al_new_article .main_content .al_n_article .pagination .p_prev {
-  background-color: #B5DB1E;
+  background-color: #b5db1e;
   color: white;
 }
 

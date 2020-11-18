@@ -55,7 +55,7 @@ body {
 }
 
 .secondary-nav .NB-search span {
-  background-color: #B5DB1E;
+  background-color: #b5db1e;
   height: 38px;
   border-radius: 0px 7px 7px 0px !important;
   cursor: pointer;
@@ -132,15 +132,15 @@ nav .right-NB .navbar-option li {
 }
 
 nav .right-NB .navbar-option li:hover {
-  border-bottom: 2px solid #B5DB1E;
+  border-bottom: 2px solid #b5db1e;
 }
 
 nav .right-NB .navbar-option li:hover a {
-  color: #B5DB1E;
+  color: #b5db1e;
 }
 
 nav .right-NB .navbar-option li:hover p {
-  color: #B5DB1E;
+  color: #b5db1e;
 }
 
 nav .right-NB .navbar-option li a {
@@ -160,7 +160,7 @@ nav .right-NB .navbar-option li p i {
 }
 
 nav .right-NB .navbar-option .active-page {
-  border-bottom: 2px solid #B5DB1E;
+  border-bottom: 2px solid #b5db1e;
 }
 
 nav .left-NB {
@@ -192,13 +192,13 @@ nav .left-NB .basket-field {
 }
 
 nav .left-NB .basket-field a {
-  color: #B5DB1E;
+  color: #b5db1e;
   font-weight: bold;
   position: relative;
 }
 
 nav .left-NB .basket-field a .B-conter {
-  background-color: #B5DB1E;
+  background-color: #b5db1e;
   color: white;
   padding: 3px;
   width: 25px;
@@ -252,7 +252,7 @@ nav .left-NB .basket-field a i {
     padding-right: 15px;
   }
   .NBP-dropdown .product-option a:hover {
-    color: #B5DB1E !important;
+    color: #b5db1e !important;
     background-color: #f4f4f4;
   }
 }
@@ -292,7 +292,7 @@ nav .left-NB .basket-field a i {
   }
   nav .right-NB .navbar-option .active-page a,
   nav .right-NB .navbar-option li:hover a {
-    color: #B5DB1E;
+    color: #b5db1e;
   }
   .close_SN {
     display: block;
@@ -358,14 +358,14 @@ nav .left-NB .basket-field a i {
     color: #cecece;
   }
   #PDSN a:hover {
-    color: #B5DB1E !important;
+    color: #b5db1e !important;
     background-color: #2C2C2C;
   }
   .active_collaps {
     background-color: #2C2C2C;
   }
   .active_collaps p {
-    color: #B5DB1E !important;
+    color: #b5db1e !important;
   }
 }
 
@@ -616,7 +616,7 @@ footer .copy_right p {
   font-family: accent-font;
   font-size: 2.3rem;
   margin: 50px 40px 20px 0;
-  color: #B5DB1E;
+  color: #b5db1e;
   word-spacing: 7px;
 }
 
@@ -697,7 +697,7 @@ footer .copy_right p {
 }
 
 .main_contact_us .mcu_right_box .form_contact_us .btn_send_msg {
-  background: #B5DB1E;
+  background: #b5db1e;
   border: none;
   width: 150px;
   border-radius: 30px;
