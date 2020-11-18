@@ -213,6 +213,10 @@
             cursor: pointer;
             color: rgb(85, 85, 85);
 
+            &:last-child {
+                margin-left: 0px;
+            }
+
             svg {
                 width: 30px;
                 fill: rgb(85, 85, 85);
@@ -267,27 +271,33 @@
                         width: 31%;
                         margin-left: 1%;
                         border-radius: 10px;
-                        height: 50px;
+                        height: max-content;
                         box-shadow: 2px 2px 4px 0px #00000012;
                         background-color: #F9F9F9;
-                        line-height: 50px;
+                        display: flex;
+                        align-items: center;
                         padding-right: 20px;
+                        line-height: 30px;
+                        padding-left: 20px;
                     }
 
                     .empty_title {
                         width: 31%;
                         margin-left: 1%;
-                        height: 50px;
+                        min-height: 50px;
                     }
 
                     .description {
                         width: 68%;
                         border-radius: 10px;
-                        height: 50px;
+                        min-height: 50px;
                         box-shadow: 2px 2px 4px 0px #00000012;
                         background-color: #F9F9F9;
-                        line-height: 50px;
+                        align-items: center;
+                        display: flex;
                         padding-right: 20px;
+                        line-height: 30px;
+                        padding-left: 20px;
                     }
                 }
             }
@@ -312,12 +322,12 @@
                 font-size: 1.3rem;
                 font-weight: bold;
 
-                &:first-child{
+                &:first-child {
                     margin-top: 10px;
                 }
             }
 
-            .comments_titles{
+            .comments_titles {
                 font-size: 1.5rem;
                 font-weight: bold;
                 text-align: center;
@@ -325,18 +335,18 @@
                 margin-top: 10px;
             }
 
-            .comments_input_field{
+            .comments_input_field {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
                 justify-content: center;
                 text-align: right;
                 direction: rtl;
-                
-                form{
+
+                form {
                     width: 600px;
 
-                    button{
+                    button {
                         width: max-content;
                         padding: 10px 40px;
                         background-color: $accent_color;
@@ -378,11 +388,24 @@
 
 }
 
+@media only screen and (max-width: 1240px) {
+
+    .Survey_field .SO_details_field .SO_container ul li {
+        font-size: 0.9rem;
+    }
+
+}
+
 @media only screen and (max-width: 1150px) {
 
     .product_details_field {
         width: 90%;
         margin: 30px 0px 30px 5%;
+    }
+
+    .Survey_field {
+        width: 90%;
+        margin-left: 5%;
     }
 
 }
@@ -399,6 +422,15 @@
 
     .product_details_field .PD_info_field .PD_chose_box {
         width: 100%;
+    }
+
+    .Survey_field .survey_option div {
+        font-size: 0.9rem;
+        padding: 12px 17px;
+    }
+
+    .Survey_field .survey_option div svg {
+        width: 26px;
     }
 
 }
@@ -442,12 +474,49 @@
         padding: 10px 10px;
     }
 
+    .Survey_field .SO_details_field .SO_container ul li {
+        font-size: 0.8rem;
+    }
+
 }
 
 @media only screen and (max-width: 700px) {
 
     .product_details_field .PD_info_field .PD_chose_box {
         width: 100%;
+    }
+
+    .Survey_field .SO_details_field .SO_container ul li .title {
+        width: 38%;
+        margin-left: 3%;
+    }
+
+    .Survey_field .SO_details_field .SO_container ul li .description {
+        width: 60%;
+    }
+
+    .Survey_field .SO_details_field .SO_container ul li .empty_title {
+        width: 38%;
+        margin-left: 3%;
+    }
+
+}
+
+@media only screen and (max-width: 630px) {
+
+    .Survey_field .survey_option {
+        justify-content: center;
+    }
+
+    .Survey_field .survey_option div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .Survey_field .survey_option div svg {
+        margin: 0px;
     }
 
 }
@@ -488,6 +557,32 @@
         width: 100%;
         margin: 30px 0px;
         font-size: 2.3rem;
+    }
+
+}
+
+@media only screen and (max-width: 450px) {
+
+    .Survey_field .survey_option div {
+        font-size: 0.8rem;
+        padding: 12px 15px;
+    }
+
+    .Survey_field .survey_option div svg {
+        margin-bottom: 5px;
+    }
+
+    .Survey_field .survey_option div {
+        width: 48%;
+        margin: 5px 1%;
+
+        &:last-child {
+            margin-left: 1%;
+        }
+    }
+
+    .Survey_field .survey_option {
+        flex-wrap: wrap;
     }
 
 }
