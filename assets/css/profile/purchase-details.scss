@@ -1,0 +1,140 @@
+@import '../partials/color';
+@import '../partials/fonts';
+@import '../partials/mixin';
+@import '../partials/navbar';
+@import '../partials/footer';
+@import '../partials/product-summary';
+
+.goods_field,
+.order_details_field {
+    width: 80%;
+    margin-left: 10%;
+    padding: 30px;
+    border-radius: 15px;
+    margin-top: 40px;
+    box-shadow: 0px 0px 6px -3px #00000073;
+    direction: rtl;
+    text-align: right;
+
+    h3 {
+        font-size: 1.2rem !important;
+        font-weight: bold;
+    }
+
+    .header_underline {
+        display: block;
+        width: 300px;
+        height: 2px;
+        background-color: $accent_color;
+        border-radius: 50px 0px 0px 50px;
+        position: relative;
+        right: -30px;
+        box-shadow: 10px 9px 15px 0px $accent_color;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+}
+
+.order_details_field {
+    position: relative;
+
+    .header_underline {
+        margin-top: 21px;
+    }
+
+    .factor_link {
+        position: absolute;
+        left: 40px;
+        top: 28px;
+        color: $accent_color;
+        font-weight: bold;
+    }
+
+    .order_details {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 35px;
+
+        div {
+            width: 50%;
+            font-family: $nf;
+
+            p {
+                line-height: 35px;
+
+                &:first-child {
+                    color: #BABABA;
+                }
+
+                &:last-child {
+                    color: #7F7F7F;
+                }
+            }
+        }
+    }
+}
+
+// media query
+
+@media only screen and (max-width: 850px) {
+
+    .order_details_field .header_underline {
+        display: block;
+        width: 200px;
+        height: 2px;
+        background-color: #b5db1e;
+        border-radius: 50px 0px 0px 50px;
+        position: relative;
+        right: -30px;
+        box-shadow: 10px 9px 15px 0px #b5db1e;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+}
+
+@media only screen and (max-width: 720px) {
+
+    .order_details_field .order_details div {
+        width: 100%;
+    }
+
+    .order_details_field .order_details div {
+        display: flex;
+    }
+
+    .order_details_field .order_details div p:first-child {
+        margin-left: 7px;
+    }
+
+    .order_details_field .order_details div p:first-child {
+        flex-shrink: 0;
+    }
+
+}
+
+@media only screen and (max-width: 550px) {
+
+    .order_details_field .order_details div {
+        display: flex;
+        font-size: 0.9rem;
+    }
+    
+}
+
+@media only screen and (max-width: 430px) {
+
+    .order_details_field .factor_link {
+        left: 0px;
+        top: 119px;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .order_details_field .order_details {
+        margin-top: 95px;
+    }
+
+}
