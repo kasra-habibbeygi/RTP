@@ -56,12 +56,12 @@ $(document).scroll(function () {
     if (scroll > 80) {
 
         $('nav').addClass('nav_sticky');
-        $('.header_sliders').addClass('margin_top');
+        $('.secondary-nav').addClass('margin_top');
 
     } else {
 
         $('nav').removeClass('nav_sticky');
-        $('.header_sliders').removeClass('margin_top');
+        $('.secondary-nav').removeClass('margin_top');
 
     }
 });
