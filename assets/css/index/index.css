@@ -90,6 +90,11 @@ nav {
   position: relative;
   display: flex;
   align-items: center;
+  z-index: 100000000000000;
+  transition: all 0.2s linear 0s;
+  -webkit-transition: all 0.2s linear 0s;
+  -ms-transition: all 0.2s linear 0s;
+  -moz-transition: all 0.2s linear 0s;
 }
 
 nav .close_SN,
@@ -218,6 +223,25 @@ nav .left-NB .basket-field a i {
   position: relative;
   top: 2px;
   margin-right: 10px;
+}
+
+.nav_sticky {
+  position: fixed;
+  top: 0;
+  height: 70px !important;
+}
+
+.nav_sticky li {
+  height: 70px !important;
+  padding-top: 24px !important;
+}
+
+.nav_sticky .NBP-dropdown .product-option {
+  top: 70px;
+}
+
+.margin_top {
+  margin-top: 82px !important;
 }
 
 @media only screen and (min-width: 992px) {

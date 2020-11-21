@@ -68,6 +68,8 @@ nav {
     position: relative;
     display: flex;
     align-items: center;
+    z-index: 100000000000000;
+    @include transition(0.2s, linear, 0s);
 
     .close_SN,
     .SN_layout {
@@ -199,6 +201,28 @@ nav {
             }
         }
     }
+}
+
+.nav_sticky {
+    position: fixed;
+    top: 0;
+    height: 70px !important;
+
+    li {
+        height: 70px !important;
+        padding-top: 24px !important;
+    }
+
+    .NBP-dropdown{
+
+        .product-option {
+            top: 70px;
+        }
+    }
+}
+
+.margin_top {
+    margin-top: 82px !important;
 }
 
 @media only screen and (min-width: 992px) {
@@ -339,7 +363,7 @@ nav {
         padding-top: 0px !important;
         padding-left: 0px;
         padding-right: 0px;
-        @include transition(0.4s , cubic-bezier(0, 0, 0.2, 1), 0s);
+        @include transition(0.4s, cubic-bezier(0, 0, 0.2, 1), 0s);
 
         &:hover {
             background-color: unset;
@@ -357,17 +381,17 @@ nav {
             font-size: 0.9rem;
             color: #cecece;
 
-            &:hover{
+            &:hover {
                 color: $accent_color !important;
                 background-color: #2C2C2C;
             }
         }
     }
 
-    .active_collaps{
+    .active_collaps {
         background-color: #2C2C2C;
-        
-        p{
+
+        p {
             color: $accent_color !important;
         }
     }
@@ -394,7 +418,7 @@ nav {
         right: 20px;
     }
 
-    nav .left-NB{
+    nav .left-NB {
         font-size: 0.8rem;
     }
 

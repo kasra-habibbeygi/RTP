@@ -47,3 +47,21 @@ $('.sandwich-navbar').click(function () {
     });
 
 });
+
+// sticky navbar
+$(document).scroll(function () {
+
+    var scroll = $(this).scrollTop();
+
+    if (scroll > 80) {
+
+        $('nav').addClass('nav_sticky');
+        $('.header_sliders').addClass('margin_top');
+
+    } else {
+
+        $('nav').removeClass('nav_sticky');
+        $('.header_sliders').removeClass('margin_top');
+
+    }
+});
