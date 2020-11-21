@@ -1,0 +1,175 @@
+@import '../partials/color';
+@import '../partials/fonts';
+@import '../partials/mixin';
+@import '../partials/navbar';
+@import '../partials/footer';
+@import '../partials/product-summary';
+@import '../partials/cart-summary';
+
+.cart_goods,
+.sale_field {
+    width: 70%;
+    margin-left: 28%;
+    padding: 30px;
+    border-radius: 15px;
+    margin-top: 40px;
+    box-shadow: 0px 0px 6px -3px #00000073;
+    direction: rtl;
+    text-align: right;
+
+    h3 {
+        font-size: 1.2rem !important;
+        font-weight: bold;
+    }
+
+    .header_underline {
+        display: block;
+        width: 300px;
+        height: 2px;
+        background-color: $accent_color;
+        border-radius: 50px 0px 0px 50px;
+        position: relative;
+        right: -30px;
+        box-shadow: 10px 9px 15px 0px $accent_color;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+}
+
+.sale_field {
+    position: relative;
+    padding-bottom: 30px;
+
+    form {
+        width: 500px;
+        font-family: $nf;
+        margin-top: 50px;
+
+        button {
+            color: $white;
+            background-color: $accent_color;
+            border-radius: 50px;
+            width: max-content;
+            padding: 7px 30px;
+        }
+    }
+}
+
+small {
+    line-height: 26px;
+}
+
+// media query
+@media only screen and (max-width: 1150px) {
+
+    .cart_goods,
+    .sale_field {
+        width: 65%;
+        margin-left: 32%;
+    }
+
+    .cart_goods h3,
+    .sale_field h3 {
+        font-size: 1rem !important;
+    }
+
+}
+
+@media only screen and (max-width: 1050px) {
+
+    .product_summary_field .summary_details {
+        width: 65%;
+    }
+
+}
+
+@media only screen and (max-width: 992px) {
+
+    .product_summary_field .summary_details a h3 {
+        font-size: 1rem !important;
+    }
+
+    .product_summary_field .summary_img_field .summary_img {
+        width: 130px;
+    }
+
+}
+
+@media only screen and (max-width: 920px) {
+
+    .cart_goods,
+    .sale_field {
+        width: 60%;
+        margin-left: 37%;
+    }
+
+    .sale_field form {
+        width: 100%;
+    }
+
+}
+
+
+@media only screen and (max-width: 900px) {
+
+    .cart_goods,
+    .sale_field {
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    .sale_field form {
+        width: 80%;
+    }
+
+}
+
+@media only screen and (max-width: 705px) {
+
+    .sale_field form {
+        width: 100%;
+    }
+
+    .product_summary_field .summary_details {
+        width: 90%;
+    }
+
+    .sale_field form button {
+        padding: 7px 0px;
+        font-size: 1.2rem;
+        width: 40%;
+        margin-right: 30%;
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+
+    .sale_field form button {
+        width: 50%;
+        margin-right: 25%;
+    }
+
+}
+
+@media only screen and (max-width: 500px) {
+
+    .sale_field form button {
+        width: 100%;
+        margin-right: 0%;
+    }
+
+    .product_summary_field .summary_details a h3 {
+        font-size: 0.9rem !important;
+    }
+
+    .product_summary_field .summary_details {
+        width: 100%;
+    }
+
+    .sale_field form button{
+        font-size: 1rem;
+    }
+
+}

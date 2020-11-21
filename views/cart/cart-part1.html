@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="../../assets/css/general/general-css.css">
     <link rel="stylesheet" href="../../assets/css/general/animate.css">
     <link rel="stylesheet" href="../../assets/css/general/Swiper.css">
-    <link rel="stylesheet" href="../../assets/css/cart/cart-2.css">
+    <link rel="stylesheet" href="../../assets/css/cart/cart.css">
     <title>index</title>
 </head>
 
@@ -94,86 +94,50 @@
             </div>
         </div>
     </nav>
+
     <!-- page conent -->
 
-    <!-- address -->
-    <section class="address_field">
-        <h3>آدرس تحویل سفارش</h3>
+    <section class="cart_goods">
+        <h3>جزئیات سفارش</h3>
         <span class="header_underline"></span>
 
-        <div class="AF">
-            <div class="old_addres">
-                <input class="inp-cbx" id="address-1" type="radio" name="addres" style="display: none" />
-                <label class="cbx" for="address-1">
-                    <span>
-                        <svg width="12px" height="10px" viewbox="0 0 12 10">
-                            <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
-                        </svg>
-                    </span>
-                    <span class="brand_name">
-                        تهران - شهران - خیابان طوقانی - خیابان یاس - پلاک 28
-                        <section>
-                            <p>کسری حبیب بیگی</p>
-                            <p>کد پسای : 1349765289</p>
-                        </section>
-                    </span>
-                </label>
-
-                <input class="inp-cbx" id="address-2" type="radio" name="addres" style="display: none" />
-                <label class="cbx" for="address-2">
-                    <span>
-                        <svg width="12px" height="10px" viewbox="0 0 12 10">
-                            <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
-                        </svg>
-                    </span>
-                    <span class="brand_name">
-                        تهران - شهران - خیابان طوقانی - خیابان یاس - پلاک 28
-                        <section>
-                            <p>کسری حبیب بیگی</p>
-                            <p>کد پسای : 1349765289</p>
-                        </section>
-                    </span>
-                </label>
+        <!-- goods details -->
+        <div class="product_summary_field">
+            <div class="summary_img_field">
+                <img class="summary_img" src="../../assets/img/AP03.PNG" alt="">
             </div>
-            <div class="new_address">
-                <div>
-                    <img src="../../assets/img/cI00.png" alt="">
-                    <p>افزودن آدرس جدید</p>
+            <div class="summary_details">
+                <a href="">
+                    <h3>گوشی موبایل سامسونگ مدل Galaxy Note20 Ultra SM-N985F/DS دو سیم کارت ظرفیت 256 گیگابایت</h3>
+                </a>
+                <div class="CM">
+                    <div><span style="background-color: white;"></span>سفید</div>
+                    <div>64 گیگابایت</div>
                 </div>
+                <div class="guarantee_field">
+                    <i class="fal fa-shield-check"></i>
+                    گارانتی 24 ماهه شرکت ارتا تجارت پارسه آریا
+                </div>
+                <p class="summary_price">قیمت : 3.000.000 </p>
             </div>
         </div>
-
     </section>
 
-    <!-- time zone -->
-    <section class="time_field">
-        <h3>زمان ارسال سفارش</h3>
+    <section class="sale_field">
+        <h3>کد تخفیف</h3>
         <span class="header_underline"></span>
 
-        <div class="send_day">
-            <p class="TF_header">روز ارسال را انتخاب کنید</p>
-            
-            <div class="PD_chose_box">
-                <div>شنبه</div>
-                <div>یکشنبه</div>
-                <div>دو شنبه</div>
-                <div>سه شنبه</div>
-                <div>چهارشنبه</div>
-                <div>پنج شنبه</div>
-                <div>جمعه</div>
+        <!-- sale form -->
+        <form>
+            <div class="form-group">
+                <label for="sale_inp">کد تخفیف</label>
+                <input type="text" class="form-control" id="sale_inp" aria-describedby="sale_help">
+                <small id="sale_help" class="form-text text-muted">کد تخفیف 8 رقمی را وارد کنید . توجه داشته باشید که
+                    فقط یک بار می توانید از کد تخفیف استفاده نمایید</small>
             </div>
-        </div>
+            <button type="submit" class="btn">اعمال تخفیف</button>
+        </form>
 
-        <div class="send_time">
-            <p class="TF_header">ساعت ارسال را انتخاب کنید</p>
-            
-            <div class="PD_chose_box">
-                <div>9 - 12</div>
-                <div>12 - 15</div>
-                <div>15 - 18</div>
-                <div>18 - 21</div>
-            </div>
-        </div>
     </section>
 
     <!-- card sammary -->
@@ -197,7 +161,7 @@
         </div>
         <button class="btn card_checked">ادامه فرآیند خرید</button>
     </section>
-
+    
     <!-- footer -->
     <footer>
         <div class="contact">

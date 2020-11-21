@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../assets/css/general/bootstrap.css">
+    <link rel="stylesheet" href="../../assets/css/general/fontAwsome.css">
+    <link rel="stylesheet" href="../../assets/css/general/general-css.css">
+    <link rel="stylesheet" href="../../assets/css/general/animate.css">
+    <link rel="stylesheet" href="../../assets/css/general/Swiper.css">
+    <link rel="stylesheet" href="../../assets/css/cart/cart-3.css">
+    <title>index</title>
+</head>
+
+<body>
+    <!-- The part at the top of the page where the logo and search are located -->
+    <div class="secondary-nav">
+        <div class="NB-search">
+            <form action="">
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <!-- search -->
+                        <span class="input-group-text" id="navbar_search">
+                            <button class="btn">
+                                <i class="fal fa-search"></i>
+                            </button>
+                        </span>
+                        <!-- search -->
+                    </div>
+                    <input type="text" class="form-control" placeholder="نام محصول یا کالای مورد نظر خود را وارد کنید !"
+                        aria-describedby="navbar_search">
+                </div>
+            </form>
+        </div>
+        <!-- logo -->
+        <img src="../../assets/img/AL00.png" alt="logo" title="logo">
+    </div>
+
+    <!-- navbar -->
+    <nav>
+        <div class="SN_layout"></div>
+        <button class="sandwich-navbar btn">
+            <i class="fas fa-bars"></i>
+        </button>
+        <div class="right-NB">
+            <i class="fas fa-times close_SN"></i>
+            <!-- navbar option -->
+            <ul class="navbar-option">
+                <li class="active-page">
+                    <a href="index.html">صفحه اصلی</a>
+                </li>
+                <li class="NBP-dropdown" id="PDP">
+                    <p>محصولات <i class="fal fa-angle-down"></i></p>
+                    <div class="product-option" id="PD">
+                        <a href="../product/product-list.html">تمام محصولات</a>
+                        <a href="">سامسونگ</a>
+                        <a href="">اپل</a>
+                        <a href="">اپل واچ</a>
+                        <a href="">ایر پاد</a>
+                    </div>
+                </li>
+                <li id="PDSN">
+                    <a href="../product/product-list.html">تمام محصولات</a>
+                    <a href="">سامسونگ</a>
+                    <a href="">اپل</a>
+                    <a href="">اپل واچ</a>
+                    <a href="">ایر پاد</a>
+                </li>
+                <li>
+                    <a href="../article/article.html">اخبار</a>
+                </li>
+                <li>
+                    <a href="../about-us/about-us.html">درباره ما</a>
+                </li>
+                <li>
+                    <a href="../contact-us/contact-us.html">تماس با ما</a>
+                </li>
+            </ul>
+            <!-- navbar option -->
+        </div>
+        <div class="left-NB">
+            <div class="LR-field">
+                <a href="">ورود</a>
+                /
+                <a href="">عضویت</a>
+            </div>
+            <div class="basket-field">
+                <a href="">
+                    سبد خریـــــــــــــد
+                    <i class="fas fa-shopping-cart"></i>
+                    <div class="B-conter">3</div>
+                </a>
+            </div>
+        </div>
+    </nav>
+    <!-- page conent -->
+
+    <!-- address -->
+    <section class="payment_method">
+        <h3>شیوه پرداخت</h3>
+        <span class="header_underline"></span>
+
+        <!-- online payment -->
+        <input class="inp-cbx" id="PM-1" type="radio" name="PM" style="display: none" />
+        <label class="cbx" for="PM-1">
+            <span>
+                <svg width="12px" height="10px" viewbox="0 0 12 10">
+                    <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+                </svg>
+            </span>
+            <span class="payment_way">
+                <img class="OP_img" src="../../assets/img/CI01.png" alt="">
+                <div>
+                    <p>پرداخت آنلاین</p>
+                    <p>با پرداخت اینترنتی، سفارش شما با اولویت بیشتری نسبت به پرداخت در محل پردازش و ارسال می
+                        شود. در صورت پرداخت ناموفق هزینه کسر شده حداکثر طی ۷۲ ساعت به حساب شما بازگردانده می‌شود
+                    </p>
+                </div>
+            </span>
+        </label>
+
+        <!-- second peyment -->
+        <input class="inp-cbx" id="PM-2" type="radio" name="PM" style="display: none" />
+        <label class="cbx" for="PM-2">
+            <span>
+                <svg width="12px" height="10px" viewbox="0 0 12 10">
+                    <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+                </svg>
+            </span>
+            <span class="payment_way">
+                <img src="../../assets/img/CI02.png" alt="">
+                <div>
+                    <p>پرداخت درب منزل</p>
+                    <p>برای اینکه درب محل کالای مورد نظر را تحویل بگیرید باید ابتدا مبلغ صد هزار تومان را به عنوان بیانه
+                        پرداخت کنید </p>
+                </div>
+            </span>
+        </label>
+
+    </section>
+
+    <!-- time zone -->
+    <section class="cart_summary">
+        <h3>خلاصه خرید</h3>
+        <span class="header_underline"></span>
+
+        <!-- goods details -->
+        <div class="product_summary_field">
+            <div class="summary_img_field">
+                <img class="summary_img" src="../../assets/img/AP03.PNG" alt="">
+            </div>
+            <div class="summary_details">
+                <a href="">
+                    <h3>گوشی موبایل سامسونگ مدل Galaxy Note20 Ultra SM-N985F/DS دو سیم کارت ظرفیت 256 گیگابایت</h3>
+                </a>
+                <div class="CM">
+                    <div><span style="background-color: white;"></span>سفید</div>
+                    <div>64 گیگابایت</div>
+                </div>
+                <div class="guarantee_field">
+                    <i class="fal fa-shield-check"></i>
+                    گارانتی 24 ماهه شرکت ارتا تجارت پارسه آریا
+                </div>
+                <p class="summary_price">قیمت : 3.000.000 </p>
+            </div>
+        </div>
+
+        <div class="address_selected">
+            <p class="address">تهران - شهران - خیابان طوقانی - خیابان یاس - پلاک 28</p>
+            <p class="name">کسری حبیب بیپی</p>
+            <p class="postal_number">کد پستی : 28694365</p>
+            <p class="date">تاریخ ارسال : شنبه - 29 آبان - 12 تا 15</p>
+        </div>
+    </section>
+
+    <!-- card sammary -->
+    <section class="card_summary">
+        <div>
+            <p>قیمت کالا :</p>
+            <p>7.000.000</p>
+        </div>
+        <div>
+            <p>تخفیف :</p>
+            <p>ندارد</p>
+        </div>
+        <div>
+            <p>هزینه ارسال :</p>
+            <p>رایگان</p>
+        </div>
+        <span></span>
+        <div>
+            <p>مبلغ قابل پرداخت :</p>
+            <p>7.000.000</p>
+        </div>
+        <button class="btn card_checked">پرداخت نهایی</button>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <div class="contact">
+            <p class="header">ارتباط با ما</p>
+            <p>
+                <i class="fal fa-map-marker-alt"></i>
+                تهران - بلوار نلسون ماندلا- بالاتر از چهار راه اسفندیاری - خیابان فاطمی - برج صبا
+            </p>
+            <p>
+                <i class="fal fa-at"></i>
+                kasrahabibbeygi@hmail.com
+            </p>
+            <p>
+                <i class="fal fa-mobile"></i>
+                <span>09021414866</span>
+                <span>09371969052</span>
+            </p>
+        </div>
+        <div class="short_links">
+            <p class="header">محصولات</p>
+            <ul>
+                <li>
+                    <a href="">سامسونگ</a>
+                </li>
+                <li>
+                    <a href="">اپل</a>
+                </li>
+                <li>
+                    <a href="">اپل واچ</a>
+                </li>
+                <li>
+                    <a href="">ایر پاد</a>
+                </li>
+            </ul>
+        </div>
+        <div class="short_links">
+            <p class="header">لینک های مفید</p>
+            <ul>
+                <li>
+                    <a href="">مقالات</a>
+                </li>
+                <li>
+                    <a href="">تماس با ما</a>
+                </li>
+                <li>
+                    <a href="">درباره ما</a>
+                </li>
+                <li>
+                    <a href="">محصولات</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer_description">
+            <p class="header">ATP.mobile</p>
+            <p class="FDT">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است
+            </p>
+            <div class="social_media">
+                <a href="">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="">
+                    <i class="fab fa-telegram-plane"></i>
+                </a>
+                <a href="">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+            </div>
+        </div>
+        <div class="copy_right">
+            <p>
+                &copy; تمام حقوق مادی و معنوی این سایت محفوظ است
+            </p>
+        </div>
+    </footer>
+    <!-- footer -->
+
+    <script src="../../assets/js/general/jquery.js"></script>
+    <script src="../../assets/js/general/popper.js"></script>
+    <script src="../../assets/js/general/bootstrap.js"></script>
+    <script src="../../assets/js/general/Swiper.js"></script>
+    <script src="../../assets/js/general/wow.js"></script>
+    <script src="../../assets/js/custom/navbar.js"></script>
+</body>
+
+</html>
