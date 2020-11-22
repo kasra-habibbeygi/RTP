@@ -9,18 +9,19 @@
 
 //The main content styles of this page
 
-.article_details{
+.article_details {
   width: 90%;
   margin: auto;
   display: flex;
   flex-wrap: wrap;
 
-  .ad_sidebar{
-    width: 22%;
+  .ad_sidebar {
+    width: 25%;
 
-    .ad_s_tag{
+
+    .ad_s_tag {
       width: 90%;
-      margin:30px auto;
+      margin: 30px auto;
       box-shadow: 0 2px 20px 0px rgba(0, 0, 0, 0.2);
       border-radius: 5px;
       direction: rtl;
@@ -29,7 +30,7 @@
       justify-content: center;
       padding-left: 10px;
 
-      .ad_s_t_title{
+      .ad_s_t_title {
         font-size: 1.2rem;
         width: 50%;
         margin-left: 50%;
@@ -39,8 +40,8 @@
         margin-bottom: 15px;
       }
 
-      .ad_s_t_tags{
-        padding:5px 15px;
+      .ad_s_t_tags {
+        padding: 5px 15px;
         background: rgba(219, 219, 219, 0.39);
         border-radius: 10px;
         margin-right: 5px;
@@ -48,9 +49,9 @@
       }
     }
 
-    .ad_s_suggest{
+    .ad_s_suggest {
       width: 90%;
-      margin:30px auto;
+      margin: 30px auto;
       box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.2);
       border-radius: 5px;
       direction: rtl;
@@ -86,11 +87,11 @@
         flex-direction: column;
       }
 
-      .img_of_slider{
+      .img_of_slider {
         height: 180px;
       }
 
-      .exp_product{
+      .exp_product {
         font-size: .9rem;
         width: 70%;
         border-bottom: 1px solid rgba(145, 145, 145, 0.39);
@@ -130,8 +131,7 @@
       }
 
 
-
-      .price{
+      .price {
         font-size: 1.3rem;
         direction: rtl;
         color: $accent_color;
@@ -140,15 +140,15 @@
       }
     }
 
-    .ad_s_best{
+    .ad_s_best {
       width: 90%;
-      margin:30px auto;
+      margin: 30px auto;
       box-shadow: 0 2px 20px 0px rgba(0, 0, 0, 0.2);
       border-radius: 5px;
       direction: rtl;
       text-align: right;
 
-      .ab_s_b_title{
+      .ab_s_b_title {
         font-size: 1.2rem;
         width: 70%;
         margin-left: 50%;
@@ -158,25 +158,28 @@
         margin-bottom: 15px;
       }
 
-      .besties{
+      .besties {
         display: flex;
         flex-wrap: wrap;
         text-align: right;
         padding: 10px;
-        .ab_s_b_img{
-          width:30%;
+
+        .ab_s_b_img {
+          width: 30%;
           height: 80px;
           border-radius: 5px;
           background-size: cover;
           background-repeat: no-repeat;
           background-position: center;
         }
-        .ab_s_b_exp{
+
+        .ab_s_b_exp {
           width: 70%;
           font-size: .8rem;
           padding: 10px 15px 10px 0;
           text-align: justify;
-          .small_date{
+
+          .small_date {
             padding-top: 10px;
             display: inline-block;
             color: #848484;
@@ -186,16 +189,16 @@
     }
   }
 
-  .ad_content{
-    width: 78%;
-    margin:30px auto;
+  .ad_content {
+    width: 75%;
+    margin: 30px auto;
     box-shadow: 0 2px 20px 0px rgba(0, 0, 0, 0.2);
     border-radius: 5px;
     direction: rtl;
     text-align: right;
 
-    .article_content{
-      .ad_main_img{
+    .article_content {
+      .ad_main_img {
         width: 100%;
         height: 500px;
         background: url("../../img/AB03.jpg") no-repeat center;
@@ -203,31 +206,31 @@
         border-radius: 5px 5px 0 0;
       }
 
-      .ad_main_txt{
+      .ad_main_txt {
         padding: 50px 70px;
         text-align: justify;
 
-        .ad_title_of_article{
+        .ad_title_of_article {
           font-size: 2.8rem;
           color: $accent_color;
           font-family: $af;
           padding-bottom: 30px;
         }
 
-        .ad_txt{
+        .ad_txt {
           line-height: 30px;
         }
 
-        .ad_sm_title{
-          font-size:  1.4rem ;
-          font-family:$bf ;
+        .ad_sm_title {
+          font-size: 1.4rem;
+          font-family: $bf;
           padding: 20px 0;
         }
       }
 
     }
 
-    .cm_msg{
+    .cm_msg {
       width: 55%;
       margin: 0px auto 50px;
       display: flex;
@@ -235,7 +238,7 @@
       flex-direction: column;
 
 
-      .f_title{
+      .f_title {
         text-align: center;
         font-size: 1.5rem;
         font-family: $bf;
@@ -245,18 +248,21 @@
         padding-bottom: 15px;
       }
 
-      #msg{
+      #msg {
         resize: none;
       }
-      .field_form{
+
+      .field_form {
         border-radius: 10px;
-        &:focus{
+
+        &:focus {
           box-shadow: none;
           border: 1px solid #ced4da;
         }
 
       }
-      .btn_send{
+
+      .btn_send {
         background: $accent_color;
         color: white;
         width: 30%;
@@ -265,9 +271,10 @@
       }
     }
 
-    .cm_box{
+    .cm_box {
       margin-bottom: 50px;
-      .cm_title{
+
+      .cm_title {
         text-align: center;
         font-size: 1.5rem;
         font-family: $bf;
@@ -277,41 +284,42 @@
         padding-bottom: 15px;
       }
 
-      .cm_s_msg{
+      .cm_s_msg {
         width: 90%;
         margin: auto;
         display: flex;
         flex-wrap: wrap;
         text-align: right;
-        .img_acc{
+
+        .img_acc {
           width: 70px;
           height: 70px;
           border-radius: 50%;
         }
 
-        .name_acc{
+        .name_acc {
           width: 70%;
           position: relative;
           right: 30px;
           top: 7px;
         }
 
-        .date_cm{
-        @extend .name_acc;
+        .date_cm {
+          @extend .name_acc;
           top: -25px;
-          right:100px;
+          right: 100px;
           color: $smal_text;
 
         }
 
-        .msg_msg{
+        .msg_msg {
           padding-right: 100px;
           text-align: justify;
           direction: rtl;
         }
       }
 
-      .cm_replay_s_msg{
+      .cm_replay_s_msg {
         margin-right: 100px;
         margin-top: 50px;
 
@@ -322,12 +330,10 @@
   }
 
 
-
 }
 
 
 //The main content styles of this page
-
 
 
 //responsive part
@@ -335,26 +341,170 @@
 
 @media only screen and (max-width: 1200px) {
 
+  .article_details .ad_sidebar {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+
+  }
+
+  .article_details .ad_sidebar .ad_res {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+  }
+  .article_details .ad_content {
+    width: 100%;
+  }
+
+  .article_details .ad_sidebar .ad_s_best {
+    width: 60%;
+  }
+
+  .d_n {
+    display: none !important;
+  }
+
+  .article_details .ad_sidebar .ad_s_suggest {
+    margin: 0 auto;
+  }
+
+  .article_details .ad_sidebar .ad_s_best .besties .ab_s_b_img {
+    width: 20%;
+  }
+
+
 }
 
 @media only screen and (max-width: 992px) {
+  .article_details .ad_content .article_content .ad_main_txt .ad_title_of_article {
+    font-size: 2.3rem;
+  }
+
+  .article_details .ad_content .article_content .ad_main_txt p,
+  .article_details .ad_content .cm_msg label,
+  .article_details .ad_content .cm_msg .btn_send,
+  .article_details .ad_content .cm_box .cm_s_msg .msg_msg {
+    font-size: .9rem;
+  }
+
+  .article_details .ad_content .article_content .ad_main_txt .ad_sm_title,
+  .article_details .ad_content .cm_msg .f_title,
+  .article_details .ad_content .cm_box .cm_title {
+    font-size: 1.2rem;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .article_details .ad_sidebar .ad_s_best {
+    width: 50%;
+  }
+  .article_details .ad_sidebar .ad_res {
+    width: 50%;
+  }
+  .article_details .ad_content .cm_msg {
+    width: 65%;
+  }
+  .article_details .ad_content .article_content .ad_main_img {
+    height: 350px;
+  }
 
 }
 
 @media only screen and (max-width: 768px) {
+  .article_details .ad_sidebar .ad_s_best,
+  .article_details .ad_sidebar .ad_s_tag,
+  .article_details .ad_sidebar .ad_res,
+  .article_details .ad_sidebar .ad_s_suggest {
+    width: 100%;
+  }
 
+  .article_details .ad_content .article_content .ad_main_img {
+    height: 300px;
+  }
+  .article_details .ad_content .article_content .ad_main_txt .ad_title_of_article {
+    font-size: 2rem;
+  }
+
+  .article_details .ad_content .article_content .ad_main_txt p,
+  .article_details .ad_content .cm_msg label,
+  .article_details .ad_content .cm_msg .btn_send,
+  .article_details .ad_content .cm_box .cm_s_msg .name_acc {
+    font-size: .9rem;
+  }
+
+  .article_details .ad_content .article_content .ad_main_txt .ad_sm_title,
+  .article_details .ad_content .cm_msg .f_title,
+  .article_details .ad_content .cm_box .cm_title,
+  .article_details .ad_sidebar .ad_s_best .ab_s_b_title,
+  .article_details .ad_sidebar .ad_s_tag .ad_s_t_title {
+    font-size: 1rem;
+  }
+  .article_details .ad_content .cm_msg {
+    width: 80%;
+  }
+
+  .article_details .ad_content .cm_box .cm_replay_s_msg {
+    margin-right: 60px;
+    margin-top: 20px;
+  }
+  .article_details .ad_content .cm_box .cm_s_msg .img_acc {
+    width: 60px;
+    height: 60px;
+  }
+
+  .article_details .ad_content .cm_box .cm_s_msg .date_cm {
+    font-size: .7rem;
+  }
+
+  .article_details .ad_content .cm_box .cm_s_msg .msg_msg {
+    font-size: .8rem;
+  }
 }
 
 @media only screen and (max-width: 600px) {
-
+  .article_details .ad_content .article_content .ad_main_txt .ad_title_of_article {
+    font-size: 1.6rem;
+    padding-bottom: 10px;
+  }
+  .article_details .ad_content .cm_box .cm_replay_s_msg {
+    margin-right: 50px;
+  }
 }
 
 @media only screen and (max-width: 500px) {
+  .article_details .ad_content .cm_box .cm_s_msg .img_acc {
+    width: 50px;
+    height: 50px;
+  }
+
+  .article_details .ad_content .cm_box .cm_s_msg .name_acc {
+    right: 20px;
+    top: 5px;
+    font-size: .8rem;
+  }
+
+  .article_details .ad_content .cm_box .cm_s_msg .date_cm {
+    right: 68px;
+    top: -20px;
+  }
+
+  .article_details .ad_content .cm_box .cm_s_msg .msg_msg {
+    padding-right: 26px;
+  }
+  .article_details .ad_content .article_content .ad_main_txt {
+    padding: 50px 20px;
+  }
+  .article_details .ad_content .cm_msg {
+    width: 90%;
+  }
 
 }
 
 @media only screen and (max-width: 400px) {
-
+  .article_details .ad_content .cm_box .cm_replay_s_msg {
+    margin-right: 30px;
+  }
 }
 
 @media only screen and (max-width: 360px) {

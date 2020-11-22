@@ -20,9 +20,33 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="852b3d14-e7b9-49ae-b295-cc1244fe7f2d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/assets/css/cart/cart-2.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/css/cart/cart-3.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/css/cart/cart.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/css/profile/profile-edit.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/css/profile/purchase-details.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/about-us/about-us.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/about-us/about-us.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/about-us/about-us.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/about-us/about-us.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/articles/article-details.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/articles/article-details.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/articles/article-details.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/articles/article-details.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/articles/article-details.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/articles/article-details.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/articles/article-list.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/articles/article-list.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/articles/article-list.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/articles/article-list.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/articles/article-list.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/articles/article-list.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/cart/cart-2.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/cart/cart-2.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/cart/cart-3.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/cart/cart-3.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/cart/cart.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/cart/cart.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/contact_us/contact_us.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/contact_us/contact_us.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/contact_us/contact_us.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/contact_us/contact_us.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/index/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/index/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/index/index.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/index/index.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/products/product-details.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/products/product-details.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/products/product-details.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/products/product-details.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/products/product-list.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/products/product-list.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/products/product-list.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/products/product-list.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/profile/profile-edit.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/profile/profile-edit.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/profile/purchase-details.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/profile/purchase-details.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/article/article-details.html" beforeDir="false" afterPath="$PROJECT_DIR$/views/article/article-details.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,7 +107,8 @@
       <workItem from="1605286079485" duration="23718000" />
       <workItem from="1605414254932" duration="848000" />
       <workItem from="1605598056838" duration="13828000" />
-      <workItem from="1605685177694" duration="18090000" />
+      <workItem from="1605685177694" duration="18157000" />
+      <workItem from="1606029621866" duration="2748000" />
     </task>
     <servers />
   </component>
@@ -126,9 +151,9 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1605196587673" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1605084645622">
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1606031653952">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1605084645622" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1606031653952" />
   </component>
 </project>
