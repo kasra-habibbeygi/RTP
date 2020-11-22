@@ -823,7 +823,24 @@ footer .copy_right p {
   }
 }
 
-.edit_field {
+.lastes_purches table tr th, .lastes_purches table tr td {
+  border: 1px solid #e9e9e9;
+  direction: rtl;
+  padding: 20px 20px;
+  color: #999999;
+  min-width: 200px;
+}
+
+.lastes_purches table tr th:first-child, .lastes_purches table tr td:first-child {
+  min-width: 100px;
+}
+
+.lastes_purches table tr th:last-child, .lastes_purches table tr td:last-child {
+  min-width: 100px;
+}
+
+.AD_field,
+.lastes_purches {
   margin-top: 40px;
   width: 90%;
   margin-left: 5%;
@@ -834,12 +851,14 @@ footer .copy_right p {
   direction: rtl;
 }
 
-.edit_field h3 {
+.AD_field h3,
+.lastes_purches h3 {
   font-size: 1.5rem !important;
   font-weight: bold;
 }
 
-.edit_field .header_underline {
+.AD_field .header_underline,
+.lastes_purches .header_underline {
   display: block;
   width: 300px;
   height: 2px;
@@ -852,20 +871,80 @@ footer .copy_right p {
   margin-bottom: 20px;
 }
 
-.edit_field .accont_details {
+.AD_field .accont_details,
+.lastes_purches .accont_details {
   display: flex;
   flex-wrap: wrap;
   font-family: normal-font;
 }
 
-.edit_field .accont_details div {
+.AD_field .accont_details div,
+.lastes_purches .accont_details div {
   width: 49%;
+  margin-top: 20px;
 }
 
-.edit_field .accont_details div p:first-child {
+.AD_field .accont_details div p:first-child,
+.lastes_purches .accont_details div p:first-child {
   color: #BABABA;
+  margin-bottom: 5px;
 }
 
-.edit_field .accont_details div p:last-child {
+.AD_field .accont_details div p:last-child,
+.lastes_purches .accont_details div p:last-child {
   color: #7F7F7F;
+  line-height: 30px;
+}
+
+.lastes_purches .table_field {
+  overflow-x: auto;
+}
+
+.lastes_purches .table_field::-webkit-scrollbar {
+  height: 7px;
+  background-color: whitesmoke;
+}
+
+.lastes_purches .table_field::-webkit-scrollbar-thumb {
+  background-color: #cacaca;
+  border-radius: 3px;
+}
+
+.lastes_purches .table_field::-webkit-scrollbar-thumb:hover {
+  background: #a3a3a3;
+}
+
+.lastes_purches table {
+  width: 100%;
+  text-align: center;
+}
+
+.lastes_purches table tr th {
+  background-color: #F6F6F6;
+}
+
+.lastes_purches table tr .success_payment {
+  color: #58BE1D;
+  font-family: normal-font;
+}
+
+.lastes_purches table tr .alert_payment {
+  color: red;
+  font-family: normal-font;
+}
+
+.lastes_purches table tr .remove_payment {
+  font-family: normal-font;
+}
+
+.lastes_purches table tr .MD a {
+  color: #999999;
+  display: block;
+}
+
+@media only screen and (max-width: 700px) {
+  .AD_field .accont_details div,
+  .lastes_purches .accont_details div {
+    width: 100%;
+  }
 }

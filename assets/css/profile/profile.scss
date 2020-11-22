@@ -5,7 +5,24 @@
 @import '../partials/footer';
 @import '../partials/product-slider';
 
-.edit_field {
+%table_data {
+    border: 1px solid rgb(233, 233, 233);
+    direction: rtl;
+    padding: 20px 20px;
+    color: #999999;
+    min-width: 200px;
+
+    &:first-child {
+        min-width: 100px;
+    }
+
+    &:last-child {
+        min-width: 100px;
+    }
+}
+
+.AD_field,
+.lastes_purches {
     margin-top: 40px;
     width: 90%;
     margin-left: 5%;
@@ -38,18 +55,91 @@
         flex-wrap: wrap;
         font-family: $nf;
 
-        div{
+        div {
             width: 49%;
+            margin-top: 20px;
 
-            p{
-                &:first-child{
+            p {
+                &:first-child {
                     color: #BABABA;
+                    margin-bottom: 5px;
                 }
-    
-                &:last-child{
+
+                &:last-child {
                     color: #7F7F7F;
+                    line-height: 30px;
                 }
             }
         }
     }
+}
+
+.lastes_purches {
+
+    .table_field {
+        overflow-x: auto;
+
+        &::-webkit-scrollbar {
+            height: 7px;
+            background-color: rgb(245, 245, 245);
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background-color: rgb(202, 202, 202);
+            border-radius: 3px;
+
+            &:hover {
+                background: rgb(163, 163, 163);
+            }
+        }
+    }
+
+    table {
+        width: 100%;
+        text-align: center;
+
+        tr {
+
+            th {
+                @extend %table_data;
+                background-color: #F6F6F6;
+            }
+
+            td {
+                @extend %table_data;
+            }
+
+            .success_payment {
+                color: #58BE1D;
+                font-family: $nf;
+            }
+
+            .alert_payment {
+                color: red;
+                font-family: $nf;
+            }
+
+            .remove_payment {
+                font-family: $nf;
+            }
+
+            .MD {
+
+                a {
+                    color: #999999;
+                    display: block;
+                }
+            }
+        }
+    }
+}
+
+// media query
+@media only screen and (max-width: 700px) {
+
+    .AD_field .accont_details div,
+    .lastes_purches .accont_details div {
+        width: 100%;
+    }
+
 }
