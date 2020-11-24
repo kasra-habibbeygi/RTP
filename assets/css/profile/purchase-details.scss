@@ -22,10 +22,6 @@
 .order_details_field {
     position: relative;
 
-    .header_underline {
-        margin-top: 21px;
-    }
-
     .factor_link {
         position: absolute;
         left: 40px;
@@ -60,23 +56,6 @@
 }
 
 // media query
-
-@media only screen and (max-width: 850px) {
-
-    .order_details_field .header_underline {
-        display: block;
-        width: 200px;
-        height: 2px;
-        background-color: #b5db1e;
-        border-radius: 50px 0px 0px 50px;
-        position: relative;
-        right: -30px;
-        box-shadow: 10px 9px 15px 0px #b5db1e;
-        margin-top: 20px;
-        margin-bottom: 20px;
-    }
-
-}
 
 @media only screen and (max-width: 720px) {
 

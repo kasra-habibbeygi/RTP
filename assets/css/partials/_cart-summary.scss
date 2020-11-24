@@ -2,12 +2,11 @@
     width: 25%;
     padding: 30px;
     border-radius: 15px;
-    margin-top: 40px;
     box-shadow: 0px 0px 6px -3px #00000073;
     direction: rtl;
     text-align: right;
     position: absolute;
-    top: 135px;
+    top: 178px;
     left: 21px;
     font-family: $nf;
 
@@ -39,6 +38,11 @@
         font-size: 1.2rem;
         margin-top: 20px;
     }
+}
+
+.PS_sticky{
+    position: fixed;
+    top: 100px;
 }
 
 @media only screen and (max-width: 1150px) {
@@ -85,6 +89,7 @@
 
     .card_summary {
         font-size: 1rem;
+        margin-top: 1.5rem;
     }
 
 }

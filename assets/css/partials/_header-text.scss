@@ -16,3 +16,18 @@
     margin-top: 20px;
     margin-bottom: 50px;
 }
+
+@media only screen and (max-width: 600px){
+
+    .all_header_text {
+        font-size: 1.3rem !important;
+    }
+
+}
+@media only screen and (max-width: 500px){
+
+    .all_header_text {
+        font-size: 1.2rem !important;
+    }
+
+}

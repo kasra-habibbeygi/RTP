@@ -19,9 +19,6 @@
 }
 
 .sale_field {
-    position: relative;
-    padding-bottom: 30px;
-
     form {
         width: 500px;
         font-family: $nf;
@@ -37,10 +34,6 @@
     }
 }
 
-small {
-    line-height: 26px;
-}
-
 
 // media query
 @media only screen and (max-width: 1150px) {
@@ -49,11 +42,6 @@ small {
     .sale_field {
         width: 65%;
         margin-left: 32%;
-    }
-
-    .cart_goods h3,
-    .sale_field h3 {
-        font-size: 1rem !important;
     }
 
 }
