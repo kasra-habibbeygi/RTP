@@ -1,0 +1,75 @@
+@import '../partials/color';
+@import '../partials/fonts';
+@import '../partials/mixin';
+@import '../partials/navbar';
+@import '../partials/footer';
+
+.login_field{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+}
+
+.login_body{
+    margin-top: 40px;
+    width: 500px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 6px -3px #00000073;
+    padding: 30px;
+    text-align: right;
+    direction: rtl;
+
+    h3 {
+        font-size: 1.5rem !important;
+        font-weight: bold;
+    }
+
+    .header_underline {
+        display: block;
+        width: 300px;
+        height: 2px;
+        background-color: $accent_color;
+        border-radius: 50px 0px 0px 50px;
+        position: relative;
+        right: -30px;
+        box-shadow: 10px 9px 15px 0px $accent_color;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    form{
+        font-family: $nf;
+
+        button{
+            width: 100%;
+            padding: 10px 30px;
+            background-color: $accent_color;
+            border-radius: 50px;
+            color: $white;
+            margin-top: 30px;
+        }
+    }
+}
+
+// media query
+@media only screen and (max-width: 550px) {
+
+    .login_body {
+        width: 90%;
+    }
+
+}
+
+@media only screen and (max-width: 450px) {
+
+    .login_body h3 {
+        font-size: 1.3rem !important;
+        font-weight: bold;
+    }
+
+    .login_body .header_underline {
+        width: 280px;
+    }
+
+}
