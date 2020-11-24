@@ -79,7 +79,8 @@
 
     .sinecure {
       width: 100%;
-      .s_b{
+
+      .s_b {
         width: 24%;
         display: inline-block;
         height: 200px;
@@ -88,16 +89,15 @@
     }
   }
 
-  .print_invoices{
+  .print_invoices {
     width: 200px;
     height: 50px;
     line-height: 50px;
     text-align: center;
     border-radius: 5px;
     border: none;
-    font-size:1.2rem;
+    font-size: 1.2rem;
     margin-top: 20px;
   }
 
 }
-
