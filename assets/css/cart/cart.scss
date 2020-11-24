@@ -110,6 +110,7 @@
         font-size: 1.2rem;
         width: 40%;
         margin-right: 30%;
+        margin-top: 20px;
     }
 
 }
@@ -138,8 +139,22 @@
         width: 100%;
     }
 
-    .sale_field form button{
+    .sale_field form button {
         font-size: 1rem;
     }
+
+    .sale_field {
+
+        .header_underline {
+            width: 200px;
+        }
+    }
+
+    .cart_goods {
+        .header_underline {
+            width: 210px;
+        }
+    }
+
 
 }
