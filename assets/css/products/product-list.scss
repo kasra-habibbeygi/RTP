@@ -4,6 +4,7 @@
 @import '../partials/navbar';
 @import '../partials/footer';
 @import '../partials/check-box';
+@import '../partials/header-text';
 
 .product_field {
     width: 84%;
@@ -142,24 +143,6 @@
         direction: rtl;
         padding: 20px 20px;
         height: max-content;
-
-        h3 {
-            font-size: 1.2rem !important;
-            font-weight: bold;
-        }
-
-        .header_underline {
-            display: block;
-            width: 150px;
-            height: 2px;
-            background-color: $accent_color;
-            border-radius: 50px 0px 0px 50px;
-            position: relative;
-            right: -20px;
-            box-shadow: 10px 9px 15px 0px $accent_color;
-            margin-top: 20px;
-            margin-bottom: 20px;
-        }
 
         .brand_name {
             position: relative;
