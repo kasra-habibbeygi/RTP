@@ -1,5 +1,3 @@
-// import partials scss file
-
 @import '../partials/color';
 @import '../partials/fonts';
 @import '../partials/mixin';
@@ -7,9 +5,7 @@
 @import '../partials/footer';
 
 //main style page
-
 .about-us {
-  // header of page
 
   .au_header {
     background-image: url("../../img/AH00.jpg");
@@ -33,10 +29,7 @@
       font-size: 1.2rem;
     }
 
-
   }
-
-  // text part
 
   .au_trust {
     text-align: right;
@@ -48,6 +41,7 @@
     .au_t_title {
       font: 2.5rem $af;
       margin-top: 50px;
+      color: #444444;
     }
 
     .au_t_exp {
@@ -67,17 +61,16 @@
     @extend .au_trust;
   }
 
-  //counter part
-
   .au_counter_box {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     width: 80%;
     height: 200px;
-    box-shadow: 5px 5px 10px 5px #b8b8b8;
+    box-shadow: $shadow;
     margin: 0 auto 50px;
     border-radius: 10px;
+    align-content: center;
 
     .au_cb_field {
       width: 25%;
@@ -103,25 +96,26 @@
     }
   }
 
-
 }
 
-//responsive part
-
-
+//media query
 @media only screen and (max-width: 1200px) {
   .about-us .au_header {
     height: 450px;
   }
+
   .about-us .au_header .au_h_txt {
     font-size: 2.5rem;
   }
+
   .about-us .au_header .au_h_small_txt,
-  .about-us .au_trust .au_t_exp, .about-us .au_best_quality .au_t_exp {
+  .about-us .au_trust .au_t_exp,
+  .about-us .au_best_quality .au_t_exp {
     font-size: 1rem;
   }
 
-  .about-us .au_trust .au_t_title, .about-us .au_best_quality .au_t_title {
+  .about-us .au_trust .au_t_title,
+  .about-us .au_best_quality .au_t_title {
     font-size: 2rem;
   }
 
@@ -131,28 +125,38 @@
   .about-us .au_header {
     height: 350px;
   }
+
   .about-us .au_header .au_h_txt {
     font-size: 2.2rem;
   }
+
   .about-us .au_header .au_h_small_txt,
-  .about-us .au_trust .au_t_exp, .about-us .au_best_quality .au_t_exp,
-  .about-us .au_counter_box .au_cb_field .exp{
-    font-size: .9rem;
+  .about-us .au_trust .au_t_exp,
+  .about-us .au_best_quality .au_t_exp,
+  .about-us .au_counter_box .au_cb_field .exp {
+    font-size: 1.1rem;
   }
-  .about-us .au_trust .au_t_img, .about-us .au_best_quality .au_t_img {
+
+  .about-us .au_trust .au_t_img,
+  .about-us .au_best_quality .au_t_img {
     width: 180px;
   }
-  .about-us .au_trust .au_t_exp, .about-us .au_best_quality .au_t_exp {
+
+  .about-us .au_trust .au_t_exp,
+  .about-us .au_best_quality .au_t_exp {
     padding: 10px 100px 20px;
   }
+
   .about-us .au_counter_box .au_cb_field .counter_icons {
-    width: 35px;
+    width: 55px;
   }
-  .about-us .au_counter_box .au_cb_field .counter{
-    font-size: 1rem;
+
+  .about-us .au_counter_box .au_cb_field .counter {
+    font-size: 1.4rem;
   }
-  .about-us .au_counter_box{
-    height: 170px;
+
+  .about-us .au_counter_box {
+    height: 210px;
   }
 }
 
@@ -160,22 +164,30 @@
   .about-us .au_header {
     height: 250px;
   }
+
   .about-us .au_header .au_h_txt {
     font-size: 2rem;
   }
+
   .about-us .au_header .au_h_small_txt,
-  .about-us .au_trust .au_t_exp, .about-us .au_best_quality .au_t_exp,
-  .about-us .au_counter_box .au_cb_field .exp{
-    font-size: .8rem;
+  .about-us .au_trust .au_t_exp,
+  .about-us .au_best_quality .au_t_exp,
+  .about-us .au_counter_box .au_cb_field .exp {
+    font-size: 1rem;
   }
-  .about-us .au_trust .au_t_title, .about-us .au_best_quality .au_t_title {
-    font-size: 1.5rem;
+
+  .about-us .au_trust .au_t_title,
+  .about-us .au_best_quality .au_t_title {
+    font-size: 2.3rem;
   }
-  .about-us .au_trust .au_t_exp, .about-us .au_best_quality .au_t_exp {
+
+  .about-us .au_trust .au_t_exp,
+  .about-us .au_best_quality .au_t_exp {
     padding: 10px 50px;
   }
-  .about-us .au_counter_box{
-    height: 160px;
+
+  .about-us .au_counter_box {
+    height: 230px;
   }
 }
 
@@ -184,29 +196,28 @@
   .about-us .au_header .au_h_txt {
     font-size: 1.5rem;
   }
-  .about-us .au_trust .au_t_img, .about-us .au_best_quality .au_t_img {
-    width: 130px;
+
+  .about-us .au_trust .au_t_img,
+  .about-us .au_best_quality .au_t_img {
+    width: 250px;
   }
-  .about-us .au_trust .au_t_title, .about-us .au_best_quality .au_t_title {
-    font-size: 1.3rem;
-  }
+
   .about-us .au_counter_box .au_cb_field .counter_icons {
     width: 25px;
   }
-  .about-us .au_counter_box .au_cb_field .exp{
-    font-size: .7rem;
-  }
+
   .about-us .au_counter_box .au_cb_field .counter {
     font-size: .8rem;
   }
 }
 
 @media only screen and (max-width: 600px) {
-  .about-us .au_counter_box .au_cb_field{
+  .about-us .au_counter_box .au_cb_field {
     width: 50%;
     height: 140px;
   }
-  .about-us .au_counter_box{
+
+  .about-us .au_counter_box {
     height: 280px;
   }
 }
@@ -217,35 +228,40 @@
   }
 
   .about-us .au_header .au_h_txt,
-  .about-us .au_trust .au_t_title, .about-us .au_best_quality .au_t_title {
-    font-size: 1.1rem;
+  .about-us .au_trust .au_t_title,
+  .about-us .au_best_quality .au_t_title {
+    font-size: 2.3rem;
   }
+
   .about-us .au_header .au_h_small_txt {
     font-size: .6rem;
     padding-right: 15vw;
   }
-  .about-us .au_trust .au_t_exp, .about-us .au_best_quality .au_t_exp{
-    font-size: .7rem;
+
+  .about-us .au_trust .au_t_exp,
+  .about-us .au_best_quality .au_t_exp {
+    font-size: 1rem;
   }
-  .about-us .au_trust .au_t_img, .about-us .au_best_quality .au_t_img {
-    width: 100px;
+
+  .about-us .au_trust .au_t_img,
+  .about-us .au_best_quality .au_t_img {
+    width: 250px;
   }
-
-
-
-
 }
 
 @media only screen and (max-width: 400px) {
   .about-us .au_header {
     height: 170px;
   }
-  .about-us .au_trust .au_t_exp, .about-us .au_best_quality .au_t_exp {
+
+  .about-us .au_trust .au_t_exp,
+  .about-us .au_best_quality .au_t_exp {
     padding: 10px 30px;
     line-height: 25px;
   }
 }
 
-@media only screen and (max-width: 360px) {
 
+.margin_top {
+  margin-bottom: 65px !important;
 }
