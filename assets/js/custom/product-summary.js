@@ -3,7 +3,8 @@
 let pageHeight = $('body').innerHeight()
 let footerHeight = $('footer').innerHeight();
 let card_summary = $('.card_summary ').innerHeight();
-let stopPoint = pageHeight - footerHeight - 28;
+let POS  = $('.POS  ').innerHeight();
+let stopPoint = pageHeight - footerHeight - POS - 45;
 
 $(document).scroll(function () {
 

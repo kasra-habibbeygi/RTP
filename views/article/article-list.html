@@ -12,86 +12,92 @@
     <title>لیست اخبار</title>
 </head>
 <body>
-<!-- The part at the top of the page where the logo and search are located -->
-<div class="secondary-nav">
-    <div class="NB-search">
-        <form action="">
-            <div class="input-group mb-3">
-                <div class="input-group-prepend">
-                    <!-- search -->
-                    <span class="input-group-text" id="navbar_search">
+    <!-- The part at the top of the page where the logo and search are located -->
+    <div class="secondary-nav">
+        <div class="NB-search">
+            <form action="">
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <!-- search -->
+                        <span class="input-group-text" id="navbar_search">
                             <button class="btn">
                                 <i class="fal fa-search"></i>
                             </button>
                         </span>
-                    <!-- search -->
+                        <!-- search -->
+                    </div>
+                    <input type="text" class="form-control" placeholder="نام محصول یا کالای مورد نظر خود را وارد کنید !"
+                        aria-describedby="navbar_search">
                 </div>
-                <input type="text" class="form-control" placeholder="نام محصول یا کالای مورد نظر خود را وارد کنید !"
-                       aria-describedby="navbar_search">
-            </div>
-        </form>
+            </form>
+        </div>
+        <!-- logo -->
+        <img src="../../assets/img/AL00.png" alt="logo" title="logo">
     </div>
-    <!-- logo -->
-    <img src="../../assets/img/AL00.png" alt="logo" title="logo">
-</div>
-<!-- The part at the top of the page where the logo and search are located -->
 
-<!-- navbar -->
-<nav>
-    <div class="left-nb">
-
-    </div>
-    <div class="right-NB">
-        <!-- navbar option -->
-        <ul class="navbar-option">
-            <li class="active-page">
-                <a href="">صفحه اصلی</a>
-            </li>
-            <li class="NBP-dropdown">
-                <p>محصولات <i class="fal fa-angle-down"></i></p>
-                <div class="product-option">
+    <!-- navbar -->
+    <nav>
+        <div class="SN_layout"></div>
+        <button class="sandwich-navbar btn">
+            <i class="fas fa-bars"></i>
+        </button>
+        <div class="right-NB">
+            <i class="fas fa-times close_SN"></i>
+            <!-- navbar option -->
+            <ul class="navbar-option">
+                <li class="active-page">
+                    <a href="index.html">صفحه اصلی</a>
+                </li>
+                <li class="NBP-dropdown" id="PDP">
+                    <p>محصولات <i class="fal fa-angle-down"></i></p>
+                    <div class="product-option" id="PD">
+                        <a href="../product/product-list.html">تمام محصولات</a>
+                        <a href="">سامسونگ</a>
+                        <a href="">اپل</a>
+                        <a href="">اپل واچ</a>
+                        <a href="">ایر پاد</a>
+                    </div>
+                </li>
+                <li id="PDSN">
+                    <a href="../product/product-list.html">تمام محصولات</a>
                     <a href="">سامسونگ</a>
                     <a href="">اپل</a>
                     <a href="">اپل واچ</a>
                     <a href="">ایر پاد</a>
-                </div>
-            </li>
-            <li>
-                <a href="">اخبار</a>
-            </li>
-            <li>
-                <a href="">درباره ما</a>
-            </li>
-            <li>
-                <a href="">تماس با ما</a>
-            </li>
-        </ul>
-        <!-- navbar option -->
-    </div>
-    <div class="left-NB">
-        <div class="LR-field">
-            <a href="">ورود</a>
-            /
-            <a href="">عضویت</a>
+                </li>
+                <li>
+                    <a href="../article/article.html">اخبار</a>
+                </li>
+                <li>
+                    <a href="../about-us/about-us.html">درباره ما</a>
+                </li>
+                <li>
+                    <a href="../contact-us/contact-us.html">تماس با ما</a>
+                </li>
+            </ul>
+            <!-- navbar option -->
         </div>
-        <div class="basket-field">
-            <a href="">
-                سبد خریـــــــــــــد
-                <i class="fas fa-shopping-cart"></i>
-                <div class="B-conter">3</div>
-            </a>
+        <div class="left-NB">
+            <div class="LR-field">
+                <a href="">ورود</a>
+                /
+                <a href="">عضویت</a>
+            </div>
+            <div class="basket-field">
+                <a href="">
+                    سبد خریـــــــــــــد
+                    <i class="fas fa-shopping-cart"></i>
+                    <div class="B-conter">3</div>
+                </a>
+            </div>
         </div>
-    </div>
-</nav>
-<!-- navbar -->
+    </nav>
+
 
 <!--The main content-->
 
 <section class="article_list">
     <div class="al_last_article">
-        <h1 class="al_la_title">
-            آخرین مطالب
-        </h1>
         <div class="content">
             <div class="big_c">
                 <div class="cover_txt">
@@ -129,7 +135,9 @@
         </div>
     </div>
     <div class="al_new_article">
-        <h2 class="title_main_c">جدیدترین مطالب</h2>
+        <h3 class="all_header_text">بازیابی رمز عبور</h3>
+        <span class="header_underline"></span>
+
         <div class="main_content">
             <div class="al_n_article">
                 <a class="link_article" href="#">
@@ -445,81 +453,81 @@
 <!--The main content-->
 
 
-<!-- footer -->
-<footer>
-    <div class="contact">
-        <p class="header">ارتباط با ما</p>
-        <p>
-            <i class="fal fa-map-marker-alt"></i>
-            تهران - بلوار نلسون ماندلا- بالاتر از چهار راه اسفندیاری - خیابان فاطمی - برج صبا
-        </p>
-        <p>
-            <i class="fal fa-at"></i>
-            kasrahabibbeygi@hmail.com
-        </p>
-        <p>
-            <i class="fal fa-mobile"></i>
-            <span>09021414866</span>
-            <span>09371969052</span>
-        </p>
-    </div>
-    <div class="short_links">
-        <p class="header">محصولات</p>
-        <ul>
-            <li>
-                <a href="">سامسونگ</a>
-            </li>
-            <li>
-                <a href="">اپل</a>
-            </li>
-            <li>
-                <a href="">اپل واچ</a>
-            </li>
-            <li>
-                <a href="">ایر پاد</a>
-            </li>
-        </ul>
-    </div>
-    <div class="short_links">
-        <p class="header">لینک های مفید</p>
-        <ul>
-            <li>
-                <a href="">مقالات</a>
-            </li>
-            <li>
-                <a href="">تماس با ما</a>
-            </li>
-            <li>
-                <a href="">درباره ما</a>
-            </li>
-            <li>
-                <a href="">محصولات</a>
-            </li>
-        </ul>
-    </div>
-    <div class="footer_description">
-        <p class="header">ATP.mobile</p>
-        <p class="FDT">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است
-        </p>
-        <div class="social_media">
-            <a href="">
-                <i class="fab fa-instagram"></i>
-            </a>
-            <a href="">
-                <i class="fab fa-telegram-plane"></i>
-            </a>
-            <a href="">
-                <i class="fab fa-whatsapp"></i>
-            </a>
+    <!-- footer -->
+    <footer>
+        <div class="contact">
+            <p class="header">ارتباط با ما</p>
+            <p>
+                <i class="fal fa-map-marker-alt"></i>
+                تهران - بلوار نلسون ماندلا- بالاتر از چهار راه اسفندیاری - خیابان فاطمی - برج صبا
+            </p>
+            <p>
+                <i class="fal fa-at"></i>
+                kasrahabibbeygi@hmail.com
+            </p>
+            <p>
+                <i class="fal fa-mobile"></i>
+                <span>09021414866</span>
+                <span>09371969052</span>
+            </p>
         </div>
-    </div>
-    <div class="copy_right">
-        <p>
-            &copy; تمام حقوق مادی و معنوی این سایت محفوظ است
-        </p>
-    </div>
-</footer>
-<!-- footer -->
+        <div class="short_links">
+            <p class="header">محصولات</p>
+            <ul>
+                <li>
+                    <a href="">سامسونگ</a>
+                </li>
+                <li>
+                    <a href="">اپل</a>
+                </li>
+                <li>
+                    <a href="">اپل واچ</a>
+                </li>
+                <li>
+                    <a href="">ایر پاد</a>
+                </li>
+            </ul>
+        </div>
+        <div class="short_links">
+            <p class="header">لینک های مفید</p>
+            <ul>
+                <li>
+                    <a href="">مقالات</a>
+                </li>
+                <li>
+                    <a href="">تماس با ما</a>
+                </li>
+                <li>
+                    <a href="">درباره ما</a>
+                </li>
+                <li>
+                    <a href="">محصولات</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer_description">
+            <p class="header">ATP.mobile</p>
+            <p class="FDT">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است
+            </p>
+            <div class="social_media">
+                <a href="">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="">
+                    <i class="fab fa-telegram-plane"></i>
+                </a>
+                <a href="">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+            </div>
+        </div>
+        <div class="copy_right">
+            <p>
+                &copy; تمام حقوق مادی و معنوی این سایت محفوظ است
+            </p>
+        </div>
+    </footer>
+    <!-- footer -->
 
 <!--js link-->
 <script src="../../assets/js/general/jquery.js"></script>
