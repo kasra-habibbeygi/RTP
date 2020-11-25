@@ -11,6 +11,10 @@
     align-self: center;
     font-family: $nf;
 
+    .header_underline {
+        right: -40px;
+    }
+
     .edit_body {
         width: 500px;
         border-radius: 15px;
@@ -39,6 +43,47 @@
             }
         }
 
+        .avaible_address{
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            border-top: 1px solid rgb(216, 216, 216);
+            margin-top: 30px;
+            padding-top: 30px;
+
+            p{
+                color: #626262;
+                width: 100%;
+
+                &:last-child{
+                    color: rgba(255, 0, 0, 0.438);
+                    cursor: pointer;
+                    width: max-content;
+                    margin-bottom: 0px;
+
+                    &:hover{
+                        color: red;
+                    }
+                }
+
+
+                i{
+                    margin-left: 5px;
+                    position: relative;
+                    top: 2px;
+                }
+            }
+
+            .CN{
+                color: #B4B4B4;
+                width: 49%;
+
+                &:last-child{
+                    margin-right: 40px;
+                }
+            }
+        }
+
         button {
             width: 100%;
             padding: 10px 30px;
@@ -56,10 +101,108 @@
     }
 }
 
+.AA_moda {
+    width: 100%;
+    height: 100vh;
+    background-color: #00000066;
+    top: 0;
+    left: 0;
+    position: fixed;
+    z-index: 9999999999999999;
+    display: none;
+
+    .AA_flex {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .AAM_field {
+        width: 500px;
+        padding: 30px;
+        border-radius: 15px;
+        box-shadow: $shadow;
+        direction: rtl;
+        text-align: right;
+        background-color: $white;
+        position: relative;
+
+        .AAM_close {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            font-size: 1.7rem;
+            color: #848484;
+            cursor: pointer;
+        }
+
+        form {
+            padding: 0px 30px;
+
+            button {
+                width: 100%;
+                padding: 10px 0px;
+                background-color: $accent_color;
+                border-radius: 50px;
+                color: #fff;
+                margin-top: 10px;
+            }
+        }
+    }
+}
+
+nav {
+    z-index: 100000000;
+}
+
+@media only screen and (max-width: 900px) {
+
+    .AA_moda .AAM_field {
+        width: 90%;
+    }
+
+}
+
 @media only screen and (max-width: 550px) {
 
     .edit_field .edit_body {
         width: 90%;
+    }
+
+}
+
+@media only screen and (max-width: 480px) {
+
+    .edit_field .edit_body .avaible_address .CN {
+        width: 100%;
+    }
+
+}
+
+
+@media only screen and (max-width: 450px) {
+
+    .AA_moda .AAM_field form {
+        padding: 0px 0px;
+    }
+
+    .AA_moda .AAM_field {
+        .header_underline {
+            width: 210px;
+        }
+    }
+
+    .edit_body{
+
+        .header_underline {
+            width: 190px;
+        }
+    }
+
+    .edit_field .edit_body {
+        padding: 30px;
     }
 
 }
@@ -70,12 +213,12 @@
         width: 60px;
     }
 
-}
+    .edit_field .edit_body .birth_day div input{
+        font-size: 0.8rem;
+    }
 
-@media only screen and (max-width: 385px) {
-
-    .edit_field .edit_body .birth_day div {
-        width: 50px;
+    .edit_field .edit_body .birth_day span {
+        margin: 0px 4px;
     }
 
 }

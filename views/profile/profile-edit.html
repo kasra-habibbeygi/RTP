@@ -13,6 +13,34 @@
 
 <body>
     <!-- The part at the top of the page where the logo and search are located -->
+
+    <!-- add new address modal -->
+    <section class="AA_moda">
+        <div class="AA_flex">
+            <div class="AAM_field">
+                <i class="fas fa-times AAM_close"></i>
+                <h3 class="all_header_text">افزودن آدرس جدید</h3>
+                <span class="header_underline"></span>
+
+                <form>
+                    <div class="form-group">
+                        <label for="sale_inp">نام دریافت کننده</label>
+                        <input type="text" class="form-control" id="sale_inp">
+                    </div>
+                    <div class="form-group">
+                        <label for="sale_inp">آدرس</label>
+                        <input type="text" class="form-control" id="sale_inp">
+                    </div>
+                    <div class="form-group">
+                        <label for="sale_inp">کد پستی</label>
+                        <input type="text" class="form-control" id="sale_inp">
+                    </div>
+                    <button type="submit" class="btn">افزودن آدرس جدید</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
     <div class="secondary-nav">
         <div class="NB-search">
             <form action="">
@@ -130,6 +158,15 @@
                     </div>
                 </div>
                 <div class="add_address">+ افزودن آدرس جدید</div>
+
+                <div class="avaible_address">
+                    <p>شهران - خیابان طوقانی - خیابان یاس - پلاک 28 - واحد 4</p>
+                    <p class="CN">کسری حبیب بیگی</p>
+                    <p class="CN">کد پستی : 6874355986</p>
+                    <p><i class="fal fa-backspace"></i> حذف آدرس</p>
+                </div>
+                
+
                 <button type="submit" class="btn">ثبت تغییرات</button>
             </form>
         </div>
@@ -215,7 +252,7 @@
     <script src="../../assets/js/general/popper.js"></script>
     <script src="../../assets/js/general/bootstrap.js"></script>
     <script src="../../assets/js/custom/navbar.js"></script>
-    <script src="../../assets/js/products/product-list.js"></script>
+    <script src="../../assets/js/profile/profile.js"></script>
 </body>
 
 </html>

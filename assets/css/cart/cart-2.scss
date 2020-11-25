@@ -167,7 +167,7 @@
             button {
                 width: 100%;
                 padding: 10px 0px;
-                background-color: #b5db1e;
+                background-color: $accent_color;
                 border-radius: 50px;
                 color: #fff;
                 margin-top: 10px;
@@ -289,6 +289,12 @@
     .time_field {
         .header_underline {
             width: 220px;
+        }
+    }
+
+    .AA_moda .AAM_field {
+        .header_underline {
+            width: 210px;
         }
     }
 
