@@ -29,7 +29,13 @@
             background-color: $accent_color;
             border-radius: 50px;
             color: $white;
-            margin-top: 30px;
+            margin-top: 20px;
+        }
+
+        .pass_forget{
+            margin-bottom: 5px;
+            margin-top: 20px;
+            font-size: 0.9rem;
         }
     }
 }
@@ -39,6 +45,27 @@
 
     .login_body {
         width: 90%;
+    }
+
+}
+
+@media only screen and (max-width: 500px) {
+
+    .login_field{
+
+        .header_underline {
+            width: 230px;
+        }
+    }
+
+}
+
+
+@media only screen and (max-width: 430px) {
+
+    .pass_forget{
+        font-size: 0.8rem !important;
+        line-height: 25px;
     }
 
 }
