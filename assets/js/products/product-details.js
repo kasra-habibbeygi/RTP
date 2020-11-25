@@ -60,3 +60,19 @@ for(let i = 0 ; i < SF_option.length ; i++){
     });
 
 }
+
+// chose color
+$('.color_chose div').click(function(){
+
+    $('.color_chose div').removeClass('active_pill');
+    $(this).addClass('active_pill');
+
+});
+
+// chose internal memory
+$('.memory_chose div').click(function(){
+
+    $('.memory_chose div').removeClass('active_pill');
+    $(this).addClass('active_pill');
+
+});

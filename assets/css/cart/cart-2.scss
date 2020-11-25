@@ -114,6 +114,7 @@
             align-items: center;
             cursor: pointer;
             color: #8f8f8f;
+            border: 1px solid transparent;
         }
     }
 }
@@ -177,7 +178,7 @@
 }
 
 .active_pill {
-    border: 1px solid $accent_color;
+    border: 1px solid $accent_color !important;
     color: $accent_color !important;
 }
 

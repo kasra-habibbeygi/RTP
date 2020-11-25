@@ -130,6 +130,7 @@
                 align-items: center;
                 cursor: pointer;
                 color: rgb(51, 51, 51);
+                border: 1px solid transparent;
 
                 span {
                     width: 15px;
@@ -387,8 +388,11 @@
     width: 60%;
     height: 100%;
     margin-left: 20%;
+}
 
-
+.active_pill {
+    border: 1px solid $accent_color !important;
+    color: $accent_color !important;
 }
 
 // media query
