@@ -80,6 +80,13 @@ textarea{
     border: 1px solid #e5e5e5 !important; 
 }
 
+select{
+    border-radius: 10px !important;
+    border: 1px solid #e5e5e5 !important; 
+
+    text-align: center;
+}
+
 .form-control:focus {
     color: #495057;
     border-color: none !important;
