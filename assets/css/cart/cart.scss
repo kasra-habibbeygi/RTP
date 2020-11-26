@@ -35,6 +35,23 @@
     }
 }
 
+.summary_details{
+    position: relative;
+}
+
+.remove_goods{
+    color: rgba(255, 0, 0, 0.425);
+    width: max-content;
+    cursor: pointer;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    &:hover{
+        color: red;
+    }
+}
+
 
 // media query
 @media only screen and (max-width: 1150px) {
@@ -115,6 +132,8 @@
     }
 
 }
+
+
 
 @media only screen and (max-width: 600px) {
 
