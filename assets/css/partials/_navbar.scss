@@ -279,6 +279,11 @@ nav {
 
     nav .sandwich-navbar {
         display: block;
+        color: #a6a6a6;
+
+        &:hover{
+            color: rgb(78, 78, 78);
+        }
     }
 
     nav .right-NB {

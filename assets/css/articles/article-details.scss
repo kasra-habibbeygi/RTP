@@ -184,6 +184,7 @@
         border-radius: 15px;
         overflow: hidden;
         box-shadow: $shadow;
+        position: relative;
 
         .header_img {
             width: 100%;
@@ -220,6 +221,20 @@
     position: fixed;
     top: 80px;
     width: 22.5% !important;
+}
+
+.release_time {
+    width: max-content;
+    padding: 7px 20px;
+    color: white;
+    background-color: #171717;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    border-radius: 7px;
+    text-align: revert;
+    direction: rtl;
+    font-size: 0.85rem;
 }
 
 @media only screen and (max-width: 1300px) {
