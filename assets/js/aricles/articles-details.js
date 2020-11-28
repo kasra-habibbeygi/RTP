@@ -1,10 +1,10 @@
 var swiper = new Swiper('.AOS', {
     
-    // autoplay: true,
-    // loop: true,
-    // autoplay: {
-    //     delay: 5000,
-    // },
+    autoplay: true,
+    loop: true,
+    autoplay: {
+        delay: 5000,
+    },
 
 
     navigation: {
@@ -39,10 +39,10 @@ var swiper = new Swiper('.AOS', {
 
 // sticky suggest
 // get page height , footer height , sugget cart and stop position 
-let pageHeight = $('body').innerHeight()
+let pageHeight = $('body').innerHeight();
 let footerHeight = $('footer').innerHeight();
 let article_suggest = $('.article_suggest ').innerHeight();
-let stopPoint = pageHeight - footerHeight - 45;
+let stopPoint = pageHeight - footerHeight -40;
 let ariveToPoint = $('.secondary-nav').innerHeight() + $('nav').innerHeight() + $('.tag_field').innerHeight() + $('.offer_product').innerHeight();
 
 $(document).scroll(function () {
