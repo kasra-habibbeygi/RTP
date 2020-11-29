@@ -109,12 +109,12 @@
     text-align: right;
     margin-top: 80px;
 
-    .all_header_text {
-        padding-right: 20px;
-    }
-
     .header_underline {
         right: 0px;
+    }
+
+    .all_header_text {
+        padding-right: 20px;
     }
 
     .article_list_field {
@@ -212,6 +212,7 @@
                 .header_underline {
                     width: 180px;
                     margin-bottom: 5px;
+                    right: -30px;
                 }
 
                 .field_of_suggest {

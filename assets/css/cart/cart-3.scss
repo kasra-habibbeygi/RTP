@@ -18,6 +18,10 @@
     box-shadow: $shadow;
     direction: rtl;
     text-align: right;
+
+    .header_underline {
+        width: 200px;
+    }
 }
 
 .payment_way {
