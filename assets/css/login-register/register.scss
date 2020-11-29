@@ -9,7 +9,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 80vh;
 }
 
 .header_underline {
@@ -23,6 +22,7 @@
     padding: 30px;
     text-align: right;
     direction: rtl;
+    margin: 50px 0px;
 
     form{
         font-family: $nf;
