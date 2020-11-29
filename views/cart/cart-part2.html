@@ -94,7 +94,7 @@
         </div>
     </nav>
     <!-- page conent -->
-    
+
     <!-- add new address modal -->
     <section class="AA_moda">
         <div class="AA_flex">
@@ -102,7 +102,7 @@
                 <i class="fas fa-times AAM_close"></i>
                 <h3 class="all_header_text">افزودن آدرس جدید</h3>
                 <span class="header_underline"></span>
-    
+
                 <form>
                     <div class="form-group">
                         <label for="sale_inp">نام دریافت کننده</label>
@@ -124,7 +124,7 @@
                             <option>3</option>
                             <option>4</option>
                             <option>5</option>
-                          </select>
+                        </select>
                     </div>
                     <button type="submit" class="btn">افزودن آدرس جدید</button>
                 </form>
@@ -134,7 +134,7 @@
 
     <!-- address -->
     <section class="address_field">
-        <h3  class="all_header_text">آدرس تحویل سفارش</h3>
+        <h3 class="all_header_text">آدرس تحویل سفارش</h3>
         <span class="header_underline"></span>
 
         <div class="AF">
@@ -150,13 +150,13 @@
                         تهران - شهران - خیابان طوقانی - خیابان یاس - پلاک 28
                         <section>
                             <p>کسری حبیب بیگی</p>
-                            <p>کد پسای : 1349765289</p>
+                            <p>شهر : تهران</p>
                         </section>
                     </span>
                 </label>
 
-                <input class="inp-cbx" id="address-2" type="radio" name="addres" style="display: none" />
-                <label class="cbx" for="address-2">
+                <input class="inp-cbx" id="address-1" type="radio" name="addres" style="display: none" />
+                <label class="cbx" for="address-1">
                     <span>
                         <svg width="12px" height="10px" viewbox="0 0 12 10">
                             <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
@@ -166,7 +166,7 @@
                         تهران - شهران - خیابان طوقانی - خیابان یاس - پلاک 28
                         <section>
                             <p>کسری حبیب بیگی</p>
-                            <p>کد پسای : 1349765289</p>
+                            <p>شهر : تهران</p>
                         </section>
                     </span>
                 </label>
@@ -181,14 +181,57 @@
 
     </section>
 
+    <!-- send method -->
+    <section class="payment_method mt-4">
+        <h3 class="all_header_text">شیوه پرداخت</h3>
+        <span class="header_underline"></span>
+
+        <!-- post -->
+        <input class="inp-cbx" id="PM-1" type="radio" name="PM" style="display: none" />
+        <label class="cbx" for="PM-1">
+            <span>
+                <svg width="12px" height="10px" viewbox="0 0 12 10">
+                    <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+                </svg>
+            </span>
+            <span class="payment_way">
+                <i class="fal fa-shipping-fast"></i>
+                <div>
+                    <p>پیک اکسپرس</p>
+                    <p>
+                        پیک اکسپرس فقط برای شهر تهران است که میتوانید روز و ساعت مورد نظر خود را انتخاب کنید .
+                    </p>
+                </div>
+            </span>
+        </label>
+
+        <!-- peyk -->
+        <input class="inp-cbx" id="PM-2" type="radio" name="PM" style="display: none" />
+        <label class="cbx" for="PM-2">
+            <span>
+                <svg width="12px" height="10px" viewbox="0 0 12 10">
+                    <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+                </svg>
+            </span>
+            <span class="payment_way">
+                <img src="../../assets/img/CI03.png" alt="">
+                <div>
+                    <p>پست پیشتاز</p>
+                    <p>به دلیل اینکه پست پیشتاز سفارش های شمارا به شما تحویل می دهد ، زمان و روز قابل انتخاب نیستند و از 3 تا 7 روز به طول می انجامد.</p>
+                </div>
+            </span>
+        </label>
+
+    </section>
+
     <!-- time zone -->
     <section class="time_field mt-4">
-        <h3  class="all_header_text">زمان ارسال سفارش</h3>
+        <h3 class="all_header_text">زمان ارسال سفارش</h3>
         <span class="header_underline"></span>
 
         <div class="send_day">
             <p class="TF_header">روز ارسال را انتخاب کنید</p>
-            
+
             <div class="PD_chose_box">
                 <div>شنبه</div>
                 <div>یکشنبه</div>
@@ -202,7 +245,7 @@
 
         <div class="send_time">
             <p class="TF_header">ساعت ارسال را انتخاب کنید</p>
-            
+
             <div class="PD_chose_box">
                 <div>9 - 12</div>
                 <div>12 - 15</div>
@@ -231,7 +274,7 @@
             <p>مبلغ قابل پرداخت :</p>
             <p>7.000.000</p>
         </div>
-        <button class="btn card_checked">ادامه فرآیند خرید</button>
+        <a href="cart-part3.html" class="btn card_checked">ادامه فرآیند خرید</a>
     </section>
 
     <!-- product offer slider -->

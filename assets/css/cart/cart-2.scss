@@ -9,7 +9,8 @@
 @import '../partials/product-slider';
 
 .address_field,
-.time_field {
+.time_field,
+.payment_method {
     width: 70%;
     margin-left: 28%;
     padding: 30px;
@@ -87,6 +88,7 @@
 }
 
 .time_field {
+    display: none;
 
     .TF_header {
         font-size: 1rem;
@@ -178,6 +180,50 @@
     }
 }
 
+.payment_way {
+    display: flex !important;
+
+    img {
+        width: 55px;
+        height: 50px;
+        margin-right: 20px;
+    }
+
+    i{
+        font-size: 3rem;
+        margin-right: 20px;
+        color: #60D7E6;
+    }
+
+    .OP_img {
+        width: 55px;
+        height: 40px;
+    }
+
+    div {
+        width: 100%;
+        margin-right: 20px;
+
+        p {
+            &:first-child {
+                font-weight: bold;
+                font-size: 1.2rem;
+                margin-bottom: 5px;
+            }
+
+            &:last-child {
+                color: #9e9e9e;
+                font-size: 0.9rem;
+                line-height: 27px;
+            }
+        }
+    }
+}
+
+.cbx {
+    display: flex !important;
+}
+
 .active_pill {
     border: 1px solid $accent_color !important;
     color: $accent_color !important;
@@ -201,7 +247,8 @@
 @media only screen and (max-width: 1150px) {
 
     .address_field,
-    .time_field {
+    .time_field,
+    .payment_method {
         width: 66%;
         margin-left: 32%;
     }
@@ -222,7 +269,8 @@
 @media only screen and (max-width: 920px) {
 
     .address_field,
-    .time_field {
+    .time_field,
+    .payment_method{
         width: 60%;
         margin-left: 37%;
     }
@@ -232,7 +280,8 @@
 @media only screen and (max-width: 900px) {
 
     .address_field,
-    .time_field {
+    .time_field,
+    .payment_method {
         width: 90%;
         margin-left: 5%;
     }
@@ -243,6 +292,30 @@
 
     .AA_moda .AAM_field {
         width: 90%;
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+
+    .payment_way div p:last-child {
+        font-size: 0.8rem;
+    }
+
+}   
+
+@media only screen and (max-width: 500px) {
+
+    .payment_way .OP_img {
+        width: 45px;
+        height: 30px;
+        margin-right: 5px;
+    }
+
+    .payment_way img {
+        width: 45px;
+        height: 40px;
+        margin-right: 5px;
     }
 
 }
