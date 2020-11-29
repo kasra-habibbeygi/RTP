@@ -92,14 +92,6 @@
 
 
 // media query
-@media only screen and (max-width: 1150px) {
-
-    .product_summary_field .summary_img_field .summary_img {
-        width: 130px;
-    }
-
-
-}
 
 @media only screen and (max-width: 1150px) {
 
@@ -107,14 +99,6 @@
     .cart_summary {
         width: 66%;
         margin-left: 32%;
-    }
-
-}
-
-@media only screen and (max-width: 925px) {
-
-    .product_summary_field .summary_img_field .summary_img {
-        width: 110px;
     }
 
 }
@@ -135,10 +119,6 @@
     .cart_summary {
         width: 90%;
         margin-left: 5%;
-    }
-
-    .product_summary_field .summary_img_field .summary_img {
-        width: 140px;
     }
 
 }

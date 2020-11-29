@@ -23,7 +23,7 @@
             h3 {
                 color: rgb(37, 37, 37);
                 line-height: 45px;
-                font-size: 1.4rem;
+                font-size: 1.3rem;
 
                 &:hover {
                     color: #0056B3;
@@ -82,6 +82,14 @@
 
 
 // media query
+@media only screen and (max-width: 1005px) {
+
+    .product_summary_field .summary_img_field .summary_img {
+        width: 130px;
+    }
+
+}
+
 @media only screen and (max-width: 992px) {
 
     .product_summary_field .summary_details a h3 {
@@ -90,6 +98,14 @@
 
     .product_summary_field .summary_details .CM {
         width: 100%;
+    }
+
+}
+
+@media only screen and (max-width: 922px) {
+
+    .product_summary_field .summary_img_field .summary_img {
+        width: 110px ;
     }
 
 }

@@ -58,28 +58,8 @@
 
     .cart_goods,
     .sale_field {
-        width: 65%;
+        width: 66%;
         margin-left: 32%;
-    }
-
-}
-
-@media only screen and (max-width: 1050px) {
-
-    .product_summary_field .summary_details {
-        width: 65%;
-    }
-
-}
-
-@media only screen and (max-width: 992px) {
-
-    .product_summary_field .summary_details a h3 {
-        font-size: 1rem !important;
-    }
-
-    .product_summary_field .summary_img_field .summary_img {
-        width: 130px;
     }
 
 }
@@ -119,10 +99,6 @@
         width: 100%;
     }
 
-    .product_summary_field .summary_details {
-        width: 90%;
-    }
-
     .sale_field form button {
         padding: 7px 0px;
         font-size: 1.2rem;
@@ -133,7 +109,19 @@
 
 }
 
+@media only screen and (max-width: 700px) {
 
+    .remove_goods {
+        color: rgba(255,0,0,0.425);
+        width: max-content;
+        cursor: pointer;
+        position: unset;
+        left: 0;
+        bottom: 0;
+        margin: 0 auto;
+    }
+
+}
 
 @media only screen and (max-width: 600px) {
 
@@ -151,14 +139,6 @@
         margin-right: 0%;
     }
 
-    .product_summary_field .summary_details a h3 {
-        font-size: 0.9rem !important;
-    }
-
-    .product_summary_field .summary_details {
-        width: 100%;
-    }
-
     .sale_field form button {
         font-size: 1rem;
     }
@@ -174,6 +154,10 @@
         .header_underline {
             width: 210px;
         }
+    }
+
+    .sale_field .header_underline {
+        width: 150px;
     }
 
 
