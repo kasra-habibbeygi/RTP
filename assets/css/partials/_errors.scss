@@ -1,0 +1,51 @@
+.error_handler{
+    width: 100%;
+    padding: 10px 10px;
+    border-radius: 7px;
+    display: flex;
+    position: relative;
+    margin-bottom: 20px;
+    margin-top: -15px;
+    display: none;
+
+    .remove_erroe{
+        position: absolute;
+        left: 15px;
+        top: 30%;
+        cursor: pointer;
+        font-size: 1.1rem;
+    }
+
+    i{
+        font-size: 1.2rem;
+    }
+
+    div{
+        max-width: 90%;
+        line-height: 25px;
+    }
+
+    p{
+        margin: 0;
+        margin-right: 10px;
+        font-size: 0.9rem;
+    }
+}
+
+.warning_error{
+    background-color: $warning_bg;
+    color: $warning_color;
+    border: 1px solid $warning_border;
+}
+
+.danger_error{
+    background-color: $danger_bg;
+    color: $danger_color;
+    border: 1px solid $danger_border;
+}
+
+.success_error{
+    background-color: $success_bg;
+    color: $success_color;
+    border: 1px solid $success_border;
+}
