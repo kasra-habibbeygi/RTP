@@ -1,17 +1,18 @@
 // sticky summary
 // get page height , footer height , card summary and stop position 
-let pageHeight = $('body').innerHeight()
-let footerHeight = $('footer').innerHeight();
-let card_summary = $('.card_summary ').innerHeight();
-let POS  = $('.POS  ').innerHeight();
-let stopPoint = pageHeight - footerHeight - POS - 45;
+let pageHeight = $('body').outerHeight(true)
+let footerHeight = $('footer').outerHeight(true);
+let card_summary = $('.card_summary').outerHeight(true);
+let POS  = $('.POS').outerHeight(true);
+let secNav  = $('.secondary-nav').height();
+let stopPoint = pageHeight - footerHeight - POS;
 
 $(document).scroll(function () {
 
     let scroll = $(this).scrollTop();
-    let fixedPos = $(this).scrollTop() + 90 + card_summary;
+    let fixedPos = scroll + 90 + card_summary;
     
-    // add sticky in higher 900px 
+    // add sticky in higher 900px browser width
     if($(window).width() >= 900){
         
         // when box arrive to footer stop following scroll
@@ -26,7 +27,7 @@ $(document).scroll(function () {
         }
 
         // when scroll going to top of page change position to sticky or fixed
-        if (scroll > 80) {
+        if (scroll > secNav) {
 
             $('.card_summary').addClass('PS_sticky');
     

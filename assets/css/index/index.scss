@@ -845,7 +845,7 @@
     }
 
     .product_slider {
-        padding: 30px 0px 0px 0px;
+        padding: 30px 0px 30px 0px;
         margin-top: 20px;
     }
 }
@@ -868,7 +868,7 @@
 @media only screen and (max-width: 550px) {
 
     .product_slider {
-        padding: 30px 0px 0px 0px;
+        padding: 30px 0px 30px 0px;
     }
 
     .packag_field .PFS .apple_bordered_logo {
@@ -905,6 +905,19 @@
 
     .categorys a p {
         width: 220px;
+    }
+
+}
+
+@media only screen and (max-width: 500px) {
+
+    .product_slider .PS_field {
+        width: 80%;
+        margin-right: 10%;
+    }
+
+    .product_slider .PS_field .PS_price {
+        font-size: 1.7rem;
     }
 
 }
@@ -961,6 +974,11 @@
     .header_sliders .LHS {
         height: 170px;
     }
+
+    .product_slider .PS_field img {
+        width: 150px;
+        height: 190px;
+    }
 }
 
 @media only screen and (max-width: 430px) {
@@ -985,6 +1003,11 @@
         font-size: 1.3rem;
         top: 80px;
     }
+    .product_slider .PS_field {
+        width: 100%;
+        margin-right: 0%;
+    }
+
 }
 
 @media only screen and (max-width: 400px) {
@@ -1015,6 +1038,10 @@
     .packag_field .PFS .samsung_bordered_logo {
         width: 180px;
         height: 80px;
+    }
+
+    .product_slider .PS_field .PS_price {
+        font-size: 1.4rem;
     }
 
 }
