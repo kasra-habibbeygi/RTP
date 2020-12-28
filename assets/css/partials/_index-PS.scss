@@ -102,6 +102,37 @@
             background-color: $white;
         }
 
+        .sale_flag{
+            width: 100%;
+            text-align: center;
+            margin-bottom: 10px;
+
+            span{
+                &:first-child{
+                    width: max-content;
+                    padding: 0px 10px;
+                    background-color: #FF6565;
+                    color: $white;
+                    border-radius: 50px;
+                    font-size: 1.5rem;
+                    font-family: $af;
+                    display: inline-block;
+                }
+
+                &:last-child{
+                    text-decoration: line-through;   
+                    color: rgb(190, 190, 190);
+                }
+            }
+        }
+
+        .slae_price{
+            text-align: center;
+            color: #59BF1F;
+            font-size: 1.3rem;
+            font-weight: bold;
+        }
+
         img {
             width: 130px;
             margin: 0 auto;
@@ -168,9 +199,32 @@
     .product_slider .PS_field .PS_description {
         font-size: 0.8rem;
     }
+
+    .product_slider {
+        padding: 30px 0px 30px 0px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+
+    .product_slider .PS_field {
+        width: 100%;
+        margin-right: 0%;
+    }
+
+    .product_slider .PS_field .PS_price {
+        font-size: 1.7rem;
+    }
+
 }
 
 @media only screen and (max-width: 499px) {
+
+    .product_slider .PS_field {
+        width: 80%;
+        margin-right: 10%;
+    }
+
     .product_slider .PS_field img {
         width: 170px;
         height: 210px;

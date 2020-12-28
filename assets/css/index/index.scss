@@ -867,10 +867,6 @@
 
 @media only screen and (max-width: 550px) {
 
-    .product_slider {
-        padding: 30px 0px 30px 0px;
-    }
-
     .packag_field .PFS .apple_bordered_logo {
         width: 110px;
         height: 120px;
@@ -909,18 +905,7 @@
 
 }
 
-@media only screen and (max-width: 500px) {
 
-    .product_slider .PS_field {
-        width: 80%;
-        margin-right: 10%;
-    }
-
-    .product_slider .PS_field .PS_price {
-        font-size: 1.7rem;
-    }
-
-}
 
 @media only screen and (max-width: 480px) {
 
@@ -1003,6 +988,7 @@
         font-size: 1.3rem;
         top: 80px;
     }
+
     .product_slider .PS_field {
         width: 100%;
         margin-right: 0%;
