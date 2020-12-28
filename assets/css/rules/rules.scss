@@ -1,0 +1,67 @@
+@import '../partials/variable';
+@import '../partials/mixin';
+@import '../partials/header-text';
+
+.rules_field {
+    direction: rtl;
+    text-align: right;
+    width: 90%;
+    margin-left: 5%;
+    box-shadow: $shadow;
+    padding: 30px;
+    border-radius: 15px;
+
+    .all_header_text {
+        font-size: 1.6rem !important;
+    }
+
+    .header_rules {
+        font-size: 1.3rem;
+        font-weight: bold;
+        color: rgb(48, 48, 48);
+        padding: 0px 40px;
+        line-height: 40px;
+        margin-bottom: 0px;
+        margin-top: 10px;
+    }
+
+    .rules_text {
+        font-size: 1rem;
+        line-height: 38px;
+        color: rgb(48, 48, 48);
+        text-align: justify;
+        padding: 0px 40px;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+
+    .rules_field .header_rules,
+    .rules_field .rules_text {
+        padding: 10px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+
+    .rules_field .header_rules,
+    .rules_field .rules_text {
+        padding: 0px;
+    }
+
+    .rules_field .header_rules {
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen and (max-width: 380px) {
+    .rules_field .header_rules {
+        font-size: 1.1rem;
+        line-height: 35px;
+    }
+
+    .rules_field .rules_text {
+        font-size: 0.9rem;
+        line-height: 33px;
+    }
+}
