@@ -23,6 +23,11 @@
         text-align: center;
         margin-bottom: 30px;
 
+        .active{
+            background-color: $accent_color;
+            color: $white !important;
+        }
+
         .PRT {
             width: max-content;
             padding: 3px 10px;
@@ -394,6 +399,11 @@
         .PRT_F {
             position: absolute;
             left: 0;
+
+            .active{
+                background-color: $accent_color;
+                color: $white !important;
+            }
 
             .PRT {
                 width: max-content;
