@@ -195,20 +195,15 @@
                         border: 1px solid rgb(204, 204, 204);
                     }
 
-                    &:last-child {
-                        a {
-                            background-color: $accent_color;
-                            color: $white;
-                            font-size: 1.5rem;
-                        }
+                    .arrow{
+                        background-color: $accent_color;
+                        color: $white;
+                        font-size: 1.5rem;
                     }
 
-                    &:first-child {
-                        a {
-                            background-color: $accent_color;
-                            color: $white;
-                            font-size: 1.5rem;
-                        }
+                    .enable{
+                        opacity: 0.4;
+                        cursor: auto;
                     }
                 }
             }
