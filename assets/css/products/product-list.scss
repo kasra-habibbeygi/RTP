@@ -282,6 +282,18 @@
     display: none;
 }
 
+.NP_exist{
+    width: 90%;
+    padding: 52px 0px;
+    border-radius: 15px;
+    background-color: #ececec;
+    text-align: center;
+    direction: rtl;
+    color: #666;
+    margin-left: 5%;
+    font-size: 1.3rem;
+}
+
 // media query
 @media only screen and (max-width: 1340px) {
 
