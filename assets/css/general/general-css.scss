@@ -32,7 +32,9 @@ $af : accent-font;
         url(../../fonts/avinyweb.woff2) format('woff2');
 }
 
-@import '../partials/footer',
+@import '../partials/mixin',
+        '../partials/variable',
+        '../partials/footer',
         '../partials/navbar';
 
 body{
