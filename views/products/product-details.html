@@ -94,14 +94,14 @@
         </div>
     </nav>
     <!-- navbar -->
-    
+
     <div class="field_of_scale">
         <div class="flex_field">
-            <div class="main_box"> 
-                <i class="fas fa-times close_scale_modal"></i>  
+            <div class="main_box">
+                <i class="fas fa-times close_scale_modal"></i>
                 <div class="PD_img_field">
                     <div class="swiper-container scale-gallery-top">
-        
+
                         <!-- big image of slider -->
                         <div class="swiper-wrapper">
                             <div class="swiper-slide slider_img">
@@ -132,7 +132,7 @@
                     </div>
                     <div class="swiper-container scale-gallery-thumbs">
                         <div class="swiper-wrapper">
-        
+
                             <!-- small image of slider -->
                             <div class="swiper-slide slider_small_img">
                                 <img src="../../assets/img/AP01.png" alt="">
@@ -177,7 +177,6 @@
             <small>Samsung Galaxy Note20 Ultra SM-N985F/DS Dual SIM 256GB Mobile Phone</small>
             <div class="brand_point">
                 <p>برند : <span>سامسونگ</span></p>
-                <p>امتیاز : <span>5 از 5</span></p>
             </div>
 
             <div class="PD_chose_box memory_chose">
@@ -203,7 +202,14 @@
             </div>
 
             <div class="PD_price">
-                <p>3.000.000</p>
+                <!-- without sale -->
+                <p class="main_price">3.000.000</p>
+
+                <!-- with sale -->
+                <div class="sale_flag_field">
+                    <p>3.000.000</p>
+                    <p>2.700.000</p>
+                </div>
                 <button class="add_to_basket">افزودن به سبد خرید</button>
             </div>
         </div>
@@ -526,28 +532,64 @@
                 <div class="h_iframe-aparat_embed_frame"><span></span><iframe
                         src="https://www.aparat.com/video/video/embed/videohash/ZR7ek/vt/frame?&recom=none"
                         allowFullScreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe></div>
+
+                <div class="N_exost_video">
+                    هنوز ویدیو برای این محصول ثبت نشده است !
+                </div>
             </div>
 
             <!-- comments -->
             <div class="SO_container">
-                <p class="comments_titles">نظرات خود را با ما در میان بگذاری</p>
-                <div class="comments_input_field">
+                <div class="add_comments">
+                    <h3>نظرات خود را با ما در میان بگذارید </h3>
                     <form>
                         <div class="form-group">
-                            <label for="user_name">نام و نام خانوادگی</label>
-                            <input type="email" class="form-control" id="user_name">
+                            <label for="name_inp">نام</label>
+                            <input type="text" class="form-control" id="name_inp">
                         </div>
                         <div class="form-group">
-                            <label for="user_email">ایمیل</label>
-                            <input type="password" class="form-control" id="user_email">
+                            <label for="email_inp">پست الکترونیکی</label>
+                            <input type="text" class="form-control" id="email_inp">
                         </div>
                         <div class="form-group">
-                            <label for="user_email">متن پیام</label>
-                            <textarea type="password" class="form-control" id="user_email" rows="5"></textarea>
+                            <label for="email_inp">متن پیام</label>
+                            <textarea type="text" class="form-control" id="email_inp" rows="5"></textarea>
                         </div>
-                        <button type="submit" class="btn">ارسال پیام</button>
+                        <button type="submit" class="btn">ثبت نظر</button>
                     </form>
                 </div>
+
+                <!-- user comments -->
+                <div class="comment_field">
+                    <img src="../../assets/img/AA00.jpg" alt="">
+                    <div class="comments_info">
+                        <p class="name">کسری حبیب بیگی</p>
+                        <div class="time_reply">
+                            <p>10 شهریور 1399</p>
+                        </div>
+                        <p class="comment_text">به نظرم بهترین گوشی دنیا میتونه سامسونگ باشه به خاطر اینکه اپل به دلیل
+                            مارکش خیلی گرونه و
+                            قطعا به اون اندازه امکانت نمیده </p>
+                    </div>
+                </div>
+
+                <!-- admin reply -->
+                <div class="comment_field">
+                    <img src="../../assets/img/AA00.jpg" alt="">
+                    <div class="comments_info">
+                        <p class="name">فروشگاه ثریتی</p>
+
+                        <div class="time_reply">
+                            <p class="mb-2">10 شهریور 1399</p>
+                            <p><span>در پاسخ به : </span> کسری حبیب بیگی</p>
+                        </div>
+
+                        <p class="comment_text">به نظرم بهترین گوشی دنیا میتونه سامسونگ باشه به خاطر اینکه اپل به دلیل
+                            مارکش خیلی گرونه و
+                            قطعا به اون اندازه امکانت نمیده </p>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>

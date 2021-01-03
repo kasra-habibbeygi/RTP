@@ -219,11 +219,27 @@
                 left: 0px;
                 top: 15px;
             }
+
+            .sale_flag_field {
+                display: flex;
+                align-items: center;
+                margin-top: 5px;
+
+                p {
+
+                    &:first-child {
+                        color: rgb(207, 207, 207);
+                        text-decoration: line-through;
+                        margin-left: 20px;
+                        font-size: 1.2rem;
+                    }
+                }
+            }
         }
     }
 }
 
-.sale_flag{
+.sale_flag {
     position: absolute;
     background-color: #FF6565;
     color: white;
@@ -236,6 +252,17 @@
     top: 25px;
     font-family: $af;
     font-size: 1.5rem;
+}
+
+.N_exost_video {
+    width: 100%;
+    padding: 30px;
+    border-radius: 15px;
+    background-color: rgb(236, 236, 236);
+    text-align: center;
+    direction: rtl;
+    color: rgb(102, 102, 102);
+    margin-right: 2%;
 }
 
 // product info and details and video and comments
@@ -314,6 +341,7 @@
             ul {
                 list-style-type: none;
                 padding: 0;
+                color: #5a5a5a;
 
                 li {
                     display: flex;
@@ -356,20 +384,6 @@
                 }
             }
 
-            .article_header {
-                margin-top: 10px;
-                margin-bottom: 30px;
-                font-size: 1.3rem;
-                font-weight: bold;
-            }
-
-            .article_body {
-                text-align: justify;
-                font-size: 1.05rem;
-                line-height: 35px;
-                font-family: $nf;
-            }
-
             .video_title {
                 margin-top: 50px;
                 margin-bottom: 40px;
@@ -381,34 +395,61 @@
                 }
             }
 
-            .comments_titles {
-                font-size: 1.5rem;
-                font-weight: bold;
-                text-align: center;
-                direction: rtl;
-                margin-top: 10px;
+            .add_comments {
+                width: 500px;
+                margin: 0 auto;
+
+                h3 {
+                    width: 100%;
+                    text-align: center;
+                    font-size: 1.7rem;
+                }
+
+                button {
+                    font-size: 1.2rem;
+                    padding: 5px 50px;
+                    color: #fff;
+                    background-color: #b5db1e;
+                    border-radius: 50px;
+                    margin-bottom: 110px;
+                }
             }
 
-            .comments_input_field {
+            .comment_field {
+                width: 90%;
+                margin-right: 5%;
                 display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-                text-align: right;
-                direction: rtl;
+                margin-top: 20px;
 
-                form {
-                    width: 600px;
+                img {
+                    width: 80px;
+                    height: 80px;
+                    border-radius: 50px;
+                    margin-left: 20px;
+                }
 
-                    button {
-                        width: max-content;
-                        padding: 10px 40px;
-                        background-color: $accent_color;
-                        border-radius: 50px;
-                        color: $white;
+                .comments_info {
+
+                    .name {
+                        font-weight: bold;
+                    }
+
+                    .time_reply {
+
+                        p {
+                            color: #c5c5c5;
+                            font-size: 0.85rem;
+                        }
+                    }
+
+                    .comment_text {
+                        color: #2c2c2c;
+                        line-height: 30px;
+                        text-align: justify;
                     }
                 }
             }
+
         }
     }
 }
@@ -563,6 +604,14 @@
 
 }
 
+@media only screen and (max-width: 950px){
+
+    .product_details_field .PD_info_field .PD_price p {
+        font-size: 1.5rem;
+    }
+
+}
+
 @media only screen and (max-width: 900px) {
 
     .product_details_field .PD_info_field {
@@ -608,6 +657,11 @@
 
     .Survey_field .SO_details_field .SO_container .comments_input_field form {
         width: 460px;
+    }
+
+    .product_details_field .PD_info_field .PD_price .main_price{
+        font-size: 1.8rem;
+        margin-top: 10px;
     }
 
 }
@@ -669,6 +723,15 @@
         margin: 0px;
     }
 
+    .Survey_field .SO_details_field .SO_container .add_comments {
+        width: 90%;
+        margin-right: 5%;
+    }
+
+    .Survey_field .SO_details_field .SO_container .add_comments h3 {
+        font-size: 1.4rem;
+    }
+
 }
 
 @media only screen and (max-width: 600px) {
@@ -699,6 +762,20 @@
         width: 90%;
     }
 
+    .product_details_field .PD_info_field .PD_price .sale_flag_field {
+        margin-top: 25px;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .product_details_field .PD_info_field .PD_price button {
+        top: 25px;
+    }
+
+    .product_details_field .PD_info_field .PD_price .main_price {
+        margin-top: 30px;
+    }
+
 }
 
 @media only screen and (max-width: 550px) {
@@ -722,6 +799,16 @@
 
     .field_of_scale .main_box .slider_small_img img {
         width: 50px;
+    }
+
+    .Survey_field .SO_details_field .SO_container .comment_field {
+        width: 100%;
+        margin-right: 0%;
+        display: flex;
+    }
+
+    .product_details_field .PD_info_field {
+        padding-right: 0px;
     }
 
 }
@@ -756,6 +843,24 @@
         width: 80%;
     }
 
+    .Survey_field .SO_details_field .SO_container .comment_field img {
+        width: 60px;
+        height: 60px;
+        margin-left: 10px;
+    }
+
+    .product_details_field .PD_info_field .PD_price .sale_flag_field p:first-child {
+        margin: 0;
+    }
+
+    .product_details_field .PD_info_field .PD_price .sale_flag_field {
+        width: 100%;
+    }
+
+    .product_details_field .PD_info_field .PD_price p:last-child{
+        margin: 0;
+    }
+
 }
 
 @media only screen and (max-width: 450px) {
@@ -782,6 +887,11 @@
         flex-wrap: wrap;
     }
 
+    .Survey_field .SO_details_field .SO_container .add_comments {
+        width: 100%;
+        margin-right: 0%;
+    }
+
 }
 
 @media only screen and (max-width: 410px) {
@@ -796,6 +906,11 @@
 
     .product_details_field {
         padding: 10px;
+    }
+
+    .Survey_field .SO_details_field .SO_container .add_comments h3 {
+        font-size: 1.1rem;
+        line-height: 30px;
     }
 
 }
