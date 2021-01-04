@@ -100,12 +100,22 @@
             <h3 class="all_header_text">بازیابی رمز عبور</h3>
             <span class="header_underline"></span>
 
+            <div class="error_handler warning_error">
+                <i class="fal fa-exclamation-circle"></i>
+                <div class="error_content">
+                    <p>
+                        لطفا تمام فیلد ها را پر کنید
+                    </p>
+                </div>
+                <i class="fal fa-times remove_erroe"></i>
+            </div>
+
             <form>
                 <div class="form-group">
-                    <label for="recovery_pass_inp">جهت بازیابی رمز عبور ، پست الکترونیکی یا شماره تماس خود را وارد کنید .</label>
-                    <input type="text" class="form-control" id="recovery_pass_inp">
+                    <label for="recovery_pass_inp">جهت بازیابی رمز عبور ، شماره تماس خود را وارد کنید .</label>
+                    <input type="text" class="form-control valid" id="recovery_pass_inp">
                 </div>
-                <button type="submit" class="btn">بازیابی رمز عبور</button>
+                <button type="submit" class="btn check_valid">بازیابی رمز عبور</button>
             </form>
         </div>
     </section>
@@ -190,6 +200,7 @@
     <script src="../../assets/js/general/popper.js"></script>
     <script src="../../assets/js/general/bootstrap.js"></script>
     <script src="../../assets/js/custom/navbar.js"></script>
+    <script src="../../assets/js/login-register/recovery.js"></script>
 </body>
 
 </html>
