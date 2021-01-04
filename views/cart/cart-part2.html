@@ -104,21 +104,32 @@
                 <span class="header_underline"></span>
 
                 <form>
+                    
+                    <div class="error_handler warning_error">
+                        <i class="fal fa-exclamation-circle"></i>
+                        <div class="error_content">
+                            <p>
+                                لطفا تمام فیلد ها را پر کنید
+                            </p>
+                        </div>
+                        <i class="fal fa-times remove_erroe"></i>
+                    </div>
+
                     <div class="form-group">
-                        <label for="sale_inp">نام دریافت کننده</label>
-                        <input type="text" class="form-control" id="sale_inp">
+                        <label for="receiver">نام دریافت کننده</label>
+                        <input type="text" class="form-control valid" id="receiver">
                     </div>
                     <div class="form-group">
-                        <label for="sale_inp">آدرس</label>
-                        <input type="text" class="form-control" id="sale_inp">
+                        <label for="address">آدرس</label>
+                        <input type="text" class="form-control valid" id="address">
                     </div>
                     <div class="form-group">
-                        <label for="sale_inp">کد پستی</label>
-                        <input type="text" class="form-control" id="sale_inp">
+                        <label for="postal_code">کد پستی</label>
+                        <input type="text" class="form-control valid" id="postal_code">
                     </div>
                     <div class="form-group">
-                        <label for="sale_inp">انتخاب شهر</label>
-                        <select class="form-control" id="exampleFormControlSelect1">
+                        <label for="city_select">انتخاب شهر</label>
+                        <select class="form-control valid" id="city_select">
                             <option>1</option>
                             <option>2</option>
                             <option>3</option>
@@ -126,7 +137,7 @@
                             <option>5</option>
                         </select>
                     </div>
-                    <button type="submit" class="btn">افزودن آدرس جدید</button>
+                    <button type="submit" class="btn check_valid">افزودن آدرس جدید</button>
                 </form>
             </div>
         </div>
@@ -139,37 +150,40 @@
 
         <div class="AF">
             <div class="old_addres">
-                <input class="inp-cbx" id="address-1" type="radio" name="addres" style="display: none" />
-                <label class="cbx" for="address-1">
-                    <span>
-                        <svg width="12px" height="10px" viewbox="0 0 12 10">
-                            <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
-                        </svg>
-                    </span>
-                    <span class="brand_name">
-                        تهران - شهران - خیابان طوقانی - خیابان یاس - پلاک 28
-                        <section>
-                            <p>کسری حبیب بیگی</p>
-                            <p>شهر : تهران</p>
-                        </section>
-                    </span>
-                </label>
+                <form action="">
 
-                <input class="inp-cbx" id="address-1" type="radio" name="addres" style="display: none" />
-                <label class="cbx" for="address-1">
-                    <span>
-                        <svg width="12px" height="10px" viewbox="0 0 12 10">
-                            <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
-                        </svg>
-                    </span>
-                    <span class="brand_name">
-                        تهران - شهران - خیابان طوقانی - خیابان یاس - پلاک 28
-                        <section>
-                            <p>کسری حبیب بیگی</p>
-                            <p>شهر : تهران</p>
-                        </section>
-                    </span>
-                </label>
+                    <input class="inp-cbx" id="address-1" type="radio" name="addres" style="display: none" checked />
+                    <label class="cbx" for="address-1">
+                        <span>
+                            <svg width="12px" height="10px" viewbox="0 0 12 10">
+                                <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+                            </svg>
+                        </span>
+                        <span class="brand_name">
+                            تهران - شهران - خیابان طوقانی - خیابان یاس - پلاک 28
+                            <section>
+                                <p>کسری حبیب بیگی</p>
+                                <p>شهر : تهران</p>
+                            </section>
+                        </span>
+                    </label>
+    
+                    <input class="inp-cbx" id="address-2" type="radio" name="addres" style="display: none" />
+                    <label class="cbx" for="address-2">
+                        <span>
+                            <svg width="12px" height="10px" viewbox="0 0 12 10">
+                                <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+                            </svg>
+                        </span>
+                        <span class="brand_name">
+                            تهران - شهران - خیابان طوقانی - خیابان یاس - پلاک 28
+                            <section>
+                                <p>کسری حبیب بیگی</p>
+                                <p>شهر : تهران</p>
+                            </section>
+                        </span>
+                    </label>
+                </form>
             </div>
             <div class="new_address">
                 <div>
@@ -274,7 +288,7 @@
             <p>مبلغ قابل پرداخت :</p>
             <p>7.000.000</p>
         </div>
-        <a href="cart-part3.html" class="btn card_checked">ادامه فرآیند خرید</a>
+        <a href="cart-part3.html"  class="btn card_checked">ادامه فرآیند خرید</a>
     </section>
 
     <!-- product offer slider -->
@@ -288,7 +302,11 @@
                     <a href="" class="PS_field">
                         <img src="../../assets/img/AP01.png" alt="">
                         <p class="PS_description">گوشی موبایل هوااوی مدل galaxy note 9 ظرفیت 128 گیگ</p>
-                        <p class="PS_price">3.000.000</p>
+                        <p class="slider_sale_flag">
+                            <span>10%</span>
+                            <span>4.000.000</span>
+                        </p>
+                        <p class="slae_price">3.600.000</p>
                     </a>
                 </div>
                 <div class="swiper-slide">
@@ -323,7 +341,11 @@
                     <a href="" class="PS_field">
                         <img src="../../assets/img/AP07.png" alt="">
                         <p class="PS_description">گوشی موبایل هوااوی مدل galaxy note 9 ظرفیت 128 گیگ</p>
-                        <p class="PS_price">3.000.000</p>
+                        <p class="slider_sale_flag">
+                            <span>10%</span>
+                            <span>4.000.000</span>
+                        </p>
+                        <p class="slae_price">3.600.000</p>
                     </a>
                 </div>
             </div>

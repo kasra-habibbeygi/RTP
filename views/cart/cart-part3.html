@@ -100,42 +100,54 @@
         <h3 class="all_header_text">شیوه پرداخت</h3>
         <span class="header_underline"></span>
 
-        <!-- online payment -->
-        <input class="inp-cbx" id="PM-1" type="radio" name="PM" style="display: none" />
-        <label class="cbx" for="PM-1">
-            <span>
-                <svg width="12px" height="10px" viewbox="0 0 12 10">
-                    <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
-                </svg>
-            </span>
-            <span class="payment_way">
-                <img class="OP_img" src="../../assets/img/CI01.png" alt="">
-                <div>
-                    <p>پرداخت آنلاین</p>
-                    <p>با پرداخت اینترنتی، سفارش شما با اولویت بیشتری نسبت به پرداخت در محل پردازش و ارسال می
-                        شود. در صورت پرداخت ناموفق هزینه کسر شده حداکثر طی ۷۲ ساعت به حساب شما بازگردانده می‌شود
-                    </p>
-                </div>
-            </span>
-        </label>
+        <div class="error_handler warning_error">
+            <i class="fal fa-exclamation-circle"></i>
+            <div class="error_content">
+                <p>
+                    لطفا تمام فیلد ها را پر کنید
+                </p>
+            </div>
+            <i class="fal fa-times remove_erroe"></i>
+        </div>
 
-        <!-- second peyment -->
-        <input class="inp-cbx" id="PM-2" type="radio" name="PM" style="display: none" />
-        <label class="cbx" for="PM-2">
-            <span>
-                <svg width="12px" height="10px" viewbox="0 0 12 10">
-                    <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
-                </svg>
-            </span>
-            <span class="payment_way">
-                <img src="../../assets/img/CI02.png" alt="">
-                <div>
-                    <p>پرداخت درب منزل</p>
-                    <p>برای اینکه درب محل کالای مورد نظر را تحویل بگیرید باید ابتدا مبلغ صد هزار تومان را به عنوان بیانه
-                        پرداخت کنید </p>
-                </div>
-            </span>
-        </label>
+        <!-- online payment -->
+        <form>
+            <input class="inp-cbx" id="PM-1" type="radio" name="PM" style="display: none" />
+            <label class="cbx" for="PM-1">
+                <span>
+                    <svg width="12px" height="10px" viewbox="0 0 12 10">
+                        <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+                    </svg>
+                </span>
+                <span class="payment_way">
+                    <img class="OP_img" src="../../assets/img/CI01.png" alt="">
+                    <div>
+                        <p>پرداخت آنلاین</p>
+                        <p>با پرداخت اینترنتی، سفارش شما با اولویت بیشتری نسبت به پرداخت در محل پردازش و ارسال می
+                            شود. در صورت پرداخت ناموفق هزینه کسر شده حداکثر طی ۷۲ ساعت به حساب شما بازگردانده می‌شود
+                        </p>
+                    </div>
+                </span>
+            </label>
+    
+            <!-- second peyment -->
+            <input class="inp-cbx" id="PM-2" type="radio" name="PM" style="display: none" />
+            <label class="cbx" for="PM-2">
+                <span>
+                    <svg width="12px" height="10px" viewbox="0 0 12 10">
+                        <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+                    </svg>
+                </span>
+                <span class="payment_way">
+                    <img src="../../assets/img/CI02.png" alt="">
+                    <div>
+                        <p>پرداخت درب منزل</p>
+                        <p>برای اینکه درب محل کالای مورد نظر را تحویل بگیرید باید ابتدا مبلغ صد هزار تومان را به عنوان بیانه
+                            پرداخت کنید </p>
+                    </div>
+                </span>
+            </label>
+        </form>
 
     </section>
 
@@ -192,7 +204,7 @@
             <p>مبلغ قابل پرداخت :</p>
             <p>7.000.000</p>
         </div>
-        <button class="btn card_checked">پرداخت نهایی</button>
+        <a href="" class="btn card_checked check_valid">پرداخت نهایی</a>
     </section>
 
     <!-- product offer slider -->
@@ -206,7 +218,11 @@
                     <a href="" class="PS_field">
                         <img src="../../assets/img/AP01.png" alt="">
                         <p class="PS_description">گوشی موبایل هوااوی مدل galaxy note 9 ظرفیت 128 گیگ</p>
-                        <p class="PS_price">3.000.000</p>
+                        <p class="slider_sale_flag">
+                            <span>10%</span>
+                            <span>4.000.000</span>
+                        </p>
+                        <p class="slae_price">3.600.000</p>
                     </a>
                 </div>
                 <div class="swiper-slide">
@@ -241,7 +257,11 @@
                     <a href="" class="PS_field">
                         <img src="../../assets/img/AP07.png" alt="">
                         <p class="PS_description">گوشی موبایل هوااوی مدل galaxy note 9 ظرفیت 128 گیگ</p>
-                        <p class="PS_price">3.000.000</p>
+                        <p class="slider_sale_flag">
+                            <span>10%</span>
+                            <span>4.000.000</span>
+                        </p>
+                        <p class="slae_price">3.600.000</p>
                     </a>
                 </div>
             </div>
@@ -329,12 +349,13 @@
     <!-- footer -->
 
     <script src="../../assets/js/general/jquery.js"></script>
-    <script src="../../assets/js/general/popper.js"></script>
     <script src="../../assets/js/general/bootstrap.js"></script>
     <script src="../../assets/js/general/Swiper.js"></script>
     <script src="../../assets/js/custom/navbar.js"></script>
     <script src="../../assets/js/custom/product-summary.js"></script>
     <script src="../../assets/js/custom/POS.js"></script>
+    <script src="../../assets/js/cart/cart-part3.js"></script>
+
 </body>
 
 </html>
