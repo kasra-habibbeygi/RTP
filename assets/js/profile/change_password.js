@@ -1,19 +1,3 @@
-// open add address modal
-$('.add_address').click(function() {
-
-    $('.AA_moda').fadeIn();
-    $('body').css('overflow' , 'hidden');
-
-    $('.AAM_close').click(function(){
-
-        $('.AA_moda').fadeOut();
-        $('body').css('overflow' , 'auto');
-
-    })
-
-});
-
-// form validation
 $('.check_valid').click(function (e){
 
     let inp_count = $('form div .valid').length;
@@ -28,16 +12,16 @@ $('.check_valid').click(function (e){
     }
     
     // check if inp is empty
-    if(inp_val[0] == '' || inp_val[1] == '' || inp_val[2] == '' || inp_val[3] == '' || inp_val[4] == ''){
+    if(inp_val[0] == '' || inp_val[1] == '' || inp_val[2] == ''){
 
         error_text.text('لطفا تمام فیلد ها را پر کنید .');
         $('.error_handler').css('display' , 'flex');
         e.preventDefault();
 
     // check phone number value
-    }else if(isNaN(inp_val[1]) || inp_val[1].length < 11 || inp_val[1].length > 11){
+    }else if(inp_val[1] !== inp_val[2]){
 
-        error_text.text('لطفا شماره موبایل خود را درست وارد کنید .');
+        error_text.text('رمز عبور جدید با تکرار آن برابر نمی باشد .');
         $('.error_handler').css('display' , 'flex');
         e.preventDefault();
 

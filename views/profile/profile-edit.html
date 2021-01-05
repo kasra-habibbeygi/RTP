@@ -137,34 +137,44 @@
             <h3 class="all_header_text">ویرایش پروفایل</h3>
             <span class="header_underline"></span>
 
+            <div class="error_handler warning_error">
+                <i class="fal fa-exclamation-circle"></i>
+                <div class="error_content">
+                    <p>
+                        لطفا تمام فیلد ها را پر کنید
+                    </p>
+                </div>
+                <i class="fal fa-times remove_erroe"></i>
+            </div>
+
             <form>
                 <div class="form-group">
                     <label for="name_inp">نام و نام خانوادگی</label>
-                    <input type="text" class="form-control" id="name_inp">
+                    <input type="text" class="form-control valid" id="name_inp">
                 </div>
                 <div class="form-group">
                     <label for="phoneNumber_inp">شماره تماس</label>
-                    <input type="text" class="form-control" id="phoneNumber_inp">
+                    <input type="text" class="form-control valid" id="phoneNumber_inp">
                 </div>
                 <div class="form-group">
                     <label for="email_inp">پست الکترونیکی</label>
-                    <input type="text" class="form-control" id="email_inp">
+                    <input type="text" class="form-control valid" id="email_inp">
                 </div>
                 <div class="birth_day">
                     <p>تاریخ تولد</p>
                     <div>
                         <label for="day_inp">روز</label>
-                        <input type="text" class="form-control" id="day_inp">
+                        <input type="text" class="form-control valid" id="day_inp">
                     </div>
                     <Span>/</Span>
                     <div>
                         <label for="month_inp">ماه</label>
-                        <input type="text" class="form-control" id="month_inp">
+                        <input type="text" class="form-control valid" id="month_inp">
                     </div>
                     <Span>/</Span>
                     <div>
                         <label for="year_inp">سال</label>
-                        <input type="text" class="form-control" id="year_inp">
+                        <input type="text" class="form-control valid" id="year_inp">
                     </div>
                 </div>
                 <div class="add_address">+ افزودن آدرس جدید</div>
@@ -176,7 +186,7 @@
                     <p><i class="fal fa-backspace"></i> حذف آدرس</p>
                 </div>
                 
-                <button type="submit" class="btn">ثبت تغییرات</button>
+                <button type="submit" class="btn check_valid">ثبت تغییرات</button>
             </form>
         </div>
     </section>
