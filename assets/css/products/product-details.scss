@@ -263,7 +263,6 @@
     text-align: center;
     direction: rtl;
     color: rgb(102, 102, 102);
-    margin-right: 2%;
 }
 
 // product info and details and video and comments
@@ -449,6 +448,25 @@
                         text-align: justify;
                     }
                 }
+            }
+
+            &:nth-child(2){
+
+                direction: rtl;
+                text-align: right;
+
+                h2{
+                    font-size: 1.7rem !important;
+                    font-weight: bold !important;
+                    line-height: 30px !important;
+                }
+
+                p{
+                    line-height: 34px !important;
+                    text-align: justify !important;
+                    font-size: 1rem !important;
+                }
+
             }
 
         }
@@ -745,10 +763,6 @@
         margin-bottom: 40px;
     }
 
-    .Survey_field .SO_details_field .SO_container .article_body {
-        font-size: 0.9rem;
-    }
-
     .h_iframe-aparat_embed_frame iframe {
         width: 90%;
         margin-left: 5%;
@@ -810,6 +824,11 @@
 
     .product_details_field .PD_info_field {
         padding-right: 0px;
+    }
+
+    .Survey_field .SO_details_field .SO_container:nth-child(2) h2 {
+        font-size: 1.4rem;
+        line-height: 40px;
     }
 
 }

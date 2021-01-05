@@ -1,7 +1,6 @@
 @import '../partials/variable';
 @import '../partials/mixin';
 @import '../partials/header-text';
-@import '../partials/product-slider';
 
 .article_field {
     width: 98%;
@@ -126,7 +125,7 @@
 
             .offer_product {
                 width: 100%;
-                padding: 40px 10px;
+                padding: 40px 10px 10px 10px;
                 box-shadow: $shadow;
                 border-radius: 15px;
 
@@ -158,6 +157,39 @@
                     .AO_price {
                         font-size: 1.3rem;
                         color: #58BE1D;
+                        font-weight: bold;
+                    }
+
+                    .AO_sale_flag{
+                        width: 100%;
+                        text-align: center;
+                        margin-bottom: 10px;
+
+                        span{
+
+                            &:first-child{
+                                width: max-content;
+                                padding: 0px 10px;
+                                background-color: #FF6565;
+                                color: #fff;
+                                border-radius: 50px;
+                                font-size: 1.5rem;
+                                font-family: accent-font;
+                                display: inline-block;
+                            }
+
+                            &:last-child{
+                                text-decoration: line-through;
+                                color: #bebebe;
+                            }
+
+                        }
+                    }
+
+                    .AO_sale_price{
+                        text-align: center;
+                        color: #EE384E;
+                        font-size: 1.3rem;
                         font-weight: bold;
                     }
                 }
@@ -316,20 +348,24 @@
                 }
             }
 
+            .PU_field{
+                width: 100%;
+            }
+            
             .pagination_ul {
                 width: max-content;
                 margin: 40px auto;
-
+            
                 ul {
                     padding: 0;
                     display: flex;
                     flex-direction: row;
                     list-style-type: none;
-
-                    .dotted{
+            
+                    .dotted {
                         margin: 0px 10px;
                     }
-
+            
                     li {
                         width: unset;
                         box-shadow: unset;
@@ -337,7 +373,7 @@
                         overflow: unset;
                         height: unset;
                         margin-top: unset;
-
+            
                         a {
                             width: 35px !important;
                             height: 35px !important;
@@ -350,30 +386,25 @@
                             height: max-content;
                             border-radius: 7px;
                             color: #727272;
-
-                            &:hover{
+            
+                            &:hover {
                                 border: 1px solid rgb(204, 204, 204);
                             }
                         }
-
-                        .active{
+            
+                        .active {
                             border: 1px solid rgb(204, 204, 204);
                         }
-
-                        &:last-child{
-                            a{
-                                background-color: $accent_color;
-                                color: $white;
-                                font-size: 1.5rem;
-                            }
+            
+                        .arrow{
+                            background-color: $accent_color;
+                            color: $white;
+                            font-size: 1.5rem;
                         }
-
-                        &:first-child{
-                            a{
-                                background-color: $accent_color;
-                                color: $white;
-                                font-size: 1.5rem;
-                            }
+            
+                        .enable{
+                            opacity: 0.4;
+                            cursor: auto;
                         }
                     }
                 }
@@ -381,7 +412,11 @@
         }
 
     }
+
+
 }
+
+
 
 @media only screen and (max-width: 1300px) {
 
@@ -672,16 +707,6 @@
 
 }
 
-@media only screen and (max-width: 460px) {
-
-    .article_list .article_list_field .AL_carts .pagination_ul ul li a {
-        width: 30px !important;
-        height: 30px !important;
-        font-size: 0.8rem;
-        margin: 0px 4px;
-    }
-
-}
 
 @media only screen and (max-width: 380px) {
 
@@ -700,10 +725,6 @@
 
     .article_field .small_carts .SCF .content p {
         font-size: 0.9rem;
-    }
-
-    .article_list .article_list_field .AL_carts .pagination_ul ul .dotted {
-        margin: 0px 0px;
     }
 
 }
