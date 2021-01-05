@@ -1,0 +1,94 @@
+@import '../partials/variable';
+@import '../partials/mixin';
+@import '../partials/footer';
+
+.qustion_answer {
+    width: 100%;
+    padding: 0px 90px 20px 90px;
+    direction: rtl;
+    text-align: right;
+
+    .header_description{
+        line-height:30px;
+        text-align: justify;
+        margin-bottom:40px;
+    }
+
+    h2 {
+        color: $accent_color;
+        font-family: $af;
+        font-size: 3rem;
+    }
+
+    .card {
+        border: none !important;
+        margin-bottom: 20px;
+    }
+
+    .card-header {
+        background-color: #f6f6f6;
+        border-bottom: none;
+    }
+
+    .accordion>.card>.card-header {
+        border-radius: 15px;
+        margin-bottom: -1px;
+    }
+
+    .btn-link {
+        color: rgb(143, 143, 143);
+    }
+
+    .btn:hover {
+        color: #1a1a1a;
+        text-decoration: none;
+    }
+
+    .btn-link.focus,
+    .btn-link:focus {
+        text-decoration: none;
+        box-shadow: none;
+        color: #1a1a1a;
+    }
+
+    .card-body {
+        p {
+            line-height: 35px;
+            color: #171717;
+            text-align: justify;
+        }
+    }
+}
+
+.btn-link{
+    text-align: right;
+    line-height: 30px;
+    width: 100%;
+    padding: 17px;
+}
+
+.card-header{
+    padding: 0px;
+}
+
+@media only screen and (max-width: 650px) {
+
+    .qustion_answer {
+        padding: 0px 50px 20px 50px;
+    }
+
+    .qustion_answer {
+        padding: 0px 30px 20px 30px;
+    }
+
+}
+
+@media only screen and (max-width: 650px) {
+
+    .qustion_answer .header_description {
+        line-height: 35px;
+        text-align: justify;
+    }
+  
+
+}
