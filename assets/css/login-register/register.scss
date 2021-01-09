@@ -2,6 +2,7 @@
 @import '../partials/mixin';
 @import '../partials/header-text';
 @import '../partials/errors';
+@import '../partials/check-box';
 
 .register_field{
     display: flex;
@@ -33,6 +34,17 @@
             color: $white;
             margin-top: 30px;
             font-size: 1.2rem;
+        }
+    }
+}
+
+.cbx{
+    font-size: 0.9rem;
+
+    span{
+
+        &:last-child{
+            padding-right: 5px;
         }
     }
 }
