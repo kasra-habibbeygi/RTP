@@ -59,7 +59,7 @@
         position: absolute;
         right: 20px;
 
-        img{
+        img {
             width: 100%;
         }
     }
@@ -220,7 +220,7 @@ nav {
         padding-top: 24px !important;
     }
 
-    .NBP-dropdown{
+    .NBP-dropdown {
 
         .product-option {
             top: 70px;
@@ -277,6 +277,26 @@ nav {
         }
     }
 
+    nav .right-NB .navbar-option li {
+
+        padding: 0px;
+
+    }
+
+    nav .right-NB .navbar-option li a {
+        display: block;
+        padding: 17px;
+    }
+
+    #PDP {
+
+        padding: 17px;
+
+        a {
+            padding: 12px;
+        }
+    }
+
 }
 
 
@@ -286,7 +306,7 @@ nav {
         display: block;
         color: #a6a6a6;
 
-        &:hover{
+        &:hover {
             color: rgb(78, 78, 78);
         }
     }
