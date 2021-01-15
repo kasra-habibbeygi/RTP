@@ -269,6 +269,12 @@
     }
 }
 
+.add_done {
+    background-color: #ebfeec !important;
+    color: #0fb900 !important;
+    border-right: 4px solid #0fb900 !important;
+}
+
 .flow_error_field {
     display: flex;
     flex-direction: row;
@@ -285,17 +291,17 @@
     padding: 20px;
     border-radius: 5px 0px 0px 5px;
     border-right: 4px solid #B95000;
-    @include transition(1s , cubic-bezier(0.43,-0.01, 0.33, 1.26) , 0s);
+    @include transition(1s, cubic-bezier(0.43, -0.01, 0.33, 1.26), 0s);
 
     i {
         font-size: 1.2rem;
 
-        &:last-child{
+        &:last-child {
             margin-right: 50px;
             cursor: pointer;
         }
 
-        &:first-child{
+        &:first-child {
             margin-left: 10px;
         }
     }
