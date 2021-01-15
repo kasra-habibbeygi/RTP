@@ -11,18 +11,39 @@
     padding: 30px;
     border-radius: 15px;
 
-    h2,
-    h3 {
-        font-weight: bold;
-        font-size: 1.6rem;
-        margin-bottom: 15px;
-        line-height: 40px;
+    h1 {
+        font-size: 2.7rem !important;
+        font-family: $af !important;
+        margin-bottom: 20px !important;
+        color: $accent_color !important;
     }
 
     p {
-        line-height: 30px;
-        text-align: justify;
+        color: rgb(83, 83, 83) !important;
+        line-height: 33px !important;
+        font-size: 1rem !important;
+    }
 
+    ul{
+        li{
+            padding-top: 15px !important;
+        }
+    }
+
+    h2 {
+        margin: 0px 0px !important;
+        font-size: 1.5rem !important;
+        font-weight: bold !important;
+    }
+
+    h3{
+        font-size: 1.5rem !important;
+    }
+
+    img{
+        width: 100% !important;
+        height: auto !important;
+        border-radius: 15px !important;
     }
 
 }
