@@ -228,38 +228,38 @@
             direction: rtl;
 
             h1 {
-                font-size: 2.7rem;
-                font-family: $af;
-                margin-bottom: 20px;
-                color: $accent_color;
+                font-size: 2.7rem !important;
+                font-family: $af !important;
+                margin-bottom: 20px !important;
+                color: $accent_color !important;
             }
 
             p {
-                color: rgb(83, 83, 83);
-                line-height: 33px;
-                font-size: 1rem;
+                color: rgb(83, 83, 83) !important;
+                line-height: 33px !important;
+                font-size: 1rem !important;
             }
 
             ul{
                 li{
-                    padding-top: 15px;
+                    padding-top: 15px !important;
                 }
             }
 
             h2 {
-                margin: 0px 0px;
-                font-size: 1.5rem;
-                font-weight: bold;
+                margin: 0px 0px !important;
+                font-size: 1.5rem !important;
+                font-weight: bold !important;
             }
 
             h3{
-                font-size: 1.5rem;
+                font-size: 1.5rem !important;
             }
 
             img{
                 width: 100% !important;
                 height: auto !important;
-                border-radius: 15px;
+                border-radius: 15px !important;
             }
         }
     }

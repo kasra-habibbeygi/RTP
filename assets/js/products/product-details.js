@@ -160,6 +160,7 @@ $('.check_valid').click(function (e) {
 
 });
 
+// when user chose memory , +
 for (let x = 0; x <= $('.memory_chose .PDCB_parent div').length; x++) {
 
     $('.memory_chose .PDCB_parent div').eq(x).click(function(){
