@@ -172,3 +172,24 @@ for (let x = 0; x <= $('.memory_chose .PDCB_parent div').length; x++) {
     });
 
 }
+
+$('.add_to_basket').click(function(){
+
+    if($('.color_chose .PDCB_parent div').hasClass('active_pill') == false){
+
+        $('.flow_error_field P').text('ابتدا رنگ مورد نظر خود را انتخاب کنید .');
+        $('.flow_error_field').css('right' , '20px');
+    }else{
+
+        let cardCount = $('.B-conter').text();
+        $('.B-conter').text(parseInt(cardCount) + 1);
+
+    }
+
+    $('.remove_FEF').click(function(){
+
+        $('.flow_error_field').css('right' , '-500px');
+
+    })
+
+});

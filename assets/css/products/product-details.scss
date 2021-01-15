@@ -152,13 +152,13 @@
                 font-weight: bold;
             }
 
-            .color_pill{
+            .color_pill {
                 display: none !important;
-            
+
 
             }
 
-            .active_by_memory{
+            .active_by_memory {
                 display: flex !important;
             }
 
@@ -218,14 +218,14 @@
             align-items: center;
             height: 70px;
 
-            .NE_field{
-                
-                p{
+            .NE_field {
+
+                p {
                     color: #CFD1D8;
                 }
             }
 
-            .not_active{
+            .not_active {
                 background-color: #CFD1D8;
                 cursor: auto;
             }
@@ -266,6 +266,42 @@
                 }
             }
         }
+    }
+}
+
+.flow_error_field {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    direction: rtl;
+    text-align: right;
+    position: fixed;
+    right: -500px;
+    top: 180px;
+    z-index: 100;
+    background-color: #FEF5EB;
+    color: #B95000;
+    padding: 20px;
+    border-radius: 5px 0px 0px 5px;
+    border-right: 4px solid #B95000;
+    @include transition(1s , cubic-bezier(0.43,-0.01, 0.33, 1.26) , 0s);
+
+    i {
+        font-size: 1.2rem;
+
+        &:last-child{
+            margin-right: 50px;
+            cursor: pointer;
+        }
+
+        &:first-child{
+            margin-left: 10px;
+        }
+    }
+
+    p {
+        margin-bottom: 0px;
     }
 }
 
@@ -490,30 +526,30 @@
                     margin-bottom: 20px !important;
                     color: $accent_color !important;
                 }
-    
+
                 p {
                     color: rgb(83, 83, 83) !important;
                     line-height: 33px !important;
                     font-size: 1rem !important;
                 }
-    
-                ul{
-                    li{
+
+                ul {
+                    li {
                         padding-top: 15px !important;
                     }
                 }
-    
+
                 h2 {
                     margin: 0px 0px !important;
                     font-size: 1.5rem !important;
                     font-weight: bold !important;
                 }
-    
-                h3{
+
+                h3 {
                     font-size: 1.5rem !important;
                 }
-    
-                img{
+
+                img {
                     width: 100% !important;
                     height: auto !important;
                     border-radius: 15px !important;
