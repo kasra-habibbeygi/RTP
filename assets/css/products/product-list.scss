@@ -22,7 +22,7 @@
         text-align: center;
         margin-bottom: 30px;
 
-        .active{
+        .active {
             background-color: $accent_color;
             color: $white !important;
         }
@@ -60,6 +60,30 @@
             margin-bottom: 2%;
             @include transition(0.2s, linear, 0s);
             height: 380px;
+
+            .NE_field {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                span {
+                    width: 70%;
+                    height: 1px;
+                    background-color: #c9c9c9;
+                    display: block;
+                    position: relative;
+                    top: 14px;
+                }
+
+                p {
+                    color: #c9c9c9;
+                    background-color: white;
+                    position: relative;
+                    padding: 0px 10px;
+                }
+            }
 
             &:hover {
                 @include transform(scale(1.05));
@@ -152,7 +176,7 @@
             margin-right: 2%;
         }
 
-        .PU_field{
+        .PU_field {
             width: 100%;
         }
 
@@ -200,13 +224,13 @@
                         border: 1px solid rgb(204, 204, 204);
                     }
 
-                    .arrow{
+                    .arrow {
                         background-color: $accent_color;
                         color: $white;
                         font-size: 1.5rem;
                     }
 
-                    .enable{
+                    .enable {
                         opacity: 0.4;
                         cursor: auto;
                     }
@@ -282,7 +306,7 @@
     display: none;
 }
 
-.NP_exist{
+.NP_exist {
     width: 90%;
     padding: 52px 0px;
     border-radius: 15px;
@@ -400,7 +424,7 @@
             position: absolute;
             left: 0;
 
-            .active{
+            .active {
                 background-color: $accent_color;
                 color: $white !important;
             }
@@ -502,7 +526,7 @@
         width: 100%;
     }
 
-    
+
 
 }
 

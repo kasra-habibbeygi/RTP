@@ -218,6 +218,18 @@
             align-items: center;
             height: 70px;
 
+            .NE_field{
+                
+                p{
+                    color: #CFD1D8;
+                }
+            }
+
+            .not_active{
+                background-color: #CFD1D8;
+                cursor: auto;
+            }
+
             p {
                 color: $accent_color;
                 font-size: 1.6rem;
