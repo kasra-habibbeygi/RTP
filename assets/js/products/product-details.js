@@ -208,6 +208,7 @@ $('.add_to_basket').click(function () {
 
     });
 
+    // after 5 sec , error field hidden
     setTimeout(function(){
 
         $('.flow_error_field').css('right', '-500px');
