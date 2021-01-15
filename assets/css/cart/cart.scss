@@ -3,7 +3,6 @@
 @import '../partials/product-summary';
 @import '../partials/cart-summary';
 @import '../partials/header-text';
-@import '../partials/product-slider';
 
 .cart_goods,
 .sale_field {
@@ -32,11 +31,11 @@
     }
 }
 
-.summary_details{
+.summary_details {
     position: relative;
 }
 
-.remove_goods{
+.remove_goods {
     color: rgba(255, 0, 0, 0.425);
     width: max-content;
     cursor: pointer;
@@ -44,7 +43,7 @@
     left: 0;
     bottom: 0;
 
-    &:hover{
+    &:hover {
         color: red;
     }
 }
@@ -109,7 +108,7 @@
 @media only screen and (max-width: 700px) {
 
     .remove_goods {
-        color: rgba(255,0,0,0.425);
+        color: rgba(255, 0, 0, 0.425);
         width: max-content;
         cursor: pointer;
         position: unset;
