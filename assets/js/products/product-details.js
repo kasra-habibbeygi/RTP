@@ -120,42 +120,53 @@ for (let i = 0; i < SF_option.length; i++) {
 }
 
 // chose color
-$('.color_chose div').click(function () {
+$('.color_chose .PDCB_parent div').click(function () {
 
-    $('.color_chose div').removeClass('active_pill');
+    $('.color_chose .PDCB_parent div').removeClass('active_pill');
     $(this).addClass('active_pill');
 
 });
 
 // chose internal memory
-$('.memory_chose div').click(function () {
+$('.memory_chose .PDCB_parent div').click(function () {
 
-    $('.memory_chose div').removeClass('active_pill');
+    $('.memory_chose .PDCB_parent div').removeClass('active_pill');
     $(this).addClass('active_pill');
 
 });
 
 // form validations
 
-$('.check_valid').click(function (e){
+$('.check_valid').click(function (e) {
 
     let inp_count = $('form div .valid').length;
     let inp_val = [];
     let error_text = $('.error_handler .error_content p');
-    
+
     // get input value and push them into the inp_val array
-    for(let i = 0 ; i < inp_count ; i++){
-    
+    for (let i = 0; i < inp_count; i++) {
+
         inp_val.push($('form div .valid').eq(i).val());
-    
+
     }
-    
+
     // check if inp is empty
-    if(inp_val[0] == '' || inp_val[1] == '' || inp_val[2] == ''){
+    if (inp_val[0] == '' || inp_val[1] == '' || inp_val[2] == '') {
 
         error_text.text('لطفا تمام فیلد ها را پر کنید .');
-        $('.error_handler').css('display' , 'flex');
+        $('.error_handler').css('display', 'flex');
         e.preventDefault();
     }
 
 });
+
+for (let x = 0; x <= $('.memory_chose .PDCB_parent div').length; x++) {
+
+    $('.memory_chose .PDCB_parent div').eq(x).click(function(){
+
+        $('.color_chose .color_pill').removeClass('active_by_memory');
+        $('.color_chose .color_pill').eq(x).addClass('active_by_memory');
+
+    });
+
+}

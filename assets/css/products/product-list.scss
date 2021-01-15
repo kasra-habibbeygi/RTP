@@ -53,6 +53,7 @@
             margin-right: 2%;
             display: flex;
             flex-direction: column;
+            justify-content: center;
             align-items: center;
             padding: 50px 20px 20px 20px;
             position: relative;
@@ -110,7 +111,7 @@
                 color: rgb(184, 184, 184);
                 font-family: $nf;
                 font-weight: normal;
-                font-size: 1.2rem;
+                font-size: 1rem;
             }
 
             .PC_sale {
