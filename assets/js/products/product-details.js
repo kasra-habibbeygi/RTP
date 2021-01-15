@@ -125,6 +125,12 @@ $('.color_chose .PDCB_parent div').click(function () {
     $('.color_chose .PDCB_parent div').removeClass('active_pill');
     $(this).addClass('active_pill');
 
+    if($('.NE_field').length != 0){
+
+        $('.color_chose .PDCB_parent div').removeClass('active_pill');
+
+    }
+
 });
 
 // chose internal memory
