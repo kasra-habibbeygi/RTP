@@ -17,7 +17,7 @@ $('.negetive').click(function () {
     }else{
         
         $(this).parent().children('p').text(parseInt($(this).parent().children('p').text()) - 1);
-        
+
         // add 'p' value to input value attr
         $(this).parent().children('input').attr('value' , parseInt($(this).parent().children('p').text()))
 
@@ -52,10 +52,25 @@ $('.check_valid').click(function (e){
 });
 
 // if user click on remove product btn , open confirm modal
-// var $RG = $('.remove_goods');
+var $RG = $('.remove_goods');
 
-// $RG.click(function(){
+$RG.click(function(){
 
-//     $(this).att('')
+    // fade in
+    $('.card_confirm').fadeIn();
 
-// })
+    // fade out
+    $('.card_confirm .no').click(function(){
+
+        $('.card_confirm').fadeOut();
+
+    });
+
+    var data_title = $(this).attr('data-title');
+    var data_memory = $(this).attr('data-memory');
+    var data_color = $(this).attr('data-color');
+
+    $('.confiem_content p').text(`ایا مطمئن هستید که میخواهید ${data_title} با حافظه داخلی ${data_memory} و رنگ ${data_color} از سبد خرید شما حذف شود ؟`);
+
+
+})

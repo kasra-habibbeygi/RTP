@@ -68,6 +68,7 @@
     top: 0;
     left: 0;
     z-index: 100000000000;
+    display: none;
     
     .content_parent{
         width: 100%;
@@ -89,9 +90,9 @@
 
             p{
                 text-align: center;
-                line-height: 45px;
-                font-size: 1.5rem;
-                color: rgb(83, 83, 83);
+                line-height: 35px;
+                font-size: 1.2rem;
+                color: #535353;
             }
 
             .yes{
