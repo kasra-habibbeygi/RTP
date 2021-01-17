@@ -75,4 +75,6 @@ $RG.click(function(){
 
     $('#CC_yes').attr('href' , data_url);
 
-})
+});
+
+$('.product_summary_field').first().css('border' , 'none');

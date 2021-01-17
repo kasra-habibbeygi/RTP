@@ -37,6 +37,16 @@
 
 .summary_details {
     position: relative;
+
+    h3{
+        a{
+            width: max-content;
+            max-width: 100%;
+            display: block;
+            line-height: 40px;
+            color: rgb(75, 75, 75);
+        }
+    }
 }
 
 .remove_goods {
