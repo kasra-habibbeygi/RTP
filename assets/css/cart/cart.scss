@@ -31,6 +31,10 @@
             border-radius: 50px;
             width: max-content;
             padding: 7px 30px;
+
+            &:hover{
+                background-color: $ac_color;
+            }
         }
     }
 }

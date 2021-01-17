@@ -248,6 +248,10 @@
                 position: absolute;
                 left: 0px;
                 top: 15px;
+
+                &:hover{
+                    background-color: $ac_color;
+                }
             }
 
             .sale_flag_field {

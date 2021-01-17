@@ -90,6 +90,10 @@
                 justify-content: center;
                 align-items: center;
                 margin-right: 10px;
+
+                &:hover{
+                    background-color: $ac_color;
+                }
             }
         }
 
