@@ -1,6 +1,5 @@
 @import '../partials/variable';
 @import '../partials/mixin';
-@import '../partials/product-summary';
 @import '../partials/cart-summary';
 @import '../partials/check-box';
 @import '../partials/header-text';
@@ -71,7 +70,6 @@
     flex-wrap: wrap;
     width: 100%;
     font-family: $nf;
-    border-top: 1px solid rgb(226, 226, 226);
     padding-top: 30px;
 
     .address,
@@ -89,6 +87,56 @@
     .postal_number {
         margin-right: 35px;
     }
+}
+
+    .main_ST{
+        width: 100%;
+        overflow: auto;
+    }
+
+.summary_table{
+    width: 100%;
+    text-align: center;
+
+    #PT{
+        font-size: 0.9rem;
+    }
+
+    tr{
+
+        td ,th{
+            &:first-child{
+                min-width: 100px;
+            }
+
+
+        }
+    }
+
+    thead{
+        background-color: #F6F6F6;
+        direction: rtl;
+
+        th{
+            border: 1px solid #E9E9E9;
+            padding: 20px;
+            color: #999999;
+            min-width: 200px;
+        }
+    }
+
+    tbody{
+        border: none !important;
+
+        td{
+            border: 1px solid #e9e9e9;
+            direction: rtl;
+            padding: 20px 20px;
+            color: #999999;
+            min-width: 200px;
+        }
+    }
+
 }
 
 
