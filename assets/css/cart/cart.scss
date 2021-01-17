@@ -3,6 +3,7 @@
 @import '../partials/product-summary';
 @import '../partials/cart-summary';
 @import '../partials/header-text';
+@import '../partials/errors';
 
 .cart_goods,
 .sale_field {
@@ -19,7 +20,6 @@
     form {
         width: 500px;
         font-family: $nf;
-        margin-top: 50px;
 
         button {
             color: $white;
@@ -59,6 +59,8 @@
     margin-left: 5%;
     font-size: 1.3rem;
 }
+
+
 
 // media query
 @media only screen and (max-width: 1150px) {
@@ -128,6 +130,10 @@
         margin: 0 auto;
     }
 
+    .product_summary_field .summary_details .counter_field {
+        justify-content: center;
+    }
+
 }
 
 @media only screen and (max-width: 600px) {
@@ -169,3 +175,32 @@
 
 
 }
+
+@media only screen and (max-width: 420px) {
+
+    .product_summary_field .summary_details .counter_field .add_counter p {
+        font-size: 0.8rem;
+    }
+
+    .product_summary_field .summary_details .counter_field .add_counter {
+        padding: 10px;
+    }
+
+    .product_summary_field .summary_details .pr_counter {
+        width: 120px;
+    }
+
+}
+
+@media only screen and (max-width: 325px) {
+
+    .product_summary_field .summary_details .pr_counter {
+        width: 100px;
+    }
+
+    .product_summary_field .summary_details .pr_counter p {
+        font-size: 0.9rem;
+    }
+
+}
+
