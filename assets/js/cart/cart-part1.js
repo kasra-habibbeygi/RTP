@@ -1,19 +1,19 @@
 $('.plus').click(function () {
 
-    $('.pr_counter p').text(parseInt($('.pr_counter p').text()) + 1);
+    $(this).parent().children('p').text(parseInt($(this).parent().children('p').text()) + 1);
 
 });
 
 $('.negetive').click(function () {
 
     
-    if(parseInt($('.pr_counter p').text()) - 1 < 0){
+    if(parseInt($(this).parent().children('p').text()) <= 0){
         
         return
         
     }else{
         
-        $('.pr_counter p').text(parseInt($('.pr_counter p').text()) - 1);
+        $(this).parent().children('p').text(parseInt($(this).parent().children('p').text()) - 1);
 
     }
 
