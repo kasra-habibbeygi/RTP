@@ -2,18 +2,24 @@ $('.plus').click(function () {
 
     $(this).parent().children('p').text(parseInt($(this).parent().children('p').text()) + 1);
 
+    // add 'p' value to input value attr
+    $(this).parent().children('input').attr('value' , parseInt($(this).parent().children('p').text()))
+
 });
 
 $('.negetive').click(function () {
 
     
-    if(parseInt($(this).parent().children('p').text()) <= 0){
+    if(parseInt($(this).parent().children('p').text()) <= 1){
         
         return
         
     }else{
         
         $(this).parent().children('p').text(parseInt($(this).parent().children('p').text()) - 1);
+        
+        // add 'p' value to input value attr
+        $(this).parent().children('input').attr('value' , parseInt($(this).parent().children('p').text()))
 
     }
 
@@ -44,3 +50,12 @@ $('.check_valid').click(function (e){
     }
 
 });
+
+// if user click on remove product btn , open confirm modal
+// var $RG = $('.remove_goods');
+
+// $RG.click(function(){
+
+//     $(this).att('')
+
+// })

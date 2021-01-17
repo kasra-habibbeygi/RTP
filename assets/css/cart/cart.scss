@@ -60,20 +60,61 @@
     font-size: 1.3rem;
 }
 
-// .card_confirm{
-//     width: 100%;
-//     height: 100vh;
-//     background-color: rgba(0, 0, 0, 0.164);
-//     position: fixed;
+.card_confirm{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.301);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100000000000;
     
-//     .content_parent{
-//         width: 100%;
-//         height: 100%;
-//         display: flex;
-//         justify-content: center;
-//         align-items: center;
-//     }
-// }
+    .content_parent{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .confiem_content{
+            width: 500px;
+            padding: 50px;
+            background-color: $white;
+            border-radius: 15px;
+            text-align: right;
+            direction: rtl;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            p{
+                text-align: center;
+                line-height: 45px;
+                font-size: 1.5rem;
+                color: rgb(83, 83, 83);
+            }
+
+            .yes{
+                background-color: $accent_color;
+                color: $white;
+                margin-right: 20px;
+                font-size: 1.3rem;
+                border-radius: 50px;
+                padding: 5px 25px;
+                margin-top: 20px;
+            }
+
+            .no{
+                background-color: #FE3548;
+                color: $white;
+                font-size: 1.3rem;
+                border-radius: 50px;
+                padding: 5px 25px;
+                margin-top: 20px;
+            }
+        }
+    }
+}
 
 
 // media query
@@ -88,7 +129,7 @@
 }
 
 @media only screen and (max-width: 920px) {
-
+    counter_field
     .cart_goods,
     .sale_field {
         width: 60%;

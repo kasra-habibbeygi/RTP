@@ -1,388 +1,304 @@
  <!DOCTYPE html>
-<html lang="en">
+ <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../assets/css/general/bootstrap.css">
-    <link rel="stylesheet" href="../../assets/css/general/fontAwsome.css">
-    <link rel="stylesheet" href="../../assets/css/general/general-css.css">
-    <link rel="stylesheet" href="../../assets/css/general/Swiper.css">
-    <link rel="stylesheet" href="../../assets/css/cart/cart.css">
-    <title>index</title>
-</head>
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="../../assets/css/general/bootstrap.css">
+     <link rel="stylesheet" href="../../assets/css/general/fontAwsome.css">
+     <link rel="stylesheet" href="../../assets/css/general/general-css.css">
+     <link rel="stylesheet" href="../../assets/css/general/Swiper.css">
+     <link rel="stylesheet" href="../../assets/css/cart/cart.css">
+     <title>index</title>
+ </head>
 
-<body>
-    <!-- The part at the top of the page where the logo and search are located -->
-    <div class="secondary-nav">
-        <div class="NB-search">
-            <form action="">
-                <div class="input-group">
-                    <div class="input-group-prepend">
-                        <!-- search -->
-                        <span class="input-group-text" id="navbar_search">
-                            <button class="btn">
-                                <i class="fal fa-search"></i>
-                            </button>
-                        </span>
-                        <!-- search -->
-                    </div>
-                    <input type="text" class="form-control" placeholder="نام محصول یا کالای مورد نظر خود را وارد کنید !"
-                        aria-describedby="navbar_search">
-                </div>
-            </form>
-        </div>
-        <!-- logo -->
-        <img src="../../assets/img/AL00.png" alt="logo" title="logo">
-    </div>
+ <body>
+     <!-- The part at the top of the page where the logo and search are located -->
+     <div class="secondary-nav">
+         <div class="NB-search">
+             <form action="">
+                 <div class="input-group">
+                     <div class="input-group-prepend">
+                         <!-- search -->
+                         <span class="input-group-text" id="navbar_search">
+                             <button class="btn">
+                                 <i class="fal fa-search"></i>
+                             </button>
+                         </span>
+                         <!-- search -->
+                     </div>
+                     <input type="text" class="form-control"
+                         placeholder="نام محصول یا کالای مورد نظر خود را وارد کنید !" aria-describedby="navbar_search">
+                 </div>
+             </form>
+         </div>
+         <!-- logo -->
+         <img src="../../assets/img/AL00.png" alt="logo" title="logo">
+     </div>
 
-    <!-- navbar -->
-    <nav>
-        <div class="SN_layout"></div>
-        <button class="sandwich-navbar btn">
-            <i class="fas fa-bars"></i>
-        </button>
-        <div class="right-NB">
-            <i class="fas fa-times close_SN"></i>
-            <!-- navbar option -->
-            <ul class="navbar-option">
-                <li class="active-page">
-                    <a href="index.html">صفحه اصلی</a>
-                </li>
-                <li class="NBP-dropdown" id="PDP">
-                    <p>محصولات <i class="fal fa-angle-down"></i></p>
-                    <div class="product-option" id="PD">
-                        <a href="../product/product-list.html">تمام محصولات</a>
-                        <a href="">سامسونگ</a>
-                        <a href="">اپل</a>
-                        <a href="">اپل واچ</a>
-                        <a href="">ایر پاد</a>
-                    </div>
-                </li>
-                <li id="PDSN">
-                    <a href="../product/product-list.html">تمام محصولات</a>
-                    <a href="">سامسونگ</a>
-                    <a href="">اپل</a>
-                    <a href="">اپل واچ</a>
-                    <a href="">ایر پاد</a>
-                </li>
-                <li>
-                    <a href="../article/article.html">اخبار</a>
-                </li>
-                <li>
-                    <a href="../about-us/about-us.html">درباره ما</a>
-                </li>
-                <li>
-                    <a href="../contact-us/contact-us.html">تماس با ما</a>
-                </li>
-            </ul>
-            <!-- navbar option -->
-        </div>
-        <div class="left-NB">
-            <div class="LR-field">
-                <a href="">ورود</a>
-                /
-                <a href="">عضویت</a>
-            </div>
-            <div class="basket-field">
-                <a href="">
-                    سبد خریـــــــــــــد
-                    <i class="fas fa-shopping-cart"></i>
-                    <div class="B-conter">3</div>
-                </a>
-            </div>
-        </div>
-    </nav>
+     <!-- navbar -->
+     <nav>
+         <div class="SN_layout"></div>
+         <button class="sandwich-navbar btn">
+             <i class="fas fa-bars"></i>
+         </button>
+         <div class="right-NB">
+             <i class="fas fa-times close_SN"></i>
+             <!-- navbar option -->
+             <ul class="navbar-option">
+                 <li class="active-page">
+                     <a href="index.html">صفحه اصلی</a>
+                 </li>
+                 <li class="NBP-dropdown" id="PDP">
+                     <p>محصولات <i class="fal fa-angle-down"></i></p>
+                     <div class="product-option" id="PD">
+                         <a href="../product/product-list.html">تمام محصولات</a>
+                         <a href="">سامسونگ</a>
+                         <a href="">اپل</a>
+                         <a href="">اپل واچ</a>
+                         <a href="">ایر پاد</a>
+                     </div>
+                 </li>
+                 <li id="PDSN">
+                     <a href="../product/product-list.html">تمام محصولات</a>
+                     <a href="">سامسونگ</a>
+                     <a href="">اپل</a>
+                     <a href="">اپل واچ</a>
+                     <a href="">ایر پاد</a>
+                 </li>
+                 <li>
+                     <a href="../article/article.html">اخبار</a>
+                 </li>
+                 <li>
+                     <a href="../about-us/about-us.html">درباره ما</a>
+                 </li>
+                 <li>
+                     <a href="../contact-us/contact-us.html">تماس با ما</a>
+                 </li>
+             </ul>
+             <!-- navbar option -->
+         </div>
+         <div class="left-NB">
+             <div class="LR-field">
+                 <a href="">ورود</a>
+                 /
+                 <a href="">عضویت</a>
+             </div>
+             <div class="basket-field">
+                 <a href="">
+                     سبد خریـــــــــــــد
+                     <i class="fas fa-shopping-cart"></i>
+                     <div class="B-conter">3</div>
+                 </a>
+             </div>
+         </div>
+     </nav>
 
-    <!-- big alert -->
-    <section class="card_confirm">
+     <!-- big alert -->
+     <!-- <section class="card_confirm">
         <div class="content_parent">
-
-        </div>   
-    </section>
-
-    <!-- page conent -->
-
-    <section class="cart_goods">
-        <h3 class="all_header_text">جزئیات سفارش</h3>
-        <span class="header_underline"></span>
-
-        <!-- goods details -->
-        <div class="product_summary_field">
-            <div class="summary_img_field">
-                <img class="summary_img" src="../../assets/img/AP03.png" alt="">
+            <div class="confiem_content">
+                <p></p>
+                <button class="btn no">خیر</button>
+                <button class="btn yes">بله</button>
             </div>
-            <div class="summary_details">
-                <a href="">
-                    <h3>گوشی موبایل سامسونگ مدل Galaxy Note20 Ultra SM-N985F/DS دو سیم کارت ظرفیت 256 گیگابایت</h3>
-                </a>
-                <div class="CM">
-                    <div><span style="background-color: white;"></span>سفید</div>
-                    <div>64 گیگابایت</div>
-                </div>
+        </div>   -
+    </section> -->
 
-                <div class="counter_field">
-                    <div class="pr_counter">
-                        <span class="plus">+</span>
-                        <p>2</p>
-                        <span class="negetive">-</span>
-                    </div>
+     <!-- page conent -->
 
-                    <div class="add_counter">
-                        <p>اعمال تغییرات</p>
-                    </div>
-                </div>
+     <section class="cart_goods">
+         <h3 class="all_header_text">جزئیات سفارش</h3>
+         <span class="header_underline"></span>
 
-                <div class="guarantee_field">
-                    <i class="fal fa-shield-check"></i>
-                    گارانتی 24 ماهه شرکت ارتا تجارت پارسه آریا
-                </div>
-                
-                <!-- sale price -->
-                <div class="sale_flag">
-                    <p class="summary_price"> 3.000.000 </p>
+         <!-- goods details -->
+         <div class="product_summary_field">
+             <div class="summary_img_field">
+                 <img class="summary_img" src="../../assets/img/AP03.png" alt="">
+             </div>
+             <div class="summary_details">
+                 <a href="">
+                     <h3>گوشی موبایل سامسونگ مدل Galaxy Note20 Ultra SM-N985F/DS دو سیم کارت ظرفیت 256 گیگابایت</h3>
+                 </a>
+                 <div class="CM">
+                     <div><span style="background-color: white;"></span>سفید</div>
+                     <div>64 گیگابایت</div>
+                 </div>
 
-                    <div>
-                        <p> 3.000.000 </p>
-                        <span>10%</span>
-                    </div>
-                </div>
+                 <form action="">
+                     <div class="counter_field">
+                         <div class="pr_counter">
+                             <input type="text" value="" hidden>
+                             <span class="plus">+</span>
+                             <p>2</p>
+                             <span class="negetive">-</span>
+                         </div>
 
-                <!-- price without sale -->
-                <p class="summary_price"> 3.000.000 </p>
-                <p class="remove_goods"><i class="fal fa-backspace"></i> حذف محصول</p>
-            </div>
-        </div>
-        <div class="product_summary_field">
-            <div class="summary_img_field">
-                <img class="summary_img" src="../../assets/img/AP03.png" alt="">
-            </div>
-            <div class="summary_details">
-                <a href="">
-                    <h3>گوشی موبایل سامسونگ مدل Galaxy Note20 Ultra SM-N985F/DS دو سیم کارت ظرفیت 256 گیگابایت</h3>
-                </a>
-                <div class="CM">
-                    <div><span style="background-color: white;"></span>سفید</div>
-                    <div>64 گیگابایت</div>
-                </div>
+                         <button class="add_counter btn" type="button">اعمال تغییرات</button>
+                     </div>
+                 </form>
 
-                <div class="counter_field">
-                    <div class="pr_counter">
-                        <span class="plus">+</span>
-                        <p>2</p>
-                        <span class="negetive">-</span>
-                    </div>
+                 <div class="guarantee_field">
+                     <i class="fal fa-shield-check"></i>
+                     گارانتی 24 ماهه شرکت ارتا تجارت پارسه آریا
+                 </div>
 
-                    <div class="add_counter">
-                        <p>اعمال تغییرات</p>
-                    </div>
-                </div>
+                 <!-- sale price -->
+                 <div class="sale_flag">
+                     <p class="summary_price"> 3.000.000 </p>
 
-                <div class="guarantee_field">
-                    <i class="fal fa-shield-check"></i>
-                    گارانتی 24 ماهه شرکت ارتا تجارت پارسه آریا
-                </div>
-                
-                <!-- sale price -->
-                <div class="sale_flag">
-                    <p class="summary_price"> 3.000.000 </p>
+                     <div>
+                         <p> 3.000.000 </p>
+                         <span>10%</span>
+                     </div>
+                 </div>
 
-                    <div>
-                        <p> 3.000.000 </p>
-                        <span>10%</span>
-                    </div>
-                </div>
+                 <!-- price without sale -->
+                 <p class="summary_price"> 3.000.000 </p>
+                 <p class="remove_goods" data-color="" data-memory="" data-title=""><i class="fal fa-backspace"></i> حذف
+                     محصول</p>
+             </div>
+         </div>
+     </section>
 
-                <!-- price without sale -->
-                <p class="summary_price"> 3.000.000 </p>
-                <p class="remove_goods"><i class="fal fa-backspace"></i> حذف محصول</p>
-            </div>
-        </div>
-        <div class="product_summary_field">
-            <div class="summary_img_field">
-                <img class="summary_img" src="../../assets/img/AP03.png" alt="">
-            </div>
-            <div class="summary_details">
-                <a href="">
-                    <h3>گوشی موبایل سامسونگ مدل Galaxy Note20 Ultra SM-N985F/DS دو سیم کارت ظرفیت 256 گیگابایت</h3>
-                </a>
-                <div class="CM">
-                    <div><span style="background-color: white;"></span>سفید</div>
-                    <div>64 گیگابایت</div>
-                </div>
+     <section class="sale_field mt-4">
+         <h3 class="all_header_text">کد تخفیف</h3>
+         <span class="header_underline"></span>
 
-                <div class="counter_field">
-                    <div class="pr_counter">
-                        <span class="plus">+</span>
-                        <p>2</p>
-                        <span class="negetive">-</span>
-                    </div>
+         <div class="error_handler warning_error">
+             <i class="fal fa-exclamation-circle"></i>
+             <div class="error_content">
+                 <p>
+                     لطفا تمام فیلد ها را پر کنید
+                 </p>
+             </div>
+             <i class="fal fa-times remove_erroe"></i>
+         </div>
+         <form>
+             <div class="form-group">
+                 <label for="sale_inp">کد تخفیف</label>
+                 <input type="text" class="form-control valid " id="sale_inp">
+             </div>
+             <button type="submit" class="btn check_valid">اعمال تخفیف</button>
+         </form>
 
-                    <div class="add_counter">
-                        <p>اعمال تغییرات</p>
-                    </div>
-                </div>
-
-                <div class="guarantee_field">
-                    <i class="fal fa-shield-check"></i>
-                    گارانتی 24 ماهه شرکت ارتا تجارت پارسه آریا
-                </div>
-                
-                <!-- sale price -->
-                <div class="sale_flag">
-                    <p class="summary_price"> 3.000.000 </p>
-
-                    <div>
-                        <p> 3.000.000 </p>
-                        <span>10%</span>
-                    </div>
-                </div>
-
-                <!-- price without sale -->
-                <p class="summary_price"> 3.000.000 </p>
-                <p class="remove_goods"><i class="fal fa-backspace"></i> حذف محصول</p>
-            </div>
-        </div>
-    </section>
-
-    <section class="sale_field mt-4">
-        <h3 class="all_header_text">کد تخفیف</h3>
-        <span class="header_underline"></span>
-
-        <div class="error_handler warning_error">
-            <i class="fal fa-exclamation-circle"></i>
-            <div class="error_content">
-                <p>
-                    لطفا تمام فیلد ها را پر کنید
-                </p>
-            </div>
-            <i class="fal fa-times remove_erroe"></i>
-        </div>
-        <form>
-            <div class="form-group">
-                <label for="sale_inp">کد تخفیف</label>
-                <input type="text" class="form-control valid " id="sale_inp">
-            </div>
-            <button type="submit" class="btn check_valid">اعمال تخفیف</button>
-        </form>
-
-    </section>
+     </section>
 
 
-    <!-- card sammary -->
-    <section class="card_summary">
-        <div>
-            <p>قیمت کالا :</p>
-            <p>7.000.000</p>
-        </div>
-        <div>
-            <p>تخفیف کالا :</p>
-            <p>ندارد</p>
-        </div>
-        <div>
-            <p>کد تخفیف :</p>
-            <p>ندارد</p>
-        </div>
-        <div>
-            <p>هزینه ارسال :</p>
-            <p>رایگان</p>
-        </div>
-        <span></span>
-        <div>
-            <p>مبلغ قابل پرداخت :</p>
-            <p>7.000.000</p>
-        </div>
-        <a href="cart-part2.html" class="btn card_checked">ادامه فرآیند خرید</a>
-    </section>
+     <!-- card sammary -->
+     <section class="card_summary">
+         <div>
+             <p>قیمت کالا :</p>
+             <p>7.000.000</p>
+         </div>
+         <div>
+             <p>تخفیف کالا :</p>
+             <p>ندارد</p>
+         </div>
+         <div>
+             <p>کد تخفیف :</p>
+             <p>ندارد</p>
+         </div>
+         <div>
+             <p>هزینه ارسال :</p>
+             <p>رایگان</p>
+         </div>
+         <span></span>
+         <div>
+             <p>مبلغ قابل پرداخت :</p>
+             <p>7.000.000</p>
+         </div>
+         <a href="cart-part2.html" class="btn card_checked">ادامه فرآیند خرید</a>
+     </section>
 
-    <!-- empty field -->
-    <div class="empty_card">
-        هنوز محصولی به سبد خرید شما اضافه نشده است !
-    </div>
+     <!-- empty field -->
+     <div class="empty_card">
+         هنوز محصولی به سبد خرید شما اضافه نشده است !
+     </div>
 
-    <!-- footer -->
-    <footer>
-        <div class="contact">
-            <p class="header">ارتباط با ما</p>
-            <p>
-                <i class="fal fa-map-marker-alt"></i>
-                تهران - بلوار نلسون ماندلا- بالاتر از چهار راه اسفندیاری - خیابان فاطمی - برج صبا
-            </p>
-            <p>
-                <i class="fal fa-at"></i>
-                kasrahabibbeygi@hmail.com
-            </p>
-            <p>
-                <i class="fal fa-mobile"></i>
-                <span>09021414866</span>
-                <span>09371969052</span>
-            </p>
-        </div>
-        <div class="short_links">
-            <p class="header">محصولات</p>
-            <ul>
-                <li>
-                    <a href="">سامسونگ</a>
-                </li>
-                <li>
-                    <a href="">اپل</a>
-                </li>
-                <li>
-                    <a href="">اپل واچ</a>
-                </li>
-                <li>
-                    <a href="">ایر پاد</a>
-                </li>
-            </ul>
-        </div>
-        <div class="short_links">
-            <p class="header">لینک های مفید</p>
-            <ul>
-                <li>
-                    <a href="">مقالات</a>
-                </li>
-                <li>
-                    <a href="">تماس با ما</a>
-                </li>
-                <li>
-                    <a href="">درباره ما</a>
-                </li>
-                <li>
-                    <a href="">محصولات</a>
-                </li>
-            </ul>
-        </div>
-        <div class="footer_description">
-            <p class="header">ATP.mobile</p>
-            <p class="FDT">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است
-            </p>
-            <div class="social_media">
-                <a href="">
-                    <i class="fab fa-instagram"></i>
-                </a>
-                <a href="">
-                    <i class="fab fa-telegram-plane"></i>
-                </a>
-                <a href="">
-                    <i class="fab fa-whatsapp"></i>
-                </a>
-            </div>
-        </div>
-        <div class="copy_right">
-            <p>
-                &copy; تمام حقوق مادی و معنوی این سایت محفوظ است
-            </p>
-        </div>
-    </footer>
-    <!-- footer -->
+     <!-- footer -->
+     <footer>
+         <div class="contact">
+             <p class="header">ارتباط با ما</p>
+             <p>
+                 <i class="fal fa-map-marker-alt"></i>
+                 تهران - بلوار نلسون ماندلا- بالاتر از چهار راه اسفندیاری - خیابان فاطمی - برج صبا
+             </p>
+             <p>
+                 <i class="fal fa-at"></i>
+                 kasrahabibbeygi@hmail.com
+             </p>
+             <p>
+                 <i class="fal fa-mobile"></i>
+                 <span>09021414866</span>
+                 <span>09371969052</span>
+             </p>
+         </div>
+         <div class="short_links">
+             <p class="header">محصولات</p>
+             <ul>
+                 <li>
+                     <a href="">سامسونگ</a>
+                 </li>
+                 <li>
+                     <a href="">اپل</a>
+                 </li>
+                 <li>
+                     <a href="">اپل واچ</a>
+                 </li>
+                 <li>
+                     <a href="">ایر پاد</a>
+                 </li>
+             </ul>
+         </div>
+         <div class="short_links">
+             <p class="header">لینک های مفید</p>
+             <ul>
+                 <li>
+                     <a href="">مقالات</a>
+                 </li>
+                 <li>
+                     <a href="">تماس با ما</a>
+                 </li>
+                 <li>
+                     <a href="">درباره ما</a>
+                 </li>
+                 <li>
+                     <a href="">محصولات</a>
+                 </li>
+             </ul>
+         </div>
+         <div class="footer_description">
+             <p class="header">ATP.mobile</p>
+             <p class="FDT">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است
+             </p>
+             <div class="social_media">
+                 <a href="">
+                     <i class="fab fa-instagram"></i>
+                 </a>
+                 <a href="">
+                     <i class="fab fa-telegram-plane"></i>
+                 </a>
+                 <a href="">
+                     <i class="fab fa-whatsapp"></i>
+                 </a>
+             </div>
+         </div>
+         <div class="copy_right">
+             <p>
+                 &copy; تمام حقوق مادی و معنوی این سایت محفوظ است
+             </p>
+         </div>
+     </footer>
+     <!-- footer -->
 
-    <script src="../../assets/js/general/jquery.js"></script>
-    <script src="../../assets/js/general/popper.js"></script>
-    <script src="../../assets/js/general/bootstrap.js"></script>
-    <script src="../../assets/js/general/Swiper.js"></script>
-    <script src="../../assets/js/custom/navbar.js"></script>
-    <script src="../../assets/js/cart/cart-part1.js"></script>
-    <script src="../../assets/js/custom/errors.js"></script>
-</body>
+     <script src="../../assets/js/general/jquery.js"></script>
+     <script src="../../assets/js/general/popper.js"></script>
+     <script src="../../assets/js/general/bootstrap.js"></script>
+     <script src="../../assets/js/general/Swiper.js"></script>
+     <script src="../../assets/js/custom/navbar.js"></script>
+     <script src="../../assets/js/cart/cart-part1.js"></script>
+     <script src="../../assets/js/custom/errors.js"></script>
+ </body>
 
-</html>
+ </html>
