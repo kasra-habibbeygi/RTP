@@ -1,4 +1,4 @@
-var $RG = $('.remove_goods');
+var $RG = $('.exit_pro');
 $RG.click(function(){
 
     // fade in

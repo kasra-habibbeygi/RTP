@@ -79,13 +79,24 @@
             <!-- navbar option -->
         </div>
         <div class="left-NB">
-            <div class="LR-field">
+            <!-- <div class="LR-field">
                 <a href="../login-register/login.html">ورود</a>
                 /
                 <a href="../login-register/register.html">عضویت</a>
+            </div> -->
+            <!-- profile dropdown -->
+            <div class="dropdown">
+                <button class="btn dropdown-toggle " type="button" id="pr_dropdown" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    <i class="far fa-angle-down"></i>
+                    پروفایل
+                </button>
+                <div class="dropdown-menu" aria-labelledby="pr_dropdown">
+                    <a class="dropdown-item" href="#">پروفایل کاربری</a>
+                    <a class="dropdown-item exit_pro" href="#">خروج</a>
+                </div> 
             </div>
-            <div
-            class="profile_dropdown"></div>
+
             <div class="basket-field">
                 <a href="../cart/cart-part1.html">
                     سبد خریـــــــــــــد
@@ -673,6 +684,7 @@
     <script src="../../assets/js/general/Swiper.js"></script>
     <script src="../../assets/js/index/index.js"></script>
     <script src="../../assets/js/custom/navbar.js"></script>
+    <script src="../../assets/js/custom/E-alert.js"></script>
 </body>
 
 </html>
