@@ -121,6 +121,10 @@
                 border-radius: 50px;
                 padding: 5px 25px;
                 margin-top: 20px;
+
+                &:hover{
+                    background-color: $ac_color;
+                }
             }
 
             .no{
@@ -130,6 +134,10 @@
                 border-radius: 50px;
                 padding: 5px 25px;
                 margin-top: 20px;
+
+                &:hover{
+                    background-color: #ff6272;
+                }
             }
         }
     }
@@ -217,6 +225,15 @@
         margin-right: 25%;
     }
 
+    .card_confirm .content_parent .confiem_content {
+        width: 400px;
+        padding: 30px;
+    }
+
+    .card_confirm .content_parent .confiem_content p {
+        font-size: 1rem;
+    }
+
 }
 
 @media only screen and (max-width: 500px) {
@@ -262,6 +279,10 @@
 
     .product_summary_field .summary_details .pr_counter {
         width: 120px;
+    }
+
+    .card_confirm .content_parent .confiem_content {
+        width: 90%;
     }
 
 }
