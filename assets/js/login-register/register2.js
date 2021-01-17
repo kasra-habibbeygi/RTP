@@ -1,3 +1,7 @@
+// timer
+let flag = 0;
+
+// validation
 $('.check_valid').click(function (e) {
 
     let inp_count = $('form div .valid').length;
@@ -12,38 +16,45 @@ $('.check_valid').click(function (e) {
 
     }
 
-    // check if inp is empty
-    if(inp_val[0] == ''){
+    if (flag == 0) {
 
-        error_text.text('لطفا تمام فیلد ها را پر کنید .');
-        $('.error_handler').css('display' , 'flex');
-        e.preventDefault();
+        if (inp_val[0] == '' || inp_val[1] == '') {
+
+            error_text.text('لطفا تمام فیلد ها را پر کنید .');
+            $('.error_handler').css('display', 'flex');
+            e.preventDefault();
+
+        }
+
+    } else {
+
+        return false;
 
     }
 
 });
 
 // timer
-
 var timer = setInterval(() => {
-    
+
     var sec = parseInt($('.timer_field #sec').text());
     var min = parseInt($('.timer_field #min').text());
 
-    if(sec !== 00){
-        
-        $('.timer_field #sec').text(sec-1);
+    if (sec !== 00) {
 
-    }else if(sec === 0 && min === 0){
+        $('.timer_field #sec').text(sec - 1);
 
-        $('.error_handler').css('display' , 'flex');
-        $('.error_handler p').text('زمان شما به اتمام رسید ، لطفا مجدد تلاش کنید .');
-        clearInterval(timer)
 
-    }
-    else{
-        
-        $('.timer_field #min').text(min-1);
+    } else if (sec === 0 && min === 0) {
+
+        $('.error_handler').css('display', 'flex');
+        $('.error_handler p').html('زمان شما به اتمام رسیده است ، برای دریافت کد مجدد <a href=""> اینجا </a> کلیک کنید .');
+        clearInterval(timer);
+        flag = 1;
+
+    } else {
+
+        $('.timer_field #min').text(min - 1);
         $('.timer_field #sec').text(59);
 
     }

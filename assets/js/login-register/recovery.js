@@ -13,7 +13,7 @@ $('.check_valid').click(function (e) {
     }
 
     // check if inp is empty
-    if(inp_val[0] == ''){
+    if(inp_val[0] == '' || inp_val[1] == ''){
 
         error_text.text('لطفا تمام فیلد ها را پر کنید .');
         $('.error_handler').css('display' , 'flex');

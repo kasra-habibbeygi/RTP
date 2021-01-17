@@ -115,6 +115,18 @@
                     <label for="recovery_pass_inp">جهت بازیابی رمز عبور ، شماره تماس خود را وارد کنید .</label>
                     <input type="text" class="form-control valid" id="recovery_pass_inp">
                 </div>
+                <div class="captcha_inp">
+                    <div class="form-group">
+                        <label for="pass_inp">کد امنیتی</label>
+                        <input type="text" class="form-control valid" id="pass_inp">
+                    </div>
+                    <button type="button">
+                        <i class="far fa-redo-alt"></i>
+                    </button>
+                    <div class="captcha_img">
+                        <img src="../../assets/img/LC00.png" alt="">
+                    </div>
+                </div>
                 <button type="submit" class="btn check_valid">بازیابی رمز عبور</button>
             </form>
         </div>
@@ -201,6 +213,7 @@
     <script src="../../assets/js/general/bootstrap.js"></script>
     <script src="../../assets/js/custom/navbar.js"></script>
     <script src="../../assets/js/login-register/recovery.js"></script>
+    <script src="../../assets/js/custom/errors.js"></script>
 </body>
 
 </html>
