@@ -73,7 +73,7 @@ $RG.click(function(){
 
     if(data_memory == ''){
 
-        $('.confiem_content p').text(`ایا مطمئن هستید که میخواهید ${data_title} رنگ ${data_color} از سبد خرید شما حذف شود ؟`);
+        $('.confiem_content p').text(`ایا مطمئن هستید که میخواهید ${data_title} با رنگ ${data_color} از سبد خرید شما حذف شود ؟`);
 
     }else{
 
