@@ -175,7 +175,7 @@ for (let x = 0; x <= $('.memory_chose .PDCB_parent div').length; x++) {
         $('.color_chose .color_pill').removeClass('active_by_memory');
         $('.color_chose .color_pill').eq(x).addClass('active_by_memory');
 
+
     });
 
 }
-
