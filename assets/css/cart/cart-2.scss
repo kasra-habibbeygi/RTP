@@ -31,6 +31,9 @@
     .new_address {
         width: 50%;
         padding: 15px 50px 15px 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
         div {
             width: 100%;
@@ -230,6 +233,21 @@
 .active_pill {
     border: 1px solid $accent_color !important;
     color: $accent_color !important;
+}
+
+.not_exist{
+    width: 93%;
+    height: 200px;
+    padding: 35px 0px;
+    border-radius: 15px;
+    background-color: #ececec;
+    direction: rtl;
+    color: #666;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
 }
 
 @media only screen and (max-width: 1200px) {

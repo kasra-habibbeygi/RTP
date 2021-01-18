@@ -94,44 +94,6 @@
         </div>
     </nav>
     <!-- navbar -->
-
-        <!-- add new address modal -->
-        <section class="AA_moda">
-            <div class="AA_flex">
-                <div class="AAM_field">
-                    <i class="fas fa-times AAM_close"></i>
-                    <h3 class="all_header_text">افزودن آدرس جدید</h3>
-                    <span class="header_underline"></span>
-    
-                    <form>
-                        <div class="form-group">
-                            <label for="sale_inp">نام دریافت کننده</label>
-                            <input type="text" class="form-control" id="sale_inp">
-                        </div>
-                        <div class="form-group">
-                            <label for="sale_inp">آدرس</label>
-                            <input type="text" class="form-control" id="sale_inp">
-                        </div>
-                        <div class="form-group">
-                            <label for="sale_inp">کد پستی</label>
-                            <input type="text" class="form-control" id="sale_inp">
-                        </div>
-                        <div class="form-group">
-                            <label for="sale_inp">انتخاب شهر</label>
-                            <select class="form-control" id="exampleFormControlSelect1">
-                                <option>1</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                                <option>5</option>
-                              </select>
-                        </div>
-                        <button type="submit" class="btn">افزودن آدرس جدید</button>
-                    </form>
-                </div>
-            </div>
-        </section>
-
     <section class="edit_field">
         <div class="edit_body">
             <h3 class="all_header_text">ویرایش پروفایل</h3>
@@ -160,30 +122,18 @@
                     <label for="email_inp">پست الکترونیکی</label>
                     <input type="text" class="form-control valid" id="email_inp">
                 </div>
-                <div class="birth_day">
-                    <p>تاریخ تولد</p>
-                    <div>
-                        <label for="day_inp">روز</label>
-                        <input type="text" class="form-control valid" id="day_inp">
-                    </div>
-                    <Span>/</Span>
-                    <div>
-                        <label for="month_inp">ماه</label>
-                        <input type="text" class="form-control valid" id="month_inp">
-                    </div>
-                    <Span>/</Span>
-                    <div>
-                        <label for="year_inp">سال</label>
-                        <input type="text" class="form-control valid" id="year_inp">
-                    </div>
-                </div>
-                <div class="add_address">+ افزودن آدرس جدید</div>
 
-                <div class="avaible_address">
-                    <p>شهران - خیابان طوقانی - خیابان یاس - پلاک 28 - واحد 4</p>
-                    <p class="CN">کسری حبیب بیگی</p>
-                    <p class="CN">کد پستی : 6874355986</p>
-                    <p><i class="fal fa-backspace"></i> حذف آدرس</p>
+                <div class="captcha_inp">
+                    <div class="form-group">
+                        <label for="pass_inp">کد امنیتی</label>
+                        <input type="text" class="form-control valid" id="pass_inp">
+                    </div>
+                    <button type="button">
+                        <i class="far fa-redo-alt"></i>
+                    </button>
+                    <div class="captcha_img">
+                        <img src="../../assets/img/LC00.png" alt="">
+                    </div>
                 </div>
                 
                 <button type="submit" class="btn check_valid">ثبت تغییرات</button>
