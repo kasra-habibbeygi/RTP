@@ -18,17 +18,17 @@
         margin-top: 20px;
         width: 70%;
 
-        a {
-            display: block;
+        h3 {
+            color: rgb(37, 37, 37);
+            line-height: 45px;
+            font-size: 1.3rem;
 
-            h3 {
-                color: rgb(37, 37, 37);
-                line-height: 45px;
-                font-size: 1.3rem;
+            a{
+                width: max-content;
+            }
 
-                &:hover {
-                    color: #0056B3;
-                }
+            &:hover {
+                color: #0056B3;
             }
         }
 

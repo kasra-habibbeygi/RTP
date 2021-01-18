@@ -119,12 +119,28 @@
     }
 }
 
+.not_exist{
+    width: 90%;
+    padding: 30px 30px;
+    border-radius: 15px;
+    background-color: #ececec;
+    text-align: center;
+    direction: rtl;
+    color: #666;
+    margin-right: 5%;
+    font-size: 1.3rem;
+}
+
 // media query
 @media only screen and (max-width: 700px) {
 
     .AD_field .accont_details div,
     .lastes_purches .accont_details div {
         width: 100%;
+    }
+
+    .not_exist{
+        font-size: 1rem;
     }
 
 }
