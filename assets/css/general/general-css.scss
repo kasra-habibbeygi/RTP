@@ -141,3 +141,8 @@ select{
 label {
     color: #626262 !important;
 }
+
+label.error{
+    color: red!important;
+    padding-top: 5px !important;
+}
