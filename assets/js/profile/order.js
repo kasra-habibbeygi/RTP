@@ -63,5 +63,3 @@ $('.edit_address').click(function(){
     });
 
 });
-
-
