@@ -35,7 +35,8 @@ $af : accent-font;
 @import '../partials/mixin',
         '../partials/variable',
         '../partials/footer',
-        '../partials/navbar';
+        '../partials/navbar',
+        '../partials/E-confirm';
 
 body{
     overflow-x: hidden;
@@ -156,7 +157,6 @@ label.error{
     position: relative;
     margin-bottom: 20px;
     margin-top: -15px;
-    display: none;
     direction: rtl;
     text-align: right;
 
