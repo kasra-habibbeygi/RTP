@@ -79,13 +79,28 @@
             <!-- navbar option -->
         </div>
         <div class="left-NB">
-            <div class="LR-field">
-                <a href="">ورود</a>
+            <!-- <div class="LR-field">
+                <a href="../login-register/login.html">ورود</a>
                 /
-                <a href="">عضویت</a>
+                <a href="../login-register/register.html">عضویت</a>
+            </div> -->
+            <!-- profile dropdown -->
+            <div class="dropdown">
+                <button class="btn dropdown-toggle " type="button" id="pr_dropdown" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    <i class="far fa-angle-down"></i>
+                    پروفایل
+                </button>
+                <div class="dropdown-menu" aria-labelledby="pr_dropdown">
+                    <a class="dropdown-item" href="../profile/profile.html">پروفایل کاربری</a>
+                    <a class="dropdown-item" href="../profile/order.html">آدرس ها</a>
+                    <a class="dropdown-item" href="../profile/change-password.html">تغییر رمز عبور</a>
+                    <a class="dropdown-item exit_pro" href="#">خروج</a>
+                </div>
             </div>
+
             <div class="basket-field">
-                <a href="">
+                <a href="../cart/cart-part1.html">
                     سبد خریـــــــــــــد
                     <i class="fas fa-shopping-cart"></i>
                     <div class="B-conter">3</div>
@@ -93,7 +108,16 @@
             </div>
         </div>
     </nav>
-
+    <!-- exit alert -->
+    <section class="exit_confirm">
+        <div class="content_parent">
+            <div class="confiem_content">
+                <p>ایا مطمئن هستید که میخواهید از پروفایل خود خارج شوید ؟</p>
+                <button type="button" class="btn no">خیر</button>
+                <a href="" class="btn yes">بله</a>
+            </div>
+        </div>
+    </section>
 
     <!-- page content -->
     <section class="AD_field">
@@ -324,6 +348,7 @@
     <script src="../../assets/js/general/Swiper.js"></script>
     <script src="../../assets/js/custom/navbar.js"></script>
     <script src="../../assets/js/custom/POS.js"></script>
+    <script src="../../assets/js/custom/E-alert.js"></script>
 </body>
 
 </html>

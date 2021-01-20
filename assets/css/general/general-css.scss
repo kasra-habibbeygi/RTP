@@ -201,3 +201,42 @@ label.error{
     color: $success_color;
     border: 1px solid $success_border;
 }
+
+.dropdown-item.active, .dropdown-item:active {
+    color: #fff;
+    text-decoration: none;
+    background-color: #F8F9FA;
+}
+
+.dropdown {
+    direction: rtl;
+    text-align: right;
+    border-right: 2px solid rgb(192, 192, 192);
+    padding-right: 20px;
+
+    .dropdown-toggle {
+        padding: 0;
+        color: #707070;
+
+        i{
+            position: relative;
+            top: 3px;
+            left: 6px;
+        }
+    }
+
+    .dropdown-menu {
+        direction: rtl;
+        text-align: right;
+        padding: 0px;
+    }
+
+    .dropdown-item {
+        padding: 10px 20px;
+        color: #707070;
+    }
+}
+
+.dropdown-toggle::after {
+    display: none;
+}
