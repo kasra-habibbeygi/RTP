@@ -119,7 +119,7 @@
                 <table class="address_list">
                     <thead>
                         <tr>
-                            <th>انتخاب آدرس</th>
+                            <th class="D_A">آدرس پیش فرض</th>
                             <th>ردیف</th>
                             <th>آدرس</th>
                             <th>استان</th>
@@ -133,15 +133,28 @@
                     <tbody>
                         <tr>
                             <td>
-                                <input class="inp-cbx" id="PM-1" type="radio" name="PM" style="display: none" checked/>
-                                <label class="cbx" for="PM-1">
-                                    <span>
-                                        <svg width="12px" height="10px" viewbox="0 0 12 10">
-                                            <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
-                                        </svg>
-                                    </span>
-    
-                                </label>
+                                <span class="CON this_one"></span>
+                            </td>
+                            <td id="row">1</td>
+                            <td id="address">تهران - شهران - خیابان طوقانی - کوچه یاس ، پلاک 28 - بعد از دست انداز</td>
+                            <td>تهران</td>
+                            <td>asdasd</td>
+                            <td>09021414866</td>
+                            <td>1546899753</td>
+                            <td>
+                                <a href="#GTH" class="btn edit_address">
+                                    <i class="fal fa-pencil-alt"></i>
+                                </a>
+                            </td>
+                            <td>
+                                <button class="btn remove_tr">
+                                    <i class="fal fa-trash-alt"></i>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="CON"></span>
                             </td>
                             <td id="row">1</td>
                             <td id="address">تهران - شهران - خیابان طوقانی - کوچه یاس ، پلاک 28 - بعد از دست انداز</td>
@@ -215,6 +228,18 @@
                         <img src="../../assets/img/LC00.png" alt="">
                     </div>
                 </div>
+
+                <input class="inp-cbx" id="address-1" type="checkbox" name="addres" style="display: none" />
+                <label class="cbx" for="address-1">
+                    <span>
+                        <svg width="12px" height="10px" viewbox="0 0 12 10">
+                            <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+                        </svg>
+                    </span>
+                    <span class="brand_name">
+                        این آدرس به عنوان آدرس پیش فرض انتخاب شود .
+                    </span>
+                </label>
                 
                 <button type="submit" class="btn check_valid check_address">ثبت آدرس جدید</button>
             </form>
