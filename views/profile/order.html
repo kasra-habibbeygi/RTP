@@ -111,6 +111,10 @@
             <h3 class="all_header_text">لیست آدرس های من</h3>
             <span class="header_underline"></span>
 
+            <div class="N_exist">
+                آدرسی برای نمایش وجود ندارد !
+            </div>
+
             <div class="AL_field">
                 <table class="address_list">
                     <thead>
@@ -118,6 +122,7 @@
                             <th>انتخاب آدرس</th>
                             <th>ردیف</th>
                             <th>آدرس</th>
+                            <th>استان</th>
                             <th>شهر</th>
                             <th>شماره تماس</th>
                             <th>کد پستی</th>
@@ -128,7 +133,7 @@
                     <tbody>
                         <tr>
                             <td>
-                                <input class="inp-cbx" id="PM-1" type="radio" name="PM" style="display: none" />
+                                <input class="inp-cbx" id="PM-1" type="radio" name="PM" style="display: none" checked/>
                                 <label class="cbx" for="PM-1">
                                     <span>
                                         <svg width="12px" height="10px" viewbox="0 0 12 10">
@@ -141,40 +146,13 @@
                             <td id="row">1</td>
                             <td id="address">تهران - شهران - خیابان طوقانی - کوچه یاس ، پلاک 28 - بعد از دست انداز</td>
                             <td>تهران</td>
+                            <td>asdasd</td>
                             <td>09021414866</td>
                             <td>1546899753</td>
                             <td>
-                                <button type="button" class="btn edit_address">
+                                <a href="#GTH" class="btn edit_address">
                                     <i class="fal fa-pencil-alt"></i>
-                                </button>
-                            </td>
-                            <td>
-                                <button class="btn remove_tr">
-                                    <i class="fal fa-trash-alt"></i>
-                                </button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <input class="inp-cbx" id="PM-1" type="radio" name="PM" style="display: none" />
-                                <label class="cbx" for="PM-1">
-                                    <span>
-                                        <svg width="12px" height="10px" viewbox="0 0 12 10">
-                                            <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
-                                        </svg>
-                                    </span>
-    
-                                </label>
-                            </td>
-                            <td id="row">1</td>
-                            <td id="address">تهران - شهران - خیابان طوقانی - کوچه یاس ، پلاک asd asd asdas d - بعد از دست انداز</td>
-                            <td>تهران</td>
-                            <td>asdasd</td>
-                            <td>1546899753</td>
-                            <td>
-                                <button type="button" class="btn edit_address">
-                                    <i class="fal fa-pencil-alt"></i>
-                                </button>
+                                </a>
                             </td>
                             <td>
                                 <button class="btn remove_tr">
@@ -188,7 +166,7 @@
         </div>
     </section>
 
-    <section class="add_address mt-5">
+    <section class="add_address mt-5"  id="GTH">
         <div class="add_body">
             <h3 class="all_header_text">افزودن آدرس جدید</h3>
             <span class="header_underline"></span>
@@ -205,12 +183,16 @@
 
             <form class="add_form">
                 <div class="form-group">
-                    <label for="name_inp">آدرس</label>
+                    <label for="name_inp">استان</label>
                     <input type="text" class="form-control valid" id="name_inp">
                 </div>
                 <div class="form-group">
                     <label for="phoneNumber_inp">شهر</label>
                     <input type="text" class="form-control valid" id="phoneNumber_inp">
+                </div>
+                <div class="form-group">
+                    <label for="email_inp">آدرس</label>
+                    <textarea type="text" class="form-control valid" id="email_inp"></textarea>
                 </div>
                 <div class="form-group">
                     <label for="email_inp">شماره تماس</label>
@@ -234,7 +216,7 @@
                     </div>
                 </div>
                 
-                <button type="submit" class="btn check_valid check_address">ثبت تغییرات</button>
+                <button type="submit" class="btn check_valid check_address">ثبت آدرس جدید</button>
             </form>
 
         </div>

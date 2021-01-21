@@ -28,39 +28,41 @@ $('.check_valid').click(function (e){
 
 $('.edit_address').click(function(){
 
-    $('.add_form input').eq(0).val($(this).parent().parent().children('td:nth-child(3)').text());
-    $('.add_form input').eq(1).val($(this).parent().parent().children('td:nth-child(4)').text());
-    $('.add_form input').eq(2).val($(this).parent().parent().children('td:nth-child(5)').text());
-    $('.add_form input').eq(3).val($(this).parent().parent().children('td:nth-child(6)').text());
-
     let $checkvalid0 = $(this).parent().parent().children('td:nth-child(3)').text();
     let $checkvalid1 = $(this).parent().parent().children('td:nth-child(4)').text();
     let $checkvalid2 = $(this).parent().parent().children('td:nth-child(5)').text();
     let $checkvalid3 = $(this).parent().parent().children('td:nth-child(6)').text();
+    let $checkvalid4 = $(this).parent().parent().children('td:nth-child(7)').text();
 
-    $('.check_address').click(function(e){
+    $('.add_form input').eq(0).val($checkvalid1);
+    $('.add_form input').eq(1).val($checkvalid2);
+    $('.add_form input').eq(2).val($checkvalid3);
+    $('.add_form input').eq(3).val($checkvalid4);
+    $('.add_form textarea').val($checkvalid0);
 
-        if($('.add_form input').eq(0).val() == $checkvalid0 && $('.add_form input').eq(1).val() == $checkvalid1 && $('.add_form input').eq(2).val() == $checkvalid2 && $('.add_form input').eq(3).val() == $checkvalid3){
 
-            if($('.valid').eq(4).val() == ''){
+    // $('.check_address').click(function(e){
+
+    //     if($('.add_form input').eq(0).val() == $checkvalid1 && $('.add_form input').eq(1).val() == $checkvalid2 && $('.add_form input').eq(2).val() == $checkvalid3 && $('.add_form input').eq(3).val() == $checkvalid4 || $('.add_form textarea').val($checkvalid0) == $checkvalid0){
+
+    //         if($('.valid').eq(4).val() == ''){
                 
-                error_text.text('لطفا تمام فیلد ها را پر کنید .');
-                $('.error_handler').css('display' , 'flex');
-                e.preventDefault();
+    //             error_text.text('لطفا تمام فیلد ها را پر کنید .');
+    //             $('.error_handler').css('display' , 'flex');
+    //             e.preventDefault();
 
-            }
-            else{
+    //         }
+    //         else{
 
-                error_text.text('هنوز تغییری ایجاد نشده است .');
-                $('.error_handler').css('display' , 'flex');
-                e.preventDefault();
+    //             error_text.text('هنوز تغییری ایجاد نشده است .');
+    //             $('.error_handler').css('display' , 'flex');
+    //             e.preventDefault();
 
-            }
+    //         }
             
-
-        }
+    //     }
     
-    });
+    // });
 
 });
 
