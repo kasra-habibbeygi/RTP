@@ -63,3 +63,16 @@ $('.edit_address').click(function(){
     });
 
 });
+
+// open remove modal
+$('.remove_tr').click(function(){
+
+    $('.RR_modal').fadeIn();
+
+    $('.RR_modal .no').click(function(){
+
+        $('.RR_modal').fadeOut();
+
+    })
+
+});

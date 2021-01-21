@@ -1,7 +1,6 @@
 @import '../partials/variable';
 @import '../partials/mixin';
 @import '../partials/header-text';
-@import '../partials/errors';
 @import '../partials/check-box';
 @import '../partials/captcha';
 
@@ -95,6 +94,11 @@
 
                     }
 
+                    .remove_tr{
+                        font-size: 1.1rem;
+                        color: #999999;
+                    }
+
                     .cbx span:last-child {
                         width: 20px;
                         height: 20px;
@@ -150,6 +154,63 @@
                 border-radius: 50px;
                 color: #fff;
                 margin-top: 30px;
+            }
+        }
+    }
+}
+
+.RR_modal {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.247);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99999999999999999;
+    display: none;
+
+    .main_field {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .contact_field {
+            width: 500px;
+            padding: 50px;
+            border-radius: 15px;
+            background-color: $white;
+            text-align: right;
+            direction: rtl;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            p {
+                text-align: center;
+                line-height: 35px;
+                font-size: 1.2rem;
+                color: #535353;
+            }
+
+            .no {
+                background-color: #FE3548;
+                color: #fff;
+                font-size: 1.3rem;
+                border-radius: 50px;
+                padding: 5px 25px;
+                margin-top: 20px;
+            }
+
+            .yes {
+                background-color: #66C3D2;
+                color: #fff;
+                margin-right: 20px;
+                font-size: 1.3rem;
+                border-radius: 50px;
+                padding: 5px 25px;
+                margin-top: 20px;
             }
         }
     }
