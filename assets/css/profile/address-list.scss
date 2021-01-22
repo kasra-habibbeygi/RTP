@@ -94,7 +94,7 @@
 
                     }
 
-                    .remove_tr{
+                    .remove_tr {
                         font-size: 1.1rem;
                         color: #999999;
                     }
@@ -216,7 +216,7 @@
     }
 }
 
-.N_exist{
+.N_exist {
     width: 90%;
     margin-right: 5%;
     padding: 30px;
@@ -228,7 +228,7 @@
     font-size: 1.5rem;
 }
 
-.CON{
+.CON {
     width: 20px;
     height: 20px;
     border-radius: 50px;
@@ -237,27 +237,36 @@
     margin: 0 auto;
 }
 
-.this_one{
+.this_one {
     background-color: #62bccb8f;
 }
 
-.D_A{
+.D_A {
     min-width: 50px;
     width: 10px;
     padding: 20px 10px !important;
 }
 
-.btn_group{
+.btn_group {
     width: 100%;
     display: flex;
 
-    button{
-        &:first-child{
+    button {
+        &:first-child {
             margin-left: 20px;
         }
 
-        &:last-child{
+        &:last-child {
             background-color: #FE3548 !important;
         }
+    }
+}
+
+.all_header_text {
+
+    a {
+        font-size: 0.9rem;
+        color: $accent_color;
+        margin-right: 20px;
     }
 }
