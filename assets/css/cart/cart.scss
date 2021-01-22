@@ -4,8 +4,7 @@
 @import '../partials/cart-summary';
 @import '../partials/header-text';
 
-.cart_goods,
-.sale_field {
+.cart_goods{
     width: 70%;
     margin-left: 28%;
     padding: 30px;
@@ -19,24 +18,7 @@
     display: flex;
 }
 
-.sale_field {
-    form {
-        width: 500px;
-        font-family: $nf;
 
-        button {
-            color: $white;
-            background-color: $accent_color;
-            border-radius: 50px;
-            width: max-content;
-            padding: 7px 30px;
-
-            &:hover{
-                background-color: $ac_color;
-            }
-        }
-    }
-}
 
 .summary_details {
     position: relative;
@@ -146,8 +128,7 @@
 // media query
 @media only screen and (max-width: 1150px) {
 
-    .cart_goods,
-    .sale_field {
+    .cart_goods{
         width: 66%;
         margin-left: 32%;
     }
@@ -155,15 +136,10 @@
 }
 
 @media only screen and (max-width: 920px) {
-    counter_field
-    .cart_goods,
-    .sale_field {
+    .counter_field
+    .cart_goods{
         width: 60%;
         margin-left: 37%;
-    }
-
-    .sale_field form {
-        width: 100%;
     }
 
 }
@@ -171,30 +147,9 @@
 
 @media only screen and (max-width: 900px) {
 
-    .cart_goods,
-    .sale_field {
+    .cart_goods{
         width: 90%;
         margin-left: 5%;
-    }
-
-    .sale_field form {
-        width: 80%;
-    }
-
-}
-
-@media only screen and (max-width: 705px) {
-
-    .sale_field form {
-        width: 100%;
-    }
-
-    .sale_field form button {
-        padding: 7px 0px;
-        font-size: 1.2rem;
-        width: 40%;
-        margin-right: 30%;
-        margin-top: 20px;
     }
 
 }
@@ -237,32 +192,11 @@
 
 @media only screen and (max-width: 500px) {
 
-    .sale_field form button {
-        width: 100%;
-        margin-right: 0%;
-    }
-
-    .sale_field form button {
-        font-size: 1rem;
-    }
-
-    .sale_field {
-
-        .header_underline {
-            width: 200px;
-        }
-    }
-
     .cart_goods {
         .header_underline {
             width: 210px;
         }
     }
-
-    .sale_field .header_underline {
-        width: 150px;
-    }
-
 
 }
 
