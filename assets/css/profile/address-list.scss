@@ -270,3 +270,51 @@
         margin-right: 20px;
     }
 }
+
+// media query
+
+@media only screen and (max-width: 992px) {
+
+    .N_exist {
+        font-size: 1.1rem;
+    }
+
+}
+
+@media only screen and (max-width: 550px) {
+
+    .add_address .add_body {
+        width: 90%;
+    }
+
+    .captcha_inp .form-group {
+        width: 50%;
+    }
+
+    .header_underline {
+        width: 220px;
+    }
+
+    .RR_modal .main_field .contact_field {
+        width: 90%;
+    }
+
+    .RR_modal .main_field .contact_field p {
+        font-size: 1rem;
+    }
+
+}
+
+@media only screen and (max-width: 320PX) {
+
+    .RR_modal .main_field .contact_field .no {
+        font-size: 1rem;
+        padding: 5px 20px;
+    }
+
+    .RR_modal .main_field .contact_field .yes {
+        font-size: 1rem;
+        padding: 5px 21px;
+    }
+
+}
