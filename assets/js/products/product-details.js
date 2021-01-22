@@ -119,6 +119,7 @@ for (let i = 0; i < SF_option.length; i++) {
 
 }
 
+// if comments field have active class to show , this if is rendered
 if(SF_option.eq(3).attr('class') == 'SF_option active_SO'){
 
     SF_option.removeClass('active_SO');
