@@ -151,8 +151,6 @@ $('.memory_chose .PDCB_parent div').click(function () {
 
 });
 
-
-
 // when user chose memory , color change
 for (let x = 0; x <= $('.memory_chose .PDCB_parent div').length; x++) {
 
