@@ -9,19 +9,19 @@ $('.new_address div').click(function () {
         $('.AA_moda').fadeOut();
         $('body').css('overflow', 'auto');
 
+    });                                       
+
+    // if user click out of modal , modal will be closed
+    $(window).click(function(e){
+
+        if( $(e.target).attr('class') == 'AA_flex'){
+
+            $('.AA_moda').fadeOut();
+            $('body').css('overflow', 'auto');
+
+        }
+
     });
-
-    let $this = $(this);
-
-    // $(window).click(function(e){
-
-    //     if($this.attr('class') !== $(e.target).attr('class')){
-
-    //         alert('asdadsd');
-
-    //     }
-
-    // });
 
 });
 
