@@ -23,49 +23,6 @@ $('.check_valid').click(function (e){
 
 });
 
-// when user click on edit , value in table goes in input and user can edit address
-
-
-$('.edit_address').click(function(){
-
-    let $checkvalid0 = $(this).parent().parent().children('td:nth-child(3)').text();
-    let $checkvalid1 = $(this).parent().parent().children('td:nth-child(4)').text();
-    let $checkvalid2 = $(this).parent().parent().children('td:nth-child(5)').text();
-    let $checkvalid3 = $(this).parent().parent().children('td:nth-child(6)').text();
-    let $checkvalid4 = $(this).parent().parent().children('td:nth-child(7)').text();
-
-    $('.add_form input').eq(0).val($checkvalid1);
-    $('.add_form input').eq(1).val($checkvalid2);
-    $('.add_form input').eq(2).val($checkvalid3);
-    $('.add_form input').eq(3).val($checkvalid4);
-    $('.add_form textarea').val($checkvalid0);
-
-
-    // $('.check_address').click(function(e){
-
-    //     if($('.add_form input').eq(0).val() == $checkvalid1 && $('.add_form input').eq(1).val() == $checkvalid2 && $('.add_form input').eq(2).val() == $checkvalid3 && $('.add_form input').eq(3).val() == $checkvalid4 || $('.add_form textarea').val($checkvalid0) == $checkvalid0){
-
-    //         if($('.valid').eq(4).val() == ''){
-                
-    //             error_text.text('لطفا تمام فیلد ها را پر کنید .');
-    //             $('.error_handler').css('display' , 'flex');
-    //             e.preventDefault();
-
-    //         }
-    //         else{
-
-    //             error_text.text('هنوز تغییری ایجاد نشده است .');
-    //             $('.error_handler').css('display' , 'flex');
-    //             e.preventDefault();
-
-    //         }
-            
-    //     }
-    
-    // });
-
-});
-
 // open remove modal
 $('.remove_tr').click(function(){
 
