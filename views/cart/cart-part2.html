@@ -125,7 +125,7 @@
                     </div>
                     <div class="form-group">
                         <label for="postal_code">آدرس</label>
-                        <input type="text" class="form-control valid" id="postal_code">
+                        <textarea type="text" class="form-control valid" id="postal_code"></textarea>
                     </div>
                     <div class="form-group">
                         <label for="postal_code">شماره تماس</label>
@@ -135,6 +135,19 @@
                         <label for="postal_code">کد پستی</label>
                         <input type="text" class="form-control valid" id="postal_code">
                     </div>
+
+                    <input class="inp-cbx" id="address-1" type="radio" name="addres" style="display: none" checked />
+                    <label class="cbx" for="address-1">
+                        <span>
+                            <svg width="12px" height="10px" viewbox="0 0 12 10">
+                                <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+                            </svg>
+                        </span>
+                        <span class="brand_name">
+                            این آدرس به عنوان آدرس پیش فرض ثبت شود .
+                        </span>
+                    </label>
+
                     <button type="submit" class="btn check_valid">افزودن آدرس جدید</button>
                 </form>
             </div>
