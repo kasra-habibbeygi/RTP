@@ -465,3 +465,15 @@ nav {
     }
 
 }
+
+@media only screen and (max-width: 350px) {
+
+    .dropdown .dropdown-toggle {
+        font-size: 0.8rem;
+    }
+
+    .dropdown {
+        padding-right: 10px;
+    }
+
+}
