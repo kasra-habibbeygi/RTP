@@ -276,6 +276,11 @@
     }
 }
 
+.inp-cbx:checked+.cbx span:first-child {
+    position: relative;
+    top: 2px;
+}
+
 @media only screen and (max-width: 1200px) {
 
     .AF .old_addres .cbx .brand_name section p {

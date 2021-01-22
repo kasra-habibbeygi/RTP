@@ -9,9 +9,23 @@ $('.new_address div').click(function () {
         $('.AA_moda').fadeOut();
         $('body').css('overflow', 'auto');
 
-    })
+    });
+
+    let $this = $(this);
+
+    // $(window).click(function(e){
+
+    //     if($this.attr('class') !== $(e.target).attr('class')){
+
+    //         alert('asdadsd');
+
+    //     }
+
+    // });
 
 });
+
+
 
 // // chose day zone
 // $('.send_day .PD_chose_box div').click(function () {
