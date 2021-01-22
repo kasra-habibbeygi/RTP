@@ -119,6 +119,15 @@ for (let i = 0; i < SF_option.length; i++) {
 
 }
 
+if(SF_option.eq(3).attr('class') == 'SF_option active_SO'){
+
+    SF_option.removeClass('active_SO');
+    SF_option.eq(3).addClass('active_SO');
+    SO_container.css('display', 'none');
+    SO_container.eq(3).css('display', 'block');
+
+}
+
 // chose color
 $('.color_chose .PDCB_parent div').click(function () {
 
@@ -179,3 +188,4 @@ for (let x = 0; x <= $('.memory_chose .PDCB_parent div').length; x++) {
     });
 
 }
+

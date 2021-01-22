@@ -58,6 +58,14 @@
         position: absolute;
         right: 20px;
 
+        h1{
+            position: absolute;
+            right: 0;
+            width: max-content;
+            font-family: $af;
+            color: $accent_color;
+        }
+
         img {
             width: 100%;
         }
@@ -435,19 +443,15 @@ nav {
 
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 800px) {
 
     .secondary-nav .NB-search {
-        width: 70%;
+        width: 320px;
     }
 
 }
 
 @media only screen and (max-width: 500px) {
-
-    .secondary-nav .NB-search {
-        width: 60%;
-    }
 
     .secondary-nav a {
         width: 20%;
@@ -473,7 +477,24 @@ nav {
     }
 
     .dropdown {
-        padding-right: 10px;
+        padding-right: 10px !important;
+    }
+
+    nav .left-NB .basket-field a {
+        font-size: 0.7rem;
+    }
+
+    nav .left-NB .basket-field a .B-conter {
+        width: 24px;
+        height: 24px;
+    }
+
+    nav .left-NB .basket-field {
+        margin-left: 10px;
+    }
+
+    .dropdown .dropdown-item {
+        font-size: 0.8rem;
     }
 
 }
