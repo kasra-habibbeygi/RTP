@@ -58,7 +58,7 @@
         position: absolute;
         right: 20px;
 
-        h1{
+        h1 {
             position: absolute;
             right: 90px;
             width: max-content;
@@ -442,6 +442,62 @@ nav {
         }
     }
 
+    .secondary-nav .NB-search span {
+        border-radius: 50px !important;
+        height: 50px;
+        width: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.3rem;
+
+        i {
+            font-size: 1.5rem;
+        }
+    }
+
+    .secondary-nav {
+
+        .NB-search {
+
+            .input-group-prepend {
+                position: absolute;
+                left: 0;
+                top: -24px;
+            }
+        }
+    }
+
+    .input-group>.custom-file .custom-file-input:focus~.custom-file-label, .input-group>.custom-select:focus, .input-group>.form-control:focus {
+        z-index: 10000000000000 !important;
+    }
+
+    .secondary-nav .NB-search input {
+        border-radius: 11px !important;
+        height: 55px;
+        position: absolute;
+        top: 118px;
+        left: -600px;
+        z-index: 1000000;
+        box-shadow: 0px 0px 10px -3px #0000004f;
+        @include transition(0.7s, cubic-bezier(0.54, 0.04, 1, 0.99), 0s);
+
+        &:focus{
+            z-index: 1000000000000000 !important;
+        }
+
+        &::placeholder {
+            font-size: 1rem;
+        }
+    }
+
+}
+
+
+
+.show_search {
+    left: 0 !important;
+    @include transition(0.7s, cubic-bezier(0.01, 0.03, 0.63, 1.43), 0s !important);
 }
 
 @media only screen and (max-width: 800px) {
