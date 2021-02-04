@@ -2,6 +2,10 @@
 @import '../partials/mixin';
 @import '../partials/header-text';
 
+* , html , body{
+    font-family: $lf !important;
+}
+
 .rules_field {
     direction: rtl;
     text-align: right;
@@ -10,7 +14,6 @@
     box-shadow: $shadow;
     padding: 30px;
     border-radius: 15px;
-    font-family: $lf !important;
 
     h1 {
         font-size: 2.7rem !important;
@@ -28,6 +31,11 @@
     ul{
         li{
             padding-top: 15px !important;
+
+            span{
+                font-size: 1rem !important;
+                line-height: 33px !important;
+            }
         }
     }
 

@@ -229,6 +229,10 @@
             .not_active {
                 background-color: #CFD1D8;
                 cursor: auto;
+
+                &:hover{
+                    background-color: #CFD1D8;
+                }
             }
 
             p {
