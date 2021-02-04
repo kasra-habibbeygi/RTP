@@ -1,4 +1,4 @@
-// when user click on 'add to card btn' , errors show
+// when user click on 'add to card btn' , errors show 
 $('.add_to_basket').click(function () {
 
     // if user dont chose color , error text show

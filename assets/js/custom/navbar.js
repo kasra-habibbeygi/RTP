@@ -81,10 +81,8 @@ $(document).scroll(function () {
 });
 
 // search come in if window less than 992px
-$('#navbar_search').click(function(e){
-    
-    $('.secondary-nav .NB-search form .input-group input').toggleClass('show_search');
-    e.preventDefault();
-    
-});
+$('.mobile_search_btn').click(function(){
 
+    $('.secondary-nav .NB-search form').toggleClass('active_search')
+
+});
