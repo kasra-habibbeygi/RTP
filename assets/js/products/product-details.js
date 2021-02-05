@@ -165,3 +165,19 @@ for (let x = 0; x <= $('.memory_chose .PDCB_parent div').length; x++) {
 
 }
 
+// if Survey option have yes , background color will be green and if Survey option is no , background color will be red
+for(let m = 0 ; m <$('.SO_container ul li .description').length ; m++){
+
+    if($('.SO_container ul li .description').eq(m).text().trim() == 'بله'){
+
+       $('.SO_container ul li .description').eq(m).addClass('yes_option');
+        
+    }
+    else if($('.SO_container ul li .description').eq(m).text().trim() == 'خیر'){
+    
+       $('.SO_container ul li .description').eq(m).addClass('no_option');
+    
+    }
+
+}
+

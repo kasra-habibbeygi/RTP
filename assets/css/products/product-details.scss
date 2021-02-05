@@ -100,6 +100,11 @@
                 color: rgb(163, 163, 163);
                 margin-top: 30px;
                 cursor: pointer;
+
+                &:hover{
+                    border: 1px solid rgb(68, 68, 68);
+                    color: rgb(59, 59, 59);
+                }
             }
         }
     }
@@ -230,7 +235,7 @@
                 background-color: #CFD1D8;
                 cursor: auto;
 
-                &:hover{
+                &:hover {
                     background-color: #CFD1D8;
                 }
             }
@@ -254,7 +259,7 @@
                 left: 0px;
                 top: 15px;
 
-                &:hover{
+                &:hover {
                     background-color: $ac_color;
                 }
             }
@@ -276,6 +281,16 @@
             }
         }
     }
+}
+
+.yes_option {
+    background-color: #00ff9d0e !important;
+    color: #00b041;
+}
+
+.no_option {
+    background-color: #ff00510c !important;
+    color: #ff0054;
 }
 
 .add_done {
@@ -511,7 +526,7 @@
                     border: 1px solid #f2f2f2;
                 }
 
-                .admin_avatar{
+                .admin_avatar {
                     width: 80px !important;
                     min-width: 80px;
                     height: 80px;
