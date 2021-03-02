@@ -119,43 +119,65 @@ for (let i = 0; i < SF_option.length; i++) {
 
 }
 
-// chose color
-$('.color_chose div').click(function () {
+// if comments field have active class to show , this if is rendered
+if(SF_option.eq(3).attr('class') == 'SF_option active_SO'){
 
-    $('.color_chose div').removeClass('active_pill');
+    SF_option.removeClass('active_SO');
+    SF_option.eq(3).addClass('active_SO');
+    SO_container.css('display', 'none');
+    SO_container.eq(3).css('display', 'block');
+
+}
+
+// chose color
+$('.color_chose .PDCB_parent div').click(function () {
+
+    $('.color_chose .PDCB_parent div').removeClass('active_pill');
     $(this).addClass('active_pill');
+
+    if($('.NE_field').length != 0){
+
+        $('.color_chose .PDCB_parent div').removeClass('active_pill');
+
+    }
 
 });
 
 // chose internal memory
-$('.memory_chose div').click(function () {
+$('.memory_chose .PDCB_parent div').click(function () {
 
-    $('.memory_chose div').removeClass('active_pill');
+    $('.memory_chose .PDCB_parent div').removeClass('active_pill');
     $(this).addClass('active_pill');
 
 });
 
-// form validations
+// when user chose memory , color change
+for (let x = 0; x <= $('.memory_chose .PDCB_parent div').length; x++) {
 
-$('.check_valid').click(function (e){
+    $('.memory_chose .PDCB_parent div').eq(x).click(function () {
 
-    let inp_count = $('form div .valid').length;
-    let inp_val = [];
-    let error_text = $('.error_handler .error_content p');
+        $('.color_chose .PDCB_parent div').removeClass('active_pill');
+        $('.color_chose .color_pill').removeClass('active_by_memory');
+        $('.color_chose .color_pill').eq(x).addClass('active_by_memory');
+
+
+    });
+
+}
+
+// if Survey option have yes , background color will be green and if Survey option is no , background color will be red
+for(let m = 0 ; m <$('.SO_container ul li .description').length ; m++){
+
+    if($('.SO_container ul li .description').eq(m).text().trim() == 'بله'){
+
+       $('.SO_container ul li .description').eq(m).addClass('yes_option');
+        
+    }
+    else if($('.SO_container ul li .description').eq(m).text().trim() == 'خیر'){
     
-    // get input value and push them into the inp_val array
-    for(let i = 0 ; i < inp_count ; i++){
-    
-        inp_val.push($('form div .valid').eq(i).val());
+       $('.SO_container ul li .description').eq(m).addClass('no_option');
     
     }
-    
-    // check if inp is empty
-    if(inp_val[0] == '' || inp_val[1] == '' || inp_val[2] == ''){
 
-        error_text.text('لطفا تمام فیلد ها را پر کنید .');
-        $('.error_handler').css('display' , 'flex');
-        e.preventDefault();
-    }
+}
 
-});

@@ -3,8 +3,6 @@
 @import '../partials/cart-summary';
 @import '../partials/check-box';
 @import '../partials/header-text';
-@import '../partials/product-slider';
-@import '../partials/errors';
 
 .address_field,
 .time_field,
@@ -32,6 +30,9 @@
     .new_address {
         width: 50%;
         padding: 15px 50px 15px 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
         div {
             width: 100%;
@@ -142,12 +143,14 @@
     display: none;
     position: fixed;
 
+    overflow: auto;
+
     .AA_flex {
         width: 100%;
-        height: 100vh;
         display: flex;
         justify-content: center;
         align-items: center;
+        padding: 50px 0px;
     }
 
     .AAM_field {
@@ -178,7 +181,7 @@
                 background-color: $accent_color;
                 border-radius: 50px;
                 color: #fff;
-                margin-top: 10px;
+                margin-top: 20px;
             }
         }
     }
@@ -233,6 +236,52 @@
     color: $accent_color !important;
 }
 
+.not_exist{
+    width: 93%;
+    height: 200px;
+    padding: 35px 0px;
+    border-radius: 15px;
+    background-color: #ececec;
+    direction: rtl;
+    color: #666;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.sale_field {
+    width: 70%;
+    margin-left: 28%;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: $shadow;
+    direction: rtl;
+    text-align: right;
+    form {
+        width: 500px;
+        font-family: $nf;
+
+        button {
+            color: $white;
+            background-color: $accent_color;
+            border-radius: 50px;
+            width: max-content;
+            padding: 7px 30px;
+
+            &:hover{
+                background-color: $ac_color;
+            }
+        }
+    }
+}
+
+.cbx span:first-child {
+    position: relative;
+    top: 2px;
+}
+
 @media only screen and (max-width: 1200px) {
 
     .AF .old_addres .cbx .brand_name section p {
@@ -268,6 +317,11 @@
         margin-top: 40px;
     }
 
+    .sale_field {
+        width: 66%;
+        margin-left: 32%;
+    }
+
 }
 
 @media only screen and (max-width: 920px) {
@@ -277,6 +331,16 @@
     .payment_method{
         width: 60%;
         margin-left: 37%;
+    }
+
+
+    .sale_field {
+        width: 60%;
+        margin-left: 37%;
+    }
+
+    .sale_field form {
+        width: 100%;
     }
 
 }
@@ -290,9 +354,14 @@
         margin-left: 5%;
     }
 
-}
+    .sale_field {
+        width: 90%;
+        margin-left: 5%;
+    }
 
-@media only screen and (max-width: 900px) {
+    .sale_field form {
+        width: 80%;
+    }
 
     .AA_moda .AAM_field {
         width: 90%;
@@ -300,7 +369,28 @@
 
 }
 
+@media only screen and (max-width: 705px) {
+
+    .sale_field form {
+        width: 100%;
+    }
+
+    .sale_field form button {
+        padding: 7px 0px;
+        font-size: 1.2rem;
+        width: 40%;
+        margin-right: 30%;
+        margin-top: 20px;
+    }
+
+}
+
 @media only screen and (max-width: 600px) {
+
+    .sale_field form button {
+        width: 50%;
+        margin-right: 25%;
+    }
 
     .payment_way div p:last-child {
         font-size: 0.8rem;
@@ -320,6 +410,27 @@
         width: 45px;
         height: 40px;
         margin-right: 5px;
+    }
+
+    
+    .sale_field form button {
+        width: 100%;
+        margin-right: 0%;
+    }
+
+    .sale_field form button {
+        font-size: 1rem;
+    }
+
+    .sale_field {
+
+        .header_underline {
+            width: 200px;
+        }
+    }
+
+    .sale_field .header_underline {
+        width: 150px;
     }
 
 }

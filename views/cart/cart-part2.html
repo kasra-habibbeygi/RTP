@@ -27,13 +27,15 @@
                         </span>
                         <!-- search -->
                     </div>
-                    <input type="text" class="form-control" placeholder="نام محصول یا کالای مورد نظر خود را وارد کنید !"
-                        aria-describedby="navbar_search">
+                    <input type="text" class="form-control"
+                        placeholder="نام محصول یا کالای مورد نظر خود را وارد کنید !">
                 </div>
             </form>
         </div>
         <!-- logo -->
-        <img src="../../assets/img/AL00.png" alt="logo" title="logo">
+        <a href="index.html">
+            <img src="../../assets/img/AL00.png" alt="logo" title="logo">
+        </a>
     </div>
 
     <!-- navbar -->
@@ -52,22 +54,20 @@
                 <li class="NBP-dropdown" id="PDP">
                     <p>محصولات <i class="fal fa-angle-down"></i></p>
                     <div class="product-option" id="PD">
-                        <a href="../product/product-list.html">تمام محصولات</a>
-                        <a href="">سامسونگ</a>
-                        <a href="">اپل</a>
-                        <a href="">اپل واچ</a>
-                        <a href="">ایر پاد</a>
+                        <a href="../products/product-list.html">سامسونگ</a>
+                        <a href="../products/product-list.html">اپل</a>
+                        <a href="../products/product-list.html">اپل واچ</a>
+                        <a href="../products/product-list.html">ایر پاد</a>
                     </div>
                 </li>
                 <li id="PDSN">
-                    <a href="../product/product-list.html">تمام محصولات</a>
-                    <a href="">سامسونگ</a>
-                    <a href="">اپل</a>
-                    <a href="">اپل واچ</a>
-                    <a href="">ایر پاد</a>
+                    <a href="../products/product-list.html">سامسونگ</a>
+                    <a href="../products/product-list.html">اپل</a>
+                    <a href="../products/product-list.html">اپل واچ</a>
+                    <a href="../products/product-list.html">ایر پاد</a>
                 </li>
                 <li>
-                    <a href="../article/article.html">اخبار</a>
+                    <a href="../article/article-list.html">اخبار</a>
                 </li>
                 <li>
                     <a href="../about-us/about-us.html">درباره ما</a>
@@ -79,13 +79,28 @@
             <!-- navbar option -->
         </div>
         <div class="left-NB">
-            <div class="LR-field">
-                <a href="">ورود</a>
+            <!-- <div class="LR-field">
+                <a href="../login-register/login.html">ورود</a>
                 /
-                <a href="">عضویت</a>
+                <a href="../login-register/register.html">عضویت</a>
+            </div> -->
+            <!-- profile dropdown -->
+            <div class="dropdown">
+                <button class="btn dropdown-toggle " type="button" id="pr_dropdown" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    <i class="far fa-angle-down"></i>
+                    پروفایل
+                </button>
+                <div class="dropdown-menu" aria-labelledby="pr_dropdown">
+                    <a class="dropdown-item" href="../profile/profile.html">پروفایل کاربری</a>
+                    <a class="dropdown-item" href="../profile/order.html">آدرس ها</a>
+                    <a class="dropdown-item" href="../profile/change-password.html">تغییر رمز عبور</a>
+                    <a class="dropdown-item exit_pro" href="#">خروج</a>
+                </div>
             </div>
+
             <div class="basket-field">
-                <a href="">
+                <a href="../cart/cart-part1.html">
                     سبد خریـــــــــــــد
                     <i class="fas fa-shopping-cart"></i>
                     <div class="B-conter">3</div>
@@ -116,27 +131,38 @@
                     </div>
 
                     <div class="form-group">
-                        <label for="receiver">نام دریافت کننده</label>
+                        <label for="receiver">استان</label>
                         <input type="text" class="form-control valid" id="receiver">
                     </div>
                     <div class="form-group">
-                        <label for="address">آدرس</label>
+                        <label for="address">شهر</label>
                         <input type="text" class="form-control valid" id="address">
+                    </div>
+                    <div class="form-group">
+                        <label for="postal_code">آدرس</label>
+                        <textarea type="text" class="form-control valid" id="postal_code"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="postal_code">شماره تماس</label>
+                        <input type="text" class="form-control valid" id="postal_code">
                     </div>
                     <div class="form-group">
                         <label for="postal_code">کد پستی</label>
                         <input type="text" class="form-control valid" id="postal_code">
                     </div>
-                    <div class="form-group">
-                        <label for="city_select">انتخاب شهر</label>
-                        <select class="form-control valid" id="city_select">
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5</option>
-                        </select>
-                    </div>
+
+                    <input class="inp-cbx" id="address-1" type="radio" name="addres" style="display: none" checked />
+                    <label class="cbx" for="address-1">
+                        <span>
+                            <svg width="12px" height="10px" viewbox="0 0 12 10">
+                                <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+                            </svg>
+                        </span>
+                        <span class="brand_name">
+                            این آدرس به عنوان آدرس پیش فرض ثبت شود .
+                        </span>
+                    </label>
+
                     <button type="submit" class="btn check_valid">افزودن آدرس جدید</button>
                 </form>
             </div>
@@ -183,6 +209,10 @@
                             </section>
                         </span>
                     </label>
+
+                    <div class="not_exist">
+                        هنوز آدرسی ثبت نشده است .
+                    </div>
                 </form>
             </div>
             <div class="new_address">
@@ -192,6 +222,29 @@
                 </div>
             </div>
         </div>
+
+    </section>
+
+    <section class="sale_field mt-4">
+        <h3 class="all_header_text">کد تخفیف</h3>
+        <span class="header_underline"></span>
+
+        <div class="error_handler warning_error">
+            <i class="fal fa-exclamation-circle"></i>
+            <div class="error_content">
+                <p>
+                    لطفا تمام فیلد ها را پر کنید
+                </p>
+            </div>
+            <i class="fal fa-times remove_erroe"></i>
+        </div>
+        <form>
+            <div class="form-group">
+                <label for="sale_inp">کد تخفیف</label>
+                <input type="text" class="form-control valid " id="sale_inp">
+            </div>
+            <button type="submit" class="btn check_valid">اعمال تخفیف</button>
+        </form>
 
     </section>
 
@@ -291,70 +344,6 @@
         <a href="cart-part3.html"  class="btn card_checked">ادامه فرآیند خرید</a>
     </section>
 
-    <!-- product offer slider -->
-    <section class="POS mt-5">
-        <h3 class="all_header_text">پشنهاد های ویژه</h3>
-        <span class="header_underline"></span>
-
-        <div class="swiper-container POS00">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <a href="" class="PS_field">
-                        <img src="../../assets/img/AP01.png" alt="">
-                        <p class="PS_description">گوشی موبایل هوااوی مدل galaxy note 9 ظرفیت 128 گیگ</p>
-                        <p class="slider_sale_flag">
-                            <span>10%</span>
-                            <span>4.000.000</span>
-                        </p>
-                        <p class="slae_price">3.600.000</p>
-                    </a>
-                </div>
-                <div class="swiper-slide">
-                    <a href="" class="PS_field">
-                        <img src="../../assets/img/AP00.PNG" alt="">
-                        <p class="PS_description">گوشی موبایل هوااوی مدل galaxy note 9 ظرفیت 128 گیگ</p>
-                        <p class="PS_price">3.000.000</p>
-                    </a>
-                </div>
-                <div class="swiper-slide">
-                    <a href="" class="PS_field">
-                        <img src="../../assets/img/AP02.png" alt="">
-                        <p class="PS_description">گوشی موبایل هوااوی مدل galaxy note 9 ظرفیت 128 گیگ</p>
-                        <p class="PS_price">3.000.000</p>
-                    </a>
-                </div>
-                <div class="swiper-slide">
-                    <a href="" class="PS_field">
-                        <img src="../../assets/img/AP08.png" alt="">
-                        <p class="PS_description">گوشی موبایل هوااوی مدل galaxy note 9 ظرفیت 128 گیگ</p>
-                        <p class="PS_price">3.000.000</p>
-                    </a>
-                </div>
-                <div class="swiper-slide">
-                    <a href="" class="PS_field">
-                        <img src="../../assets/img/AP06.png" alt="">
-                        <p class="PS_description">گوشی موبایل هوااوی مدل galaxy note 9 ظرفیت 128 گیگ</p>
-                        <p class="PS_price">3.000.000</p>
-                    </a>
-                </div>
-                <div class="swiper-slide">
-                    <a href="" class="PS_field">
-                        <img src="../../assets/img/AP07.png" alt="">
-                        <p class="PS_description">گوشی موبایل هوااوی مدل galaxy note 9 ظرفیت 128 گیگ</p>
-                        <p class="slider_sale_flag">
-                            <span>10%</span>
-                            <span>4.000.000</span>
-                        </p>
-                        <p class="slae_price">3.600.000</p>
-                    </a>
-                </div>
-            </div>
-
-            <!-- Add Arrows -->
-            <div class="swiper-button-next fal POS00_next_arrow"></div>
-            <div class="swiper-button-prev fal POS00_prev_arrow"></div>
-        </div>
-    </section>
     <!-- footer -->
     <footer>
         <div class="contact">
@@ -436,9 +425,8 @@
     <script src="../../assets/js/general/bootstrap.js"></script>
     <script src="../../assets/js/general/Swiper.js"></script>
     <script src="../../assets/js/custom/navbar.js"></script>
-    <script src="../../assets/js/custom/product-summary.js"></script>
     <script src="../../assets/js/cart/cart-part2.js"></script>
-    <script src="../../assets/js/custom/POS.js"></script>
+    <script src="../../assets/js/custom/errors.js"></script>
 </body>
 
 </html>

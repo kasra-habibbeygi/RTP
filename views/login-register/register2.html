@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../assets/css/general/bootstrap.css">
+    <link rel="stylesheet" href="../../assets/css/general/fontAwsome.css">
+    <link rel="stylesheet" href="../../assets/css/general/general-css.css">
+    <link rel="stylesheet" href="../../assets/css/login-register/register2.css">
+    <title>index</title>
+</head>
+
+<body>
+    <!-- The part at the top of the page where the logo and search are located -->
+    <div class="secondary-nav">
+        <div class="NB-search">
+            <form action="">
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <!-- search -->
+                        <span class="input-group-text" id="navbar_search">
+                            <button class="btn">
+                                <i class="fal fa-search"></i>
+                            </button>
+                        </span>
+                        <!-- search -->
+                    </div>
+                    <input type="text" class="form-control"
+                        placeholder="نام محصول یا کالای مورد نظر خود را وارد کنید !">
+                </div>
+            </form>
+        </div>
+        <!-- logo -->
+        <a href="index.html">
+            <img src="../../assets/img/AL00.png" alt="logo" title="logo">
+        </a>
+    </div>
+
+    <!-- navbar -->
+    <nav>
+        <div class="SN_layout"></div>
+        <button class="sandwich-navbar btn">
+            <i class="fas fa-bars"></i>
+        </button>
+        <div class="right-NB">
+            <i class="fas fa-times close_SN"></i>
+            <!-- navbar option -->
+            <ul class="navbar-option">
+                <li class="active-page">
+                    <a href="index.html">صفحه اصلی</a>
+                </li>
+                <li class="NBP-dropdown" id="PDP">
+                    <p>محصولات <i class="fal fa-angle-down"></i></p>
+                    <div class="product-option" id="PD">
+                        <a href="../products/product-list.html">سامسونگ</a>
+                        <a href="../products/product-list.html">اپل</a>
+                        <a href="../products/product-list.html">اپل واچ</a>
+                        <a href="../products/product-list.html">ایر پاد</a>
+                    </div>
+                </li>
+                <li id="PDSN">
+                    <a href="../products/product-list.html">سامسونگ</a>
+                    <a href="../products/product-list.html">اپل</a>
+                    <a href="../products/product-list.html">اپل واچ</a>
+                    <a href="../products/product-list.html">ایر پاد</a>
+                </li>
+                <li>
+                    <a href="../article/article-list.html">اخبار</a>
+                </li>
+                <li>
+                    <a href="../about-us/about-us.html">درباره ما</a>
+                </li>
+                <li>
+                    <a href="../contact-us/contact-us.html">تماس با ما</a>
+                </li>
+            </ul>
+            <!-- navbar option -->
+        </div>
+        <div class="left-NB">
+            <!-- <div class="LR-field">
+                <a href="../login-register/login.html">ورود</a>
+                /
+                <a href="../login-register/register.html">عضویت</a>
+            </div> -->
+            <!-- profile dropdown -->
+            <div class="dropdown">
+                <button class="btn dropdown-toggle " type="button" id="pr_dropdown" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    <i class="far fa-angle-down"></i>
+                    پروفایل
+                </button>
+                <div class="dropdown-menu" aria-labelledby="pr_dropdown">
+                    <a class="dropdown-item" href="../profile/profile.html">پروفایل کاربری</a>
+                    <a class="dropdown-item" href="../profile/order.html">آدرس ها</a>
+                    <a class="dropdown-item" href="../profile/change-password.html">تغییر رمز عبور</a>
+                    <a class="dropdown-item exit_pro" href="#">خروج</a>
+                </div>
+            </div>
+
+            <div class="basket-field">
+                <a href="../cart/cart-part1.html">
+                    سبد خریـــــــــــــد
+                    <i class="fas fa-shopping-cart"></i>
+                    <div class="B-conter">3</div>
+                </a>
+            </div>
+        </div>
+    </nav>
+    <!-- navbar -->
+
+    <!-- page content -->
+    <section class="register_field">
+        <div class="register_body">
+            <h3 class="all_header_text">کد تایید</h3>
+            <span class="header_underline"></span>
+
+            
+            <div class="error_handler warning_error">
+                <i class="fal fa-exclamation-circle"></i>
+                <div class="error_content">
+                    <p>
+                        لطفا تمام فیلد ها را پر کنید
+                    </p>
+                </div>
+                <i class="fal fa-times remove_erroe"></i>
+            </div>
+            
+            <div class="timer_field">
+                <p id="sec">00</p>
+                <span>:</span> 
+                <p id="min">1</p>
+            </div>
+            <form>
+                <div class="form-group">
+                    <label for="name_inp">کد 5 رقمی را وارد کنید</label>
+                    <input type="text" class="form-control valid" id="name_inp">
+                </div>
+
+                <div class="captcha_inp">
+                    <div class="form-group">
+                        <label for="pass_inp">کد امنیتی</label>
+                        <input type="text" class="form-control valid" id="pass_inp">
+                    </div>
+                    <button type="button">
+                        <i class="far fa-redo-alt"></i>
+                    </button>
+                    <div class="captcha_img">
+                        <img src="../../assets/img/LC00.png" alt="">
+                    </div>
+                </div>
+
+                <button type="submit" class="btn check_valid" id="timeOut">ثبت نام</button>
+                <p class="resend">در صورتی که هنوز کد تایید به شما پیامک نشده است <a href=""> اینجا </a> کلیک کنید .</p>
+            </form>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <div class="contact">
+            <p class="header">ارتباط با ما</p>
+            <p>
+                <i class="fal fa-map-marker-alt"></i>
+                تهران - بلوار نلسون ماندلا- بالاتر از چهار راه اسفندیاری - خیابان فاطمی - برج صبا
+            </p>
+            <p>
+                <i class="fal fa-at"></i>
+                kasrahabibbeygi@hmail.com
+            </p>
+            <p>
+                <i class="fal fa-mobile"></i>
+                <span>09021414866</span>
+                <span>09371969052</span>
+            </p>
+        </div>
+        <div class="short_links">
+            <p class="header">محصولات</p>
+            <ul>
+                <li>
+                    <a href="">سامسونگ</a>
+                </li>
+                <li>
+                    <a href="">اپل</a>
+                </li>
+                <li>
+                    <a href="">اپل واچ</a>
+                </li>
+                <li>
+                    <a href="">ایر پاد</a>
+                </li>
+            </ul>
+        </div>
+        <div class="short_links">
+            <p class="header">لینک های مفید</p>
+            <ul>
+                <li>
+                    <a href="">مقالات</a>
+                </li>
+                <li>
+                    <a href="">تماس با ما</a>
+                </li>
+                <li>
+                    <a href="">درباره ما</a>
+                </li>
+                <li>
+                    <a href="">محصولات</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer_description">
+            <p class="header">ATP.mobile</p>
+            <p class="FDT">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است
+            </p>
+            <div class="social_media">
+                <a href="">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="">
+                    <i class="fab fa-telegram-plane"></i>
+                </a>
+                <a href="">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+            </div>
+        </div>
+        <div class="copy_right">
+            <p>
+                &copy; تمام حقوق مادی و معنوی این سایت محفوظ است
+            </p>
+        </div>
+    </footer>
+    <!-- footer -->
+
+    <script src="../../assets/js/general/jquery.js"></script>
+    <script src="../../assets/js/general/popper.js"></script>
+    <script src="../../assets/js/general/bootstrap.js"></script>
+    <script src="../../assets/js/custom/navbar.js"></script>
+    <script src="../../assets/js/custom/errors.js"></script>
+    <script src="../../assets/js/login-register/register2.js"></script>
+
+</body>
+
+</html>

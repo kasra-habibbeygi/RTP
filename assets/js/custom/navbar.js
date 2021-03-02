@@ -6,6 +6,21 @@ $('.sandwich-navbar').click(function () {
     $('.right-NB').addClass('show_navbar');
     $('body').css('overflow', 'hidden');
 
+    $(window).resize(function(){
+
+        if($(window).width() > 992){
+    
+            $('body').css('overflow', 'auto');
+    
+        }else{
+
+            $('body').css('overflow', 'hidden');
+
+
+        }
+    
+    });
+
     // product sandwich collapse
     let nav_search = $('#PDP');
     let NSH = $('#PDSN')[0].scrollHeight + 'px';
@@ -40,13 +55,14 @@ $('.sandwich-navbar').click(function () {
 
         }, 700);
 
-        // if product collaps will open and user close the navbar , and then open it , collaps will be clos
+        // if product collaps will open and user close the navbar , and then open it , collaps will be close
         $('#PDSN').css('max-height', '0px');
         $('#PDP').removeClass('active_collaps');
 
     });
 
 });
+
 
 // sticky navbar
 $(document).scroll(function () {
@@ -62,4 +78,11 @@ $(document).scroll(function () {
         $('nav').removeClass('nav_sticky');
 
     }
+});
+
+// search come in if window less than 992px
+$('.mobile_search_btn').click(function(){
+
+    $('.secondary-nav .NB-search form').toggleClass('active_search')
+
 });

@@ -1,7 +1,7 @@
 @import '../partials/variable';
 @import '../partials/mixin';
 @import '../partials/header-text';
-@import '../partials/errors';
+@import '../partials/captcha';
 
 .edit_field {
     display: flex;
@@ -20,26 +20,6 @@
         padding: 40px;
         text-align: right;
         direction: rtl;
-
-        .birth_day {
-            display: flex;
-            flex-wrap: wrap;
-
-            p {
-                width: 100%;
-                margin-bottom: 10px;
-            }
-
-            div {
-                width: 70px;
-            }
-
-            span {
-                margin: 0px 10px;
-                position: relative;
-                top: 41px;
-            }
-        }
 
         .avaible_address{
             width: 100%;
@@ -88,7 +68,7 @@
             background-color: $accent_color;
             border-radius: 50px;
             color: $white;
-            margin-top: 50px;
+            margin-top: 20px;
         }
     }
 
@@ -100,58 +80,6 @@
     }
 }
 
-.AA_moda {
-    width: 100%;
-    height: 100vh;
-    background-color: #00000066;
-    top: 0;
-    left: 0;
-    position: fixed;
-    z-index: 9999999999999999;
-    display: none;
-
-    .AA_flex {
-        width: 100%;
-        height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .AAM_field {
-        width: 500px;
-        padding: 30px;
-        border-radius: 15px;
-        box-shadow: $shadow;
-        direction: rtl;
-        text-align: right;
-        background-color: $white;
-        position: relative;
-
-        .AAM_close {
-            position: absolute;
-            top: 20px;
-            left: 20px;
-            font-size: 1.7rem;
-            color: #848484;
-            cursor: pointer;
-        }
-
-        form {
-            padding: 0px 30px;
-
-            button {
-                width: 100%;
-                padding: 10px 0px;
-                background-color: $accent_color;
-                border-radius: 50px;
-                color: #fff;
-                margin-top: 10px;
-            }
-        }
-    }
-}
-
 nav {
     z-index: 100000000;
 }
@@ -160,10 +88,6 @@ nav {
 @media only screen and (max-width: 550px) {
 
     .edit_field .edit_body {
-        width: 90%;
-    }
-
-    .AA_moda .AAM_field {
         width: 90%;
     }
 
@@ -200,22 +124,6 @@ nav {
 
     .edit_field .edit_body {
         padding: 30px;
-    }
-
-}
-
-@media only screen and (max-width: 385px) {
-
-    .edit_field .edit_body .birth_day div {
-        width: 60px;
-    }
-
-    .edit_field .edit_body .birth_day div input{
-        font-size: 0.8rem;
-    }
-
-    .edit_field .edit_body .birth_day span {
-        margin: 0px 4px;
     }
 
 }

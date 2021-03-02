@@ -26,13 +26,15 @@
                         </span>
                         <!-- search -->
                     </div>
-                    <input type="text" class="form-control" placeholder="نام محصول یا کالای مورد نظر خود را وارد کنید !"
-                        aria-describedby="navbar_search">
+                    <input type="text" class="form-control"
+                        placeholder="نام محصول یا کالای مورد نظر خود را وارد کنید !">
                 </div>
             </form>
         </div>
         <!-- logo -->
-        <img src="../../assets/img/AL00.png" alt="logo" title="logo">
+        <a href="index.html">
+            <img src="../../assets/img/AL00.png" alt="logo" title="logo">
+        </a>
     </div>
 
     <!-- navbar -->
@@ -51,22 +53,20 @@
                 <li class="NBP-dropdown" id="PDP">
                     <p>محصولات <i class="fal fa-angle-down"></i></p>
                     <div class="product-option" id="PD">
-                        <a href="../product/product-list.html">تمام محصولات</a>
-                        <a href="">سامسونگ</a>
-                        <a href="">اپل</a>
-                        <a href="">اپل واچ</a>
-                        <a href="">ایر پاد</a>
+                        <a href="../products/product-list.html">سامسونگ</a>
+                        <a href="../products/product-list.html">اپل</a>
+                        <a href="../products/product-list.html">اپل واچ</a>
+                        <a href="../products/product-list.html">ایر پاد</a>
                     </div>
                 </li>
                 <li id="PDSN">
-                    <a href="../product/product-list.html">تمام محصولات</a>
-                    <a href="">سامسونگ</a>
-                    <a href="">اپل</a>
-                    <a href="">اپل واچ</a>
-                    <a href="">ایر پاد</a>
+                    <a href="../products/product-list.html">سامسونگ</a>
+                    <a href="../products/product-list.html">اپل</a>
+                    <a href="../products/product-list.html">اپل واچ</a>
+                    <a href="../products/product-list.html">ایر پاد</a>
                 </li>
                 <li>
-                    <a href="../article/article.html">اخبار</a>
+                    <a href="../article/article-list.html">اخبار</a>
                 </li>
                 <li>
                     <a href="../about-us/about-us.html">درباره ما</a>
@@ -78,13 +78,28 @@
             <!-- navbar option -->
         </div>
         <div class="left-NB">
-            <div class="LR-field">
-                <a href="">ورود</a>
+            <!-- <div class="LR-field">
+                <a href="../login-register/login.html">ورود</a>
                 /
-                <a href="">عضویت</a>
+                <a href="../login-register/register.html">عضویت</a>
+            </div> -->
+            <!-- profile dropdown -->
+            <div class="dropdown">
+                <button class="btn dropdown-toggle " type="button" id="pr_dropdown" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    <i class="far fa-angle-down"></i>
+                    پروفایل
+                </button>
+                <div class="dropdown-menu" aria-labelledby="pr_dropdown">
+                    <a class="dropdown-item" href="../profile/profile.html">پروفایل کاربری</a>
+                    <a class="dropdown-item" href="../profile/order.html">آدرس ها</a>
+                    <a class="dropdown-item" href="../profile/change-password.html">تغییر رمز عبور</a>
+                    <a class="dropdown-item exit_pro" href="#">خروج</a>
+                </div>
             </div>
+
             <div class="basket-field">
-                <a href="">
+                <a href="../cart/cart-part1.html">
                     سبد خریـــــــــــــد
                     <i class="fas fa-shopping-cart"></i>
                     <div class="B-conter">3</div>
@@ -114,6 +129,19 @@
                 <div class="form-group">
                     <label for="name_inp">شماره موبایل خود را وارد کنید</label>
                     <input type="text" class="form-control valid" id="name_inp">
+                </div>
+
+                <div class="captcha_inp">
+                    <div class="form-group">
+                        <label for="pass_inp">کد امنیتی</label>
+                        <input type="text" class="form-control valid" id="pass_inp">
+                    </div>
+                    <button type="button">
+                        <i class="far fa-redo-alt"></i>
+                    </button>
+                    <div class="captcha_img">
+                        <img src="../../assets/img/LC00.png" alt="">
+                    </div>
                 </div>
 
                 <input class="inp-cbx" id="address-2" type="checkbox" name="addres" style="display: none" />
@@ -213,6 +241,7 @@
     <script src="../../assets/js/general/popper.js"></script>
     <script src="../../assets/js/general/bootstrap.js"></script>
     <script src="../../assets/js/custom/navbar.js"></script>
+    <script src="../../assets/js/custom/errors.js"></script>
     <script src="../../assets/js/login-register/register.js"></script>
 
 </body>

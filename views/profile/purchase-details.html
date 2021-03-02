@@ -27,13 +27,15 @@
                         </span>
                         <!-- search -->
                     </div>
-                    <input type="text" class="form-control" placeholder="نام محصول یا کالای مورد نظر خود را وارد کنید !"
-                        aria-describedby="navbar_search">
+                    <input type="text" class="form-control"
+                        placeholder="نام محصول یا کالای مورد نظر خود را وارد کنید !">
                 </div>
             </form>
         </div>
         <!-- logo -->
-        <img src="../../assets/img/AL00.png" alt="logo" title="logo">
+        <a href="index.html">
+            <img src="../../assets/img/AL00.png" alt="logo" title="logo">
+        </a>
     </div>
 
     <!-- navbar -->
@@ -52,22 +54,20 @@
                 <li class="NBP-dropdown" id="PDP">
                     <p>محصولات <i class="fal fa-angle-down"></i></p>
                     <div class="product-option" id="PD">
-                        <a href="../product/product-list.html">تمام محصولات</a>
-                        <a href="">سامسونگ</a>
-                        <a href="">اپل</a>
-                        <a href="">اپل واچ</a>
-                        <a href="">ایر پاد</a>
+                        <a href="../products/product-list.html">سامسونگ</a>
+                        <a href="../products/product-list.html">اپل</a>
+                        <a href="../products/product-list.html">اپل واچ</a>
+                        <a href="../products/product-list.html">ایر پاد</a>
                     </div>
                 </li>
                 <li id="PDSN">
-                    <a href="../product/product-list.html">تمام محصولات</a>
-                    <a href="">سامسونگ</a>
-                    <a href="">اپل</a>
-                    <a href="">اپل واچ</a>
-                    <a href="">ایر پاد</a>
+                    <a href="../products/product-list.html">سامسونگ</a>
+                    <a href="../products/product-list.html">اپل</a>
+                    <a href="../products/product-list.html">اپل واچ</a>
+                    <a href="../products/product-list.html">ایر پاد</a>
                 </li>
                 <li>
-                    <a href="../article/article.html">اخبار</a>
+                    <a href="../article/article-list.html">اخبار</a>
                 </li>
                 <li>
                     <a href="../about-us/about-us.html">درباره ما</a>
@@ -79,13 +79,28 @@
             <!-- navbar option -->
         </div>
         <div class="left-NB">
-            <div class="LR-field">
-                <a href="">ورود</a>
+            <!-- <div class="LR-field">
+                <a href="../login-register/login.html">ورود</a>
                 /
-                <a href="">عضویت</a>
+                <a href="../login-register/register.html">عضویت</a>
+            </div> -->
+            <!-- profile dropdown -->
+            <div class="dropdown">
+                <button class="btn dropdown-toggle " type="button" id="pr_dropdown" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    <i class="far fa-angle-down"></i>
+                    پروفایل
+                </button>
+                <div class="dropdown-menu" aria-labelledby="pr_dropdown">
+                    <a class="dropdown-item" href="../profile/profile.html">پروفایل کاربری</a>
+                    <a class="dropdown-item" href="../profile/order.html">آدرس ها</a>
+                    <a class="dropdown-item" href="../profile/change-password.html">تغییر رمز عبور</a>
+                    <a class="dropdown-item exit_pro" href="#">خروج</a>
+                </div>
             </div>
+
             <div class="basket-field">
-                <a href="">
+                <a href="../cart/cart-part1.html">
                     سبد خریـــــــــــــد
                     <i class="fas fa-shopping-cart"></i>
                     <div class="B-conter">3</div>
@@ -107,9 +122,9 @@
                 <img class="summary_img" src="../../assets/img/AP03.PNG" alt="">
             </div>
             <div class="summary_details">
-                <a href="">
-                    <h3>گوشی موبایل سامسونگ مدل Galaxy Note20 Ultra SM-N985F/DS دو سیم کارت ظرفیت 256 گیگابایت</h3>
-                </a>
+                <h3>
+                    <a href="">موبایل طرح اصلی ایفون 12 پرو مکس</a>
+                </h3>
                 <div class="CM">
                     <div><span style="background-color: white;"></span>سفید</div>
                     <div>64 گیگابایت</div>
@@ -118,7 +133,14 @@
                     <i class="fal fa-shield-check"></i>
                     گارانتی 24 ماهه شرکت ارتا تجارت پارسه آریا
                 </div>
-                <p class="summary_price">قیمت : 3.000.000 </p>
+                <div class="sale_flag">
+                    <p class="summary_price"> 3.000.000 </p>
+
+                    <div>
+                        <p> 3.000.000 </p>
+                        <span>10%</span>
+                    </div>
+                </div>
             </div>
 
         </div>
@@ -127,12 +149,12 @@
         <div class="product_summary_field">
 
             <div class="summary_img_field">
-                <img class="summary_img" src="../../assets/img/AP01.PNG" alt="">
+                <img class="summary_img" src="../../assets/img/AP03.PNG" alt="">
             </div>
             <div class="summary_details">
-                <a href="">
-                    <h3>گوشی موبایل سامسونگ مدل Galaxy Note20 Ultra SM-N985F/DS دو سیم کارت ظرفیت 256 گیگابایت</h3>
-                </a>
+                <h3>
+                    <a href="">موبایل طرح اصلی ایفون 12 پرو مکس</a>
+                </h3>
                 <div class="CM">
                     <div><span style="background-color: white;"></span>سفید</div>
                     <div>64 گیگابایت</div>
@@ -158,6 +180,14 @@
             <div>
                 <p>تحویل گیرنده :</p>
                 <p>کسری حبیب بیگی</p>
+            </div>
+            <div>
+                <p> کد پستی :</p>
+                <p>1354786428</p>
+            </div>
+            <div>
+                <p>شماره پیگیری :</p>
+                <p>1354786428</p>
             </div>
             <div>
                 <p> ارسال به :</p>
@@ -247,6 +277,11 @@
     <script src="../../assets/js/general/bootstrap.js"></script>
     <script src="../../assets/js/general/Swiper.js"></script>
     <script src="../../assets/js/custom/navbar.js"></script>
+
+    <script>
+        $('.product_summary_field').first().css('border', 'none');
+    </script>
+
 </body>
 
 </html>

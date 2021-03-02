@@ -1,7 +1,7 @@
 @import '../partials/variable';
 @import '../partials/mixin';
 @import '../partials/header-text';
-
+@import '../partials/pagination';
 .article_field {
     width: 98%;
     margin: 0 1%;
@@ -137,8 +137,7 @@
                     padding: 0px 30px;
 
                     img {
-                        width: 150px;
-                        height: 200px;
+                        width: 170px;
                     }
 
                     .AO_description {
@@ -146,7 +145,6 @@
                         direction: rtl;
                         color: #3d3d3d;
                         width: 90%;
-                        margin-top: 30px;
                         padding-bottom: 20px;
                         border-bottom: 1px solid #d6d6d6;
                         line-height: 30px;
@@ -295,125 +293,78 @@
                 padding: 0;
             }
 
-            li {
-                width: 100%;
-                box-shadow: $shadow;
-                border-radius: 15px;
-                overflow: hidden;
-                height: 250px;
-                margin-top: 20px;
-
-                &:first-child {
-                    margin-top: 0;
-                }
-
-                a {
-                    display: flex;
-                    align-items: center;
+            .AL_UL{
+                li {
+                    width: 100%;
+                    box-shadow: $shadow;
+                    border-radius: 15px;
+                    overflow: hidden;
                     height: 250px;
-
-                    .cart_img {
-                        width: 250px;
-                        background-size: cover;
-                        background-repeat: no-repeat;
-                        background-position: center;
-                        height: 100%;
-                        margin-left: 20px;
-                        flex-shrink: 0;
+                    margin-top: 20px;
+    
+                    &:first-child {
+                        margin-top: 0;
                     }
-
-                    .cart_contetnt {
-
-                        h3 {
-                            color: rgb(48, 48, 48);
-                            font-size: 1.4rem;
-                            line-height: 40px;
-                            padding-left: 20px;
+    
+                    a {
+                        display: flex;
+                        align-items: center;
+                        height: 250px;
+    
+                        .cart_img {
+                            width: 250px;
+                            background-size: cover;
+                            background-repeat: no-repeat;
+                            background-position: center;
+                            height: 100%;
+                            margin-left: 20px;
+                            flex-shrink: 0;
                         }
-
-                        p {
-                            color: rgb(192, 192, 192);
-                            font-size: 0.9rem;
-                            margin-bottom: 5px;
-                        }
-
-                        .content_summary {
-                            color: #969696;
-                            line-height: 25px;
-                            text-align: justify;
-                            padding-left: 20px;
-                            font-size: 0.85rem;
-                        }
-                    }
-                }
-            }
-
-            .PU_field{
-                width: 100%;
-            }
-            
-            .pagination_ul {
-                width: max-content;
-                margin: 40px auto;
-            
-                ul {
-                    padding: 0;
-                    display: flex;
-                    flex-direction: row;
-                    list-style-type: none;
-            
-                    .dotted {
-                        margin: 0px 10px;
-                    }
-            
-                    li {
-                        width: unset;
-                        box-shadow: unset;
-                        border-radius: unset;
-                        overflow: unset;
-                        height: unset;
-                        margin-top: unset;
-            
-                        a {
-                            width: 35px !important;
-                            height: 35px !important;
-                            display: flex;
-                            justify-content: center;
-                            align-items: center;
-                            box-shadow: 0px 3px 6px 1px #00000017;
-                            margin: 0px 7px;
-                            width: max-content;
-                            height: max-content;
-                            border-radius: 7px;
-                            color: #727272;
-            
-                            &:hover {
-                                border: 1px solid rgb(204, 204, 204);
+    
+                        .cart_contetnt {
+    
+                            h3 {
+                                color: rgb(48, 48, 48);
+                                font-size: 1.4rem;
+                                line-height: 40px;
+                                padding-left: 20px;
+                            }
+    
+                            p {
+                                color: rgb(192, 192, 192);
+                                font-size: 0.9rem;
+                                margin-bottom: 5px;
+                            }
+    
+                            .content_summary {
+                                color: #969696;
+                                line-height: 25px;
+                                text-align: justify;
+                                padding-left: 20px;
+                                font-size: 0.85rem;
                             }
                         }
-            
-                        .active {
-                            border: 1px solid rgb(204, 204, 204);
-                        }
-            
-                        .arrow{
-                            background-color: $accent_color;
-                            color: $white;
-                            font-size: 1.5rem;
-                        }
-            
-                        .enable{
-                            opacity: 0.4;
-                            cursor: auto;
-                        }
                     }
                 }
             }
+
+
         }
 
     }
 
 
+}
+
+.NP_exist{
+    width: 100%;
+    padding: 30px 0px;
+    border-radius: 15px;
+    background-color: #ececec;
+    text-align: center;
+    direction: rtl;
+    color: #666;
+    font-size: 1.3rem;
 }
 
 

@@ -3,10 +3,8 @@
 @import '../partials/product-summary';
 @import '../partials/cart-summary';
 @import '../partials/header-text';
-@import '../partials/product-slider';
 
-.cart_goods,
-.sale_field {
+.cart_goods{
     width: 70%;
     margin-left: 28%;
     padding: 30px;
@@ -16,27 +14,27 @@
     text-align: right;
 }
 
-.sale_field {
-    form {
-        width: 500px;
-        font-family: $nf;
-        margin-top: 50px;
+.success_error{
+    display: flex;
+}
 
-        button {
-            color: $white;
-            background-color: $accent_color;
-            border-radius: 50px;
+
+
+.summary_details {
+    position: relative;
+
+    h3{
+        a{
             width: max-content;
-            padding: 7px 30px;
+            max-width: 100%;
+            display: block;
+            line-height: 40px;
+            color: rgb(75, 75, 75);
         }
     }
 }
 
-.summary_details{
-    position: relative;
-}
-
-.remove_goods{
+.remove_goods {
     color: rgba(255, 0, 0, 0.425);
     width: max-content;
     cursor: pointer;
@@ -44,8 +42,85 @@
     left: 0;
     bottom: 0;
 
-    &:hover{
+    &:hover {
         color: red;
+    }
+}
+
+.empty_card{
+    width: 90%;
+    padding: 52px 0px;
+    border-radius: 15px;
+    background-color: #ececec;
+    text-align: center;
+    direction: rtl;
+    color: #666;
+    margin-left: 5%;
+    font-size: 1.3rem;
+}
+
+.card_confirm{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.301);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100000000000;
+    display: none;
+    
+    .content_parent{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .confiem_content{
+            width: 500px;
+            padding: 50px;
+            background-color: $white;
+            border-radius: 15px;
+            text-align: right;
+            direction: rtl;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            p{
+                text-align: center;
+                line-height: 35px;
+                font-size: 1.2rem;
+                color: #535353;
+            }
+
+            .yes{
+                background-color: $accent_color;
+                color: $white;
+                margin-right: 20px;
+                font-size: 1.3rem;
+                border-radius: 50px;
+                padding: 5px 25px;
+                margin-top: 20px;
+
+                &:hover{
+                    background-color: $ac_color;
+                }
+            }
+
+            .no{
+                background-color: #FE3548;
+                color: $white;
+                font-size: 1.3rem;
+                border-radius: 50px;
+                padding: 5px 25px;
+                margin-top: 20px;
+
+                &:hover{
+                    background-color: #ff6272;
+                }
+            }
+        }
     }
 }
 
@@ -53,8 +128,7 @@
 // media query
 @media only screen and (max-width: 1150px) {
 
-    .cart_goods,
-    .sale_field {
+    .cart_goods{
         width: 66%;
         margin-left: 32%;
     }
@@ -62,15 +136,10 @@
 }
 
 @media only screen and (max-width: 920px) {
-
-    .cart_goods,
-    .sale_field {
+    .counter_field
+    .cart_goods{
         width: 60%;
         margin-left: 37%;
-    }
-
-    .sale_field form {
-        width: 100%;
     }
 
 }
@@ -78,30 +147,9 @@
 
 @media only screen and (max-width: 900px) {
 
-    .cart_goods,
-    .sale_field {
+    .cart_goods{
         width: 90%;
         margin-left: 5%;
-    }
-
-    .sale_field form {
-        width: 80%;
-    }
-
-}
-
-@media only screen and (max-width: 705px) {
-
-    .sale_field form {
-        width: 100%;
-    }
-
-    .sale_field form button {
-        padding: 7px 0px;
-        font-size: 1.2rem;
-        width: 40%;
-        margin-right: 30%;
-        margin-top: 20px;
     }
 
 }
@@ -109,13 +157,17 @@
 @media only screen and (max-width: 700px) {
 
     .remove_goods {
-        color: rgba(255,0,0,0.425);
+        color: rgba(255, 0, 0, 0.425);
         width: max-content;
         cursor: pointer;
         position: unset;
         left: 0;
         bottom: 0;
         margin: 0 auto;
+    }
+
+    .product_summary_field .summary_details .counter_field {
+        justify-content: center;
     }
 
 }
@@ -127,25 +179,18 @@
         margin-right: 25%;
     }
 
-}
-
-@media only screen and (max-width: 500px) {
-
-    .sale_field form button {
-        width: 100%;
-        margin-right: 0%;
+    .card_confirm .content_parent .confiem_content {
+        width: 400px;
+        padding: 30px;
     }
 
-    .sale_field form button {
+    .card_confirm .content_parent .confiem_content p {
         font-size: 1rem;
     }
 
-    .sale_field {
+}
 
-        .header_underline {
-            width: 200px;
-        }
-    }
+@media only screen and (max-width: 500px) {
 
     .cart_goods {
         .header_underline {
@@ -153,9 +198,37 @@
         }
     }
 
-    .sale_field .header_underline {
-        width: 150px;
+}
+
+@media only screen and (max-width: 420px) {
+
+    .product_summary_field .summary_details .counter_field .add_counter p {
+        font-size: 0.8rem;
     }
 
+    .product_summary_field .summary_details .counter_field .add_counter {
+        padding: 10px;
+    }
+
+    .product_summary_field .summary_details .pr_counter {
+        width: 120px;
+    }
+
+    .card_confirm .content_parent .confiem_content {
+        width: 90%;
+    }
 
 }
+
+@media only screen and (max-width: 325px) {
+
+    .product_summary_field .summary_details .pr_counter {
+        width: 100px;
+    }
+
+    .product_summary_field .summary_details .pr_counter p {
+        font-size: 0.9rem;
+    }
+
+}
+

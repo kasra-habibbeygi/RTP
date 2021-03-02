@@ -36,7 +36,8 @@ $af : accent-font;
 @import '../partials/mixin',
         '../partials/variable',
         '../partials/footer',
-        '../partials/navbar';
+        '../partials/navbar',
+        '../partials/E-confirm';
 
 body{
     overflow-x: hidden;
@@ -119,6 +120,8 @@ input{
 textarea{
     border-radius: 10px !important;
     border: 1px solid #e5e5e5 !important; 
+    line-height: 30px !important;
+    height: 150px !important;
 }
 
 select{
@@ -141,4 +144,102 @@ select{
 
 label {
     color: #626262 !important;
+}
+
+label.error{
+    color: red!important;
+    padding-top: 5px !important;
+}
+
+// errors
+.error_handler{
+    width: 100%;
+    padding: 10px 10px;
+    border-radius: 7px;
+    display: flex;
+    position: relative;
+    margin-bottom: 20px;
+    margin-top: -15px;
+    direction: rtl;
+    text-align: right;
+
+    .remove_erroe{
+        position: absolute;
+        left: 15px;
+        top: 30%;
+        cursor: pointer;
+        font-size: 1.1rem;
+    }
+
+    i{
+        font-size: 1.2rem;
+    }
+
+    div{
+        max-width: 90%;
+        line-height: 25px;
+    }
+
+    p{
+        margin: 0;
+        margin-right: 10px;
+        font-size: 0.9rem;
+    }
+}
+
+.warning_error{
+    background-color: $warning_bg;
+    color: $warning_color;
+    border: 1px solid $warning_border;
+}
+
+.danger_error{
+    background-color: $danger_bg;
+    color: $danger_color;
+    border: 1px solid $danger_border;
+}
+
+.success_error{
+    background-color: $success_bg;
+    color: $success_color;
+    border: 1px solid $success_border;
+}
+
+.dropdown-item.active, .dropdown-item:active {
+    color: #fff;
+    text-decoration: none;
+    background-color: #F8F9FA;
+}
+
+.dropdown {
+    direction: rtl;
+    text-align: right;
+    border-right: 2px solid rgb(192, 192, 192);
+    padding-right: 20px;
+
+    .dropdown-toggle {
+        padding: 0;
+        color: #707070;
+
+        i{
+            position: relative;
+            top: 3px;
+            left: 6px;
+        }
+    }
+
+    .dropdown-menu {
+        direction: rtl;
+        text-align: right;
+        padding: 0px;
+    }
+
+    .dropdown-item {
+        padding: 10px 20px;
+        color: #707070;
+    }
+}
+
+.dropdown-toggle::after {
+    display: none;
 }

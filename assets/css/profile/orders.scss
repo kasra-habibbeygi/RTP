@@ -1,0 +1,24 @@
+@import '../partials/variable';
+@import '../partials/mixin';
+@import '../partials/header-text';
+@import '../partials/captcha';
+
+.edit_field {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    font-family: $nf;
+
+    .header_underline {
+        right: -40px;
+    }
+
+    .edit_body {
+        width: 90%;
+        border-radius: 15px;
+        box-shadow: $shadow;
+        padding: 40px;
+        text-align: right;
+        direction: rtl;
+    }
+}

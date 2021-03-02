@@ -1,8 +1,8 @@
 @import '../partials/variable';
 @import '../partials/mixin';
 @import '../partials/header-text';
-@import '../partials/errors';
 @import '../partials/check-box';
+@import '../partials/captcha';
 
 .register_field{
     display: flex;
@@ -47,6 +47,10 @@
             padding-right: 5px;
         }
     }
+}
+
+.error_handler{
+    display: flex ;
 }
 
 // media query
