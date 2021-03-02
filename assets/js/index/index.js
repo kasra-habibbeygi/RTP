@@ -47,11 +47,28 @@ var swiper = new Swiper('.SP000', {
       slidesPerGroup: 3,
       speed: 1000,
     },
-    1280:{
+    1280: {
       slidesPerView: 5,
       spaceBetween: 11,
       slidesPerGroup: 4,
       speed: 1200,
     },
   }
+});
+
+// accessories modal
+$('#accessories').click(function (e) {
+
+  $('body').css('overflow' , 'hidden')
+  $('.accessories_modal').fadeIn();
+  e.preventDefault();
+
+  $('.close_ACSM').click(function(){
+
+    $('body').css('overflow' , 'auto')
+    $('.accessories_modal').fadeOut();
+    e.preventDefault();
+
+  });
+
 });
