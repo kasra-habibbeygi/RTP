@@ -70,6 +70,7 @@ $('.check_valid').click(function (e){
         $('.error_handler').css('display' , 'flex');
         e.preventDefault();
 
+         
     }
 
 });
