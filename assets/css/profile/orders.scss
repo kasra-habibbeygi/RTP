@@ -2,6 +2,23 @@
 @import '../partials/mixin';
 @import '../partials/header-text';
 @import '../partials/captcha';
+@import '../partials/pagination';
+
+%table_data {
+    border: 1px solid rgb(233, 233, 233);
+    direction: rtl;
+    padding: 20px 20px;
+    color: #999999;
+    min-width: 200px;
+
+    &:first-child {
+        min-width: 100px;
+    }
+
+    &:last-child {
+        min-width: 100px;
+    }
+}
 
 .edit_field {
     display: flex;
@@ -21,4 +38,86 @@
         text-align: right;
         direction: rtl;
     }
+}
+
+.not_exist{
+    width: 90%;
+    padding: 30px 30px;
+    border-radius: 15px;
+    background-color: #ececec;
+    text-align: center;
+    direction: rtl;
+    color: #666;
+    margin-right: 5%;
+    font-size: 1.3rem;
+}
+
+.table_field {
+    overflow-x: auto;
+
+    &::-webkit-scrollbar {
+        height: 7px;
+        background-color: rgb(245, 245, 245);
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: rgb(202, 202, 202);
+        border-radius: 3px;
+
+        &:hover {
+            background: rgb(163, 163, 163);
+        }
+    }
+}
+
+table {
+    width: 100%;
+    text-align: center;
+
+    tr {
+
+        th {
+            @extend %table_data;
+            background-color: #F6F6F6;
+        }
+
+        td {
+            @extend %table_data;
+        }
+
+        .success_payment {
+            color: #58BE1D;
+            font-family: $nf;
+        }
+
+        .alert_payment {
+
+            a{
+                color: red;
+                span{
+                    display: block;
+                    font-size: 0.8rem;
+                    font-family: $lf;
+                    margin-top: 5px;
+                }
+            }
+        }
+
+        .MD {
+
+            a {
+                color: #999999;
+                display: block;
+            }
+        }
+    }
+}
+
+// media query
+@media only screen and (max-width: 700px) {
+
+    .not_exist{
+        font-size: 1rem;
+    }
+
 }
