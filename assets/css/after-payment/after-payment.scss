@@ -1,0 +1,134 @@
+@import '../partials/variable';
+@import '../partials/mixin';
+@import '../partials/captcha';
+
+.edit_field {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    font-family: $nf;
+
+    .edit_body {
+        width: 700px;
+        border-radius: 15px;
+        box-shadow: $shadow;
+        padding: 40px;
+        text-align: right;
+        direction: rtl;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        img{
+            width: 30%;
+            margin-bottom: 20px;
+        }
+
+        h3{
+            color: #32BA7C;
+            margin-bottom: 30px;
+        }
+
+        p{
+            color: #929798;
+            margin-bottom: 10px;
+        }
+
+        .danger_text{
+            color: #E21B1B;
+        }
+
+        .warning_text{
+            color: #FEB427;
+        }
+
+        div{
+            margin-top: 30px;
+
+            a{           
+
+                &:first-child{
+                    background-color: $accent_color;
+                    color: $white;
+                    padding: 5px 15px;
+                    border-radius: 5px;
+                }
+
+                &:last-child{
+                    border: 1px solid $accent_color;
+                    border-radius: 5px;
+                    color: $accent_color;
+                    padding: 5px 15px;
+                    margin-right: 10px;
+                }
+            }
+        }
+        
+    }
+}
+
+@media only screen and (max-width: 760px) {
+
+    .edit_field .edit_body {
+        width: 470px;
+    }
+
+    .edit_field .edit_body img {
+        width: 30%;
+    }
+
+    .edit_field .edit_body div {
+        margin-top: 60px;
+    }
+
+    .edit_field .edit_body h3 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+}
+
+@media only screen and (max-width: 500px) {
+
+    .edit_field .edit_body {
+        width: 90%;
+    }
+
+    .edit_field .edit_body div {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    .edit_field .edit_body div a:last-child {
+        margin-right: 0px;
+        margin-top: 10px;
+    }
+
+}
+
+@media only screen and (max-width: 440px) {
+
+    .edit_field .edit_body h3 {
+        font-size: 1.3rem;
+    }
+
+    .edit_field .edit_body p {
+        font-size: 0.9rem;
+    }
+
+    .edit_field .edit_body div a:first-child {
+        font-size: 0.9rem;
+    }
+
+    .edit_field .edit_body div a:last-child {
+        font-size: 0.9rem;
+    }
+
+    .edit_field .edit_body h3 {
+        line-height: 40px;
+    }
+
+}
