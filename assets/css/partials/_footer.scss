@@ -112,6 +112,22 @@ footer {
     }
 }
 
+.enamad{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    
+    a{
+        
+        width: 100px;
+
+        img{
+            width: 100%;
+        }
+    }
+}
+
 @media only screen and (max-width: 1200px) {
 
     footer .footer_description .FDT {
