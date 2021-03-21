@@ -94,35 +94,36 @@ footer {
         }
     }
 
-    .copy_right{
+    .copy_right {
         width: 100%;
-        border-top: 1px  solid rgb(68, 68, 68);
+        border-top: 1px solid rgb(68, 68, 68);
         padding: 15px 0px;
         color: rgb(189, 189, 189);
         text-align: center;
         margin-top: 80px;
 
-        p{
+        p {
             margin-bottom: 0;
 
-            a{
+            a {
                 color: #ffffff;
             }
         }
     }
 }
 
-.enamad{
+.enamad {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    
-    a{
-        
-        width: 100px;
 
-        img{
+    a {
+        background-color: #fafafa;
+        padding: 20px;
+        border-radius: 5px;
+
+        img {
             width: 100%;
         }
     }
